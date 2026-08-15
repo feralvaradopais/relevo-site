@@ -6,6 +6,9 @@
   production website.
 - `relevo-studio-os` is the strategic source of truth for positioning, product
   architecture, brand strategy, and business context.
+- [`context/relevo-strategy.md`](context/relevo-strategy.md) is the required
+  website-specific strategic brief. Read it before proposing site structure,
+  messaging, copy, product framing, or narrative decisions.
 - [`design-system/`](design-system/) is the visual source of truth. Inspect its
   README, relevant docs, tokens, and Claude Design reference before building UI.
 - Canonical values live in `design-system/tokens/tokens.css`; preserved Claude
@@ -14,6 +17,26 @@
 - The handoff has documented inconsistencies in
   `design-system/UNRESOLVED.md`. If canonical docs, tokens, and visual
   reference disagree, surface the conflict instead of guessing.
+
+## Strategic implementation
+
+- Relevo Studio is an AI-native systems studio that designs intelligent
+  operational systems connecting people, tools, data, workflows, and customer
+  conversations.
+- Preserve the core idea: "Relevo designs intelligent systems for organizations
+  in motion."
+- Do not position Relevo as a traditional consultancy, software factory,
+  chatbot agency, generic AI automation shop, AI hype brand, or content agency.
+- Favor operational problems, outcomes, systems, evidence, and clarity over
+  feature catalogs or abstract AI language.
+- `Relevo Engage` is historical context only and must not be used as a current
+  customer-facing brand. Its thesis evolved into Cauvia, whose current source of
+  truth lives outside this repository.
+- Do not invent the public relationship between Cauvia and Relevo Studio; the
+  stable strategic context does not define it yet.
+- Website audience, primary CTA, final information architecture, service
+  taxonomy, portfolio hierarchy, pricing, case studies, and final product
+  prominence remain open decisions. Surface them instead of guessing.
 
 ## Visual implementation
 
@@ -49,11 +72,18 @@
   production animation stack has been selected.
 - The signature easing is `cubic-bezier(.25,1,.5,1)`. Overshoot and bounce are
   limited to state micro-interactions, never credibility-critical sections.
+- Visual spectacle must reinforce the systems narrative rather than obscure the
+  value proposition.
 
 ## Content and scope
 
 - Write in direct, specific LATAM Spanish: short sentences, concrete verbs,
   operational outcomes, no hype or generic AI language.
+- Prefer concepts such as systems, operations, intelligent workflows,
+  operational clarity, decision evidence, qualified conversations, and lead
+  recovery when they accurately describe the content.
+- Avoid claims framed as AI magic, chatbots, passive income, fully autonomous
+  operation, no-code empires, or generic automation.
 - Dala is a future experience/motion reference only; it is not a source for
   Relevo's visual identity.
 - No production framework, styling library, rendering approach, scroll system,
