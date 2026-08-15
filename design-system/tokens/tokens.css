@@ -1,0 +1,135 @@
+/* Relevo Studio — Design System v5 "Festa"
+   Valores canónicos extraídos de la sección 15 del source visual aprobado.
+   No inventar valores fuera de esta lista. */
+
+:root {
+  /* ---------- Color · base negra ---------- */
+  --rv-ink-000: #000000;   /* Void: hero, atmósfera, cierres */
+  --rv-ink-100: #0A0A0A;   /* Fondo por defecto */
+  --rv-ink-200: #141414;   /* Superficie de card */
+  --rv-ink-300: #1C1C1C;   /* Panel y fondo hundido */
+  --rv-ink-400: #262626;   /* Hover y bordes fuertes */
+
+  /* ---------- Color · tipografía ---------- */
+  --rv-text-100: #FFFFFF;  /* Titulares y texto primario */
+  --rv-text-200: #D6D6D6;  /* Cuerpo largo */
+  --rv-text-300: #B4B4B4;  /* Texto secundario */
+  --rv-text-400: #8A8A8A;  /* Terciario, labels, placeholders */
+
+  /* ---------- Color · marca (los dos anillos del logo) ---------- */
+  --rv-purple-100: #140A18;
+  --rv-purple-200: #1D0E24; /* Superficie de método */
+  --rv-purple-300: #B57FCB; /* Texto morado sobre negro */
+  --rv-purple-500: #7B3E9C; /* Anillo que ENTREGA */
+  --rv-purple-600: #5F2A7D; /* Hover y trazo sobre claro */
+  --rv-purple-800: #2C1436; /* Parada oscura de gradiente */
+
+  --rv-teal-100: #072622;   /* Superficie de producto */
+  --rv-teal-300: #6FD9CE;   /* Texto turquesa sobre negro */
+  --rv-teal-500: #1FA8A0;   /* Anillo que RECIBE · estado correcto */
+  --rv-teal-600: #1B8F86;   /* Hover · anillo receptor sobre claro */
+  --rv-teal-800: #146E67;   /* Trazos y bordes oscuros */
+
+  /* ---------- Color · apoyo ---------- */
+  --rv-pink-100: #26060F;
+  --rv-pink-200: #2A0A17;   /* Superficie de acento */
+  --rv-pink-300: #E06A96;   /* Overlines y links */
+  --rv-pink-500: #B62C64;   /* ACCIÓN: CTA, énfasis, foco */
+  --rv-pink-600: #98204F;   /* Hover de acción */
+  --rv-pink-800: #4A0F26;   /* Parada oscura de gradiente */
+
+  --rv-yellow-200: #2A1F08; /* Superficie de dato */
+  --rv-yellow-300: #3D2D0C; /* Bordes amarillos */
+  --rv-yellow-400: #FFDA80; /* Texto amarillo sobre negro */
+  --rv-yellow-500: #FFC63D; /* Datos, métricas, nodos */
+  --rv-yellow-600: #D19410; /* Amarillo legible sobre claro */
+
+  --rv-orange-200: #2A1108; /* Superficie de campaña */
+  --rv-orange-300: #F9A574; /* Texto naranja sobre negro */
+  --rv-orange-500: #F2662C; /* Campaña, gráficos, acentos */
+  --rv-orange-600: #C24B15; /* Hover de naranja */
+
+  /* ---------- Color · estado ---------- */
+  --rv-state-ok:     #1FA8A0;  /* mismo token que teal-500 */
+  --rv-state-ok-bg:  #0B2A25;
+  --rv-state-err:    #FF5C5C;
+  --rv-state-err-bg: #2E0F12;
+
+  /* ---------- Líneas ---------- */
+  --rv-line: rgba(255,255,255,.12);
+
+  /* ---------- Modo claro (solo producto y papelería) ---------- */
+  --rv-lt-base:  #F7F7F5;   /* Fondo de producto y documentación */
+  --rv-lt-sand:  #FBF8F1;   /* Neutro cálido: impresos y aplicaciones */
+  --rv-lt-sand-sunk: #F3EDE1;
+  --rv-lt-text:  #111111;
+  --rv-lt-muted: #5A5A5A;
+  --rv-lt-pink-surface: #FDECF2;
+  --rv-lt-line:  rgba(0,0,0,.1);
+  --rv-lt-line-sand: #E3DACA;
+
+  /* ---------- Gradientes ---------- */
+  --rv-brand-gradient:    linear-gradient(135deg, #7B3E9C 0%, #1FA8A0 100%);
+  --rv-pink-gradient:     linear-gradient(135deg, #B62C64 0%, #2A0A17 100%);
+  --rv-yellow-gradient:   linear-gradient(135deg, #FFC63D 0%, #2A1F08 100%);
+  --rv-spectrum-gradient: linear-gradient(224deg, #7B3E9C -26%, #1FA8A0 40%, #FFC63D 112%);
+  --rv-panel-gradient:    linear-gradient(137.63deg, #1C1C1C 0%, #000000 100%);
+
+  /* ---------- Tipografía ---------- */
+  --rv-font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --rv-font-text: "Hanken Grotesk", system-ui, sans-serif;
+  --rv-tracking-head: -0.05em;
+  --rv-tracking-over: 0.1em;
+  --rv-tracking-desc: 0.28em;
+  --rv-leading-head: 1.02;   /* 1.02–1.1 según tamaño */
+  --rv-leading-body: 1.6;
+
+  /* ---------- Espaciado · base 4px ---------- */
+  --rv-space-1: 4px;
+  --rv-space-2: 8px;
+  --rv-space-3: 12px;
+  --rv-space-4: 16px;
+  --rv-space-6: 24px;
+  --rv-space-8: 32px;
+  --rv-space-12: 48px;
+  --rv-space-16: 64px;
+  --rv-space-24: 96px;
+  --rv-space-30: 120px;
+
+  /* ---------- Radios ---------- */
+  --rv-radius-xs: 8px;
+  --rv-radius-sm: 14px;   /* Inputs, chips, cards chicas */
+  --rv-radius-md: 20px;   /* Cards, imágenes */
+  --rv-radius-lg: 32px;   /* Paneles de sección */
+  --rv-radius-xl: 40px;   /* Contenedores hero */
+  --rv-radius-pill: 999px;
+
+  /* ---------- Bordes ---------- */
+  --rv-border: 1px solid rgba(255,255,255,.12);
+  --rv-border-strong: 1px solid #262626;
+  --rv-border-light: 1px solid rgba(0,0,0,.1);
+  --rv-border-sand: 1px solid #E3DACA;
+
+  /* ---------- Elevación ---------- */
+  --rv-shadow-cta: 0 4px 16px rgba(182,44,100,.4);
+  --rv-shadow-card: 0 24px 64px rgba(0,0,0,.22), 0 4px 16px rgba(0,0,0,.1);
+
+  /* ---------- Layout ---------- */
+  --rv-container: 1140px;
+  --rv-gutter: 24px;          /* 16px por debajo de 720px */
+  --rv-margin: 40px;          /* 22px en mobile */
+  --rv-margin-mobile: 22px;
+  --rv-section-y: 120px;      /* 72px en mobile, nunca menos de 56px */
+  --rv-section-y-mobile: 72px;
+  --rv-bp-sm: 720px;
+  --rv-bp-lg: 1024px;
+
+  /* ---------- Motion ---------- */
+  --rv-ease-quart: cubic-bezier(.25,1,.5,1);        /* firma, default */
+  --rv-ease-inout: cubic-bezier(.4,0,.2,1);
+  --rv-ease-overshoot: cubic-bezier(.34,1.26,.64,1);
+  --rv-ease-bounce: cubic-bezier(.175,.885,.32,1.2);
+  --rv-ease-carousel: cubic-bezier(.65,0,.35,1);
+  --rv-dur-fast: 300ms;   /* hover y estados */
+  --rv-dur-base: 1s;      /* entradas por scroll */
+}

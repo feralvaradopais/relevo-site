@@ -1,0 +1,22 @@
+/* Relevo Studio v5 — keyframes copiados literalmente del design system (sección 08).
+   En el website se disparan por scroll con animation-timeline: view();
+   en el documento fuente corren en loop solo para inspección. */
+
+@keyframes rv-handoff   {0%,100%{transform:translateX(0)} 45%,55%{transform:translateX(5px)}}
+@keyframes rv-handoff-b {0%,100%{transform:translateX(0)} 45%,55%{transform:translateX(-5px)}}
+@keyframes rv-reveal    {0%{clip-path:inset(50% 0 50% 0)} 18%,86%{clip-path:inset(0 0 0 0)} 100%{clip-path:inset(50% 0 50% 0)}}
+@keyframes rv-text      {0%{transform:translateY(110%)} 18%,86%{transform:translateY(0)} 100%{transform:translateY(110%)}}
+@keyframes rv-letter    {0%{color:#E06A96} 26%,82%{color:#FFFFFF} 100%{color:#E06A96}}
+@keyframes rv-mask      {0%{transform:translateY(60px);opacity:0} 18%,86%{transform:translateY(0);opacity:1} 100%{transform:translateY(60px);opacity:0}}
+@keyframes rv-grow      {0%{transform:scale(.5);opacity:0} 18%,86%{transform:scale(1);opacity:1} 100%{transform:scale(.5);opacity:0}}
+@keyframes rv-slide     {0%{transform:translateY(33%);opacity:0} 18%,86%{transform:translateY(0);opacity:1} 100%{transform:translateY(33%);opacity:0}}
+@keyframes rv-marquee   {0%{transform:translateX(0)} 100%{transform:translateX(-50%)}}
+@keyframes rv-ease      {from{left:6px} to{left:calc(100% - 30px)}}
+@keyframes rv-pulse     {0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.5);opacity:.35}}
+@keyframes rv-breathe   {0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.9} 50%{transform:translate(-50%,-50%) scale(1.08);opacity:1}}
+@keyframes rv-sweep     {0%{transform:translateX(-30%)} 100%{transform:translateX(30%)}}
+@keyframes rv-bar       {0%{transform:scaleX(0)} 100%{transform:scaleX(1)}}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
