@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail" data-bg-color="#0A0A0A">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0A0A0A"></rect>
+    <circle cx="530" cy="400" r="120" fill="none" stroke="#7B3E9C" stroke-width="66"></circle>
+    <circle cx="670" cy="400" r="120" fill="none" stroke="#1FA8A0" stroke-width="66"></circle>
+  </svg>
+</template>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#0A0A0A;color:#FFFFFF;font-family:"Plus Jakarta Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.4}
+  *{box-sizing:border-box}
+  h1,h2,h3,h4,p{margin:0}
+  a{color:#E06A96;text-decoration:none}
+  a:hover{color:#E06A96}
+  a:focus-visible,button:focus-visible{outline:2px solid #B62C64;outline-offset:3px}
+  @keyframes rv-handoff{0%,100%{transform:translateX(0)}45%,55%{transform:translateX(5px)}}
+  @keyframes rv-handoff-b{0%,100%{transform:translateX(0)}45%,55%{transform:translateX(-5px)}}
+  @keyframes rv-reveal{0%{clip-path:inset(50% 0 50% 0)}18%,86%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(50% 0 50% 0)}}
+  @keyframes rv-text{0%{transform:translateY(110%)}18%,86%{transform:translateY(0)}100%{transform:translateY(110%)}}
+  @keyframes rv-letter{0%{color:#E06A96}26%,82%{color:#FFFFFF}100%{color:#E06A96}}
+  @keyframes rv-mask{0%{transform:translateY(60px);opacity:0}18%,86%{transform:translateY(0);opacity:1}100%{transform:translateY(60px);opacity:0}}
+  @keyframes rv-grow{0%{transform:scale(.5);opacity:0}18%,86%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}
+  @keyframes rv-slide{0%{transform:translateY(33%);opacity:0}18%,86%{transform:translateY(0);opacity:1}100%{transform:translateY(33%);opacity:0}}
+  @keyframes rv-marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+  @keyframes rv-ease{from{left:6px}to{left:calc(100% - 30px)}}
+  @keyframes rv-pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.35}}
+  @keyframes rv-breathe{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.9}50%{transform:translate(-50%,-50%) scale(1.08);opacity:1}}
+  @keyframes rv-sweep{0%{transform:translateX(-30%)}100%{transform:translateX(30%)}}
+  @keyframes rv-bar{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</helmet>
+
+<nav style="position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:16px;padding:12px 40px;background:rgba(10,10,10,.86);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.12);flex-wrap:wrap">
+  <span style="display:flex;align-items:center;gap:9px;margin-right:auto;font-weight:800;letter-spacing:-.04em;font-size:17px">
+    <svg viewBox="6 0 90 55" width="28" height="17" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg>
+    Relevo Studio
+  </span>
+  <a href="#logo" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Logo</a>
+  <a href="#variaciones" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Variaciones</a>
+  <a href="#proteccion" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Protección</a>
+  <a href="#color" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Color</a>
+  <a href="#rampas" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Rampas</a>
+  <a href="#expansion" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Expansión</a>
+  <a href="#oscuro" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Modo claro</a>
+  <a href="#claro" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Aplicaciones claro</a>
+  <a href="#atmosfera" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Atmósfera</a>
+  <a href="#tipografia" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Tipografía</a>
+  <a href="#motion" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Motion</a>
+  <a href="#foundations" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Foundations</a>
+  <a href="#grid" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Grid</a>
+  <a href="#iconos" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Iconos</a>
+  <a href="#foto" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Fotografía</a>
+  <a href="#componentes" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Componentes</a>
+  <a href="#voz" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Voz</a>
+  <a href="#tokens" style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;font-weight:500">Tokens</a>
+</nav>
+
+<header style="background:radial-gradient(120% 100% at 100% 0%, rgba(182,44,100,.10), transparent 60%);border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:88px 40px 72px">
+    <span style="display:inline-flex;align-items:center;gap:9px;font-family:'Hanken Grotesk';font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:7px 15px 7px 11px;border-radius:999px;background:#1C1C1C;color:#FFFFFF">
+      <svg viewBox="6 0 90 55" width="21" height="13" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg>
+      Design System · v5 · Festa
+    </span>
+    <h1 style="margin-top:34px;font-size:clamp(2.6rem,6.5vw,72px);font-weight:800;letter-spacing:-.05em;line-height:1.02">El sistema de la marca,<br>documentado y en movimiento</h1>
+    <p style="font-family:'Hanken Grotesk';margin-top:20px;color:#B4B4B4;font-size:17px;max-width:640px;line-height:1.6;text-wrap:pretty">Relevo Studio diseña sistemas inteligentes para organizaciones en movimiento. Este documento define cómo se ve, cómo se mueve y cómo habla la marca: logotipo, color, tipografía, motion, grilla, componentes y voz.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;font-family:'Hanken Grotesk';font-size:14px;font-weight:500">
+      <span style="background:#1C1C1C;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:9px 18px">Dirección: <strong style="font-weight:700">Sage × Creator</strong></span>
+      <span style="background:#1C1C1C;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:9px 18px">Del latín <em>relevare</em> — hacer ligero lo que pesa</span>
+      <span style="background:#1C1C1C;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:9px 18px">Español · LATAM</span>
+    </div>
+  </div>
+</header>
+
+<section id="logo" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">00 — Logotipo</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">El relevo</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">La <strong>o</strong> final del wordmark no es una letra: son dos círculos que se solapan, uno entregándole la posta al otro. Ese gesto es la marca. El resto del logotipo se retira para que ese detalle sea lo único que se recuerde.</p>
+
+    <div style="background:#141414;border:1px solid rgba(255,255,255,.1);border-radius:40px;padding:88px 44px;display:flex;align-items:center;justify-content:center;overflow:hidden">
+      <div style="font-size:clamp(46px,10vw,108px);line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em;overflow:visible" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12" style="animation:rv-handoff 4.2s cubic-bezier(.25,1,.5,1) infinite;animation-play-state:{{ motionState }}"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12" style="animation:rv-handoff-b 4.2s cubic-bezier(.25,1,.5,1) infinite;animation-play-state:{{ motionState }}"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:20px">
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:28px;background:#141414">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:18px">Anatomía</div>
+        <svg viewBox="0 0 340 150" style="width:100%;height:auto;display:block" aria-hidden="true">
+          <line x1="20" y1="110" x2="320" y2="110" stroke="#8A8A8A" stroke-width="1" stroke-dasharray="4 4"></line>
+          <line x1="20" y1="55" x2="320" y2="55" stroke="#8A8A8A" stroke-width="1" stroke-dasharray="4 4"></line>
+          <circle cx="159" cy="82.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle>
+          <circle cx="183" cy="82.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle>
+          <line x1="159" y1="82.5" x2="183" y2="82.5" stroke="#1C1C1C" stroke-width="1.5"></line>
+          <circle cx="159" cy="82.5" r="2.5" fill="#1C1C1C"></circle>
+          <circle cx="183" cy="82.5" r="2.5" fill="#1C1C1C"></circle>
+          <text x="24" y="50" fill="#8A8A8A" font-family="ui-monospace,monospace" font-size="10">altura de x</text>
+          <text x="24" y="124" fill="#8A8A8A" font-family="ui-monospace,monospace" font-size="10">línea base</text>
+          <text x="132" y="132" fill="#1C1C1C" font-family="ui-monospace,monospace" font-size="10">solape 0.31em</text>
+        </svg>
+        <p style="font-family:'Hanken Grotesk';font-size:13.5px;color:#B4B4B4;line-height:1.6;margin-top:16px">Diámetro exterior <strong>0.55em</strong>, igual a la altura de x más el rebase óptico. Trazo <strong>0.115em</strong>, calibrado al peso 800 de Plus Jakarta Sans. Los centros se separan <strong>0.24em</strong>: el solape es el relevo.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:28px;background:#141414">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:18px">Jerarquía interna</div>
+        <div style="display:flex;flex-direction:column;gap:14px;font-family:'Hanken Grotesk';font-size:13.5px;color:#B4B4B4;line-height:1.6">
+          <div style="display:flex;gap:14px;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:11px;color:#E06A96;flex-shrink:0;width:64px">relev</span><span>Peso 800, tracking −0.05em, color ink-200. Es la masa del logotipo.</span></div>
+          <div style="display:flex;gap:14px;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:11px;color:#E06A96;flex-shrink:0;width:64px">oo</span><span>Morado a la izquierda entrega, turquesa a la derecha recibe. Nunca al revés: el método precede al sistema.</span></div>
+          <div style="display:flex;gap:14px;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:11px;color:#E06A96;flex-shrink:0;width:64px">studio</span><span>Peso 600 a 0.58em, ink-500 · #8A8A8A, separado 0.16em. Baja de jerarquía y comparte línea base; nunca compite.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="variaciones" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">01 — Variaciones y lockups</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Una versión por contexto</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Se elige por espacio y por fondo, nunca por gusto. El isotipo solo aparece cuando el nombre ya está presente en la pieza o cuando el espacio es mínimo.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px">
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;overflow:hidden;background:#141414">
+        <div style="padding:44px 28px;display:flex;align-items:center;justify-content:center;min-height:150px">
+          <div style="font-size:44px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div>
+        </div>
+        <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">Horizontal primario</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:3px">Web, presentaciones, papelería. Mínimo 140px de ancho.</div></div>
+      </div>
+
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;overflow:hidden;background:#1C1C1C">
+        <div style="padding:44px 28px;display:flex;align-items:center;justify-content:center;min-height:150px">
+          <div style="font-size:44px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div>
+        </div>
+        <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,.14);background:#1C1C1C"><div style="font-weight:600;font-size:14px;color:#FFFFFF">Horizontal sobre panel</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:3px">Los dos anillos se mantienen: el negro es la base nativa.</div></div>
+      </div>
+
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;overflow:hidden;background:#141414">
+        <div style="padding:38px 28px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:150px;gap:6px">
+          <svg viewBox="6 0 90 55" width="82" height="50" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg>
+          <div style="font-size:26px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF">relevo<span style="font-weight:600;font-size:.62em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.2em">studio</span></div>
+        </div>
+        <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">Vertical apilado</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:3px">Formatos cuadrados, merch, cierre de video.</div></div>
+      </div>
+
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;overflow:hidden;background:#0A0A0A">
+        <div style="padding:44px 28px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:150px;gap:13px">
+          <div style="font-size:40px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg></div>
+          <div style="font-family:'Hanken Grotesk';font-size:11.5px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#D6D6D6">Systems Studio</div>
+        </div>
+        <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,.14)"><div style="font-weight:600;font-size:14px;color:#FFFFFF">Descriptor apilado</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:3px">Piezas grandes: hero, portadas, cierres de video. Tracking .28em.</div></div>
+      </div>
+
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;overflow:hidden;background:#141414">
+        <div style="padding:38px 28px;display:flex;align-items:center;justify-content:center;gap:22px;min-height:150px;flex-wrap:wrap">
+          <div style="width:76px;height:76px;border-radius:18px;background:#1C1C1C;display:flex;align-items:center;justify-content:center"><svg viewBox="6 0 90 55" width="41" height="25" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg></div>
+          <div style="width:76px;height:76px;border-radius:18px;background:#FFDA80;display:flex;align-items:center;justify-content:center"><svg viewBox="6 0 90 55" width="41" height="25" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg></div>
+          <div style="width:44px;height:44px;border-radius:11px;background:#1C1C1C;display:flex;align-items:center;justify-content:center"><svg viewBox="6 0 90 55" width="25" height="15" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="13"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="13"></circle></svg></div>
+          <div style="width:26px;height:26px;border-radius:7px;background:#1C1C1C;display:flex;align-items:center;justify-content:center"><svg viewBox="6 0 90 55" width="15" height="9" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="15"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="15"></circle></svg></div>
+        </div>
+        <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">App icon y favicon</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:3px">Bajo 32px el trazo engorda a 15 unidades para no cerrarse.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proteccion" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">02 — Protección y usos</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Dejalo respirar</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">El espacio libre mínimo alrededor del logotipo equivale a <strong>x</strong>, el radio exterior de un círculo del isotipo. Nada entra en esa zona: ni texto, ni bordes, ni imagen.</p>
+
+    <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;background:#141414;padding:44px;display:flex;align-items:center;justify-content:center;margin-bottom:26px;overflow:hidden">
+      <div style="position:relative;padding:34px;border:1px dashed #B62C64;border-radius:8px">
+        <div style="position:absolute;top:0;left:0;width:34px;height:34px;background:rgba(182,44,100,.12)"></div>
+        <div style="position:absolute;top:0;right:0;width:34px;height:34px;background:rgba(182,44,100,.12)"></div>
+        <div style="position:absolute;bottom:0;left:0;width:34px;height:34px;background:rgba(182,44,100,.12)"></div>
+        <div style="position:absolute;bottom:0;right:0;width:34px;height:34px;background:rgba(182,44,100,.12)"></div>
+        <div style="position:absolute;top:9px;left:50%;transform:translateX(-50%);font-family:ui-monospace,monospace;font-size:10px;color:#E06A96">x</div>
+        <div style="position:absolute;bottom:9px;left:50%;transform:translateX(-50%);font-family:ui-monospace,monospace;font-size:10px;color:#E06A96">x</div>
+        <div style="font-size:40px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px">
+      <div style="border:1px solid rgba(31,168,160,.35);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:104px;display:flex;align-items:center;justify-content:center"><div style="font-size:24px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div></div>
+        <div style="padding:11px 15px;border-top:1px solid rgba(31,168,160,.25);font-family:'Hanken Grotesk';font-size:12.5px;color:#1FA8A0;font-weight:600">✓ Proporción y color originales</div>
+      </div>
+      <div style="border:1px solid rgba(255,92,92,.35);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:104px;display:flex;align-items:center;justify-content:center"><div style="font-size:24px;line-height:1.1;letter-spacing:.08em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div></div>
+        <div style="padding:11px 15px;border-top:1px solid rgba(255,92,92,.25);font-family:'Hanken Grotesk';font-size:12.5px;color:#FF5C5C;font-weight:600">✗ Alterar el tracking</div>
+      </div>
+      <div style="border:1px solid rgba(255,92,92,.35);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:104px;display:flex;align-items:center;justify-content:center"><div style="font-size:24px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#D6D6D6;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div></div>
+        <div style="padding:11px 15px;border-top:1px solid rgba(255,92,92,.25);font-family:'Hanken Grotesk';font-size:12.5px;color:#FF5C5C;font-weight:600">✗ Invertir el orden del relevo</div>
+      </div>
+      <div style="border:1px solid rgba(255,92,92,.35);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:104px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#7B3E9C,#1FA8A0)"><div style="font-size:24px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div></div>
+        <div style="padding:11px 15px;border-top:1px solid rgba(255,92,92,.25);font-family:'Hanken Grotesk';font-size:12.5px;color:#FF5C5C;font-weight:600">✗ Fondos con ruido o gradiente</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="color" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">03 — Color</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Cada tono tiene su lugar</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">El <strong>negro</strong> es la base y no se negocia; el <strong>blanco</strong> hace toda la jerarquía tipográfica por opacidad. Sobre esa base hay dos cromas <strong>de marca</strong> — morado y turquesa, los dos anillos del logotipo — y tres <strong>de apoyo</strong>: rosa, amarillo y naranja. Los de marca identifican; los de apoyo trabajan. El rosa es la acción y nadie más la pinta; el amarillo ordena datos y también puede llevar una pieza completa; el naranja es campaña y calor. La regla es <strong>un croma dominante por pantalla</strong>, con el resto en dosis bajo el 10% del área.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:34px">
+      <div style="border-radius:24px;padding:24px;background:#0A0A0A;color:#FFFFFF;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid rgba(255,255,255,.12)">
+        <div style="font-family:ui-monospace,monospace;font-size:11px;opacity:.65">#0A0A0A</div>
+        <div><div style="font-weight:700;font-size:19px;letter-spacing:-.02em">Negro</div><div style="font-family:'Hanken Grotesk';font-size:13px;opacity:.75;margin-top:3px">La base. Cinco pasos de elevación</div></div>
+      </div>
+      <div style="border-radius:24px;padding:24px;background:#B62C64;color:#FFFFFF;min-height:150px;display:flex;flex-direction:column;justify-content:space-between">
+        <div style="font-family:ui-monospace,monospace;font-size:11px;opacity:.7">#B62C64</div>
+        <div><div style="font-weight:700;font-size:19px;letter-spacing:-.02em">Rosa <span style="font-weight:500;opacity:.7">· apoyo</span></div><div style="font-family:'Hanken Grotesk';font-size:13px;opacity:.85;margin-top:3px">Acción y CTA. Nunca decorativo, nunca en el logo</div></div>
+      </div>
+      <div style="border-radius:24px;padding:24px;background:#FFFFFF;color:#0A0A0A;min-height:150px;display:flex;flex-direction:column;justify-content:space-between">
+        <div style="font-family:ui-monospace,monospace;font-size:11px;opacity:.6">#FFFFFF</div>
+        <div><div style="font-weight:700;font-size:19px;letter-spacing:-.02em">Blanco</div><div style="font-family:'Hanken Grotesk';font-size:13px;opacity:.7;margin-top:3px">Titulares y cuerpo. La jerarquía la da la opacidad</div></div>
+      </div>
+      <div style="border-radius:24px;padding:24px;background:#FFC63D;color:#0A0A0A;min-height:150px;display:flex;flex-direction:column;justify-content:space-between">
+        <div style="font-family:ui-monospace,monospace;font-size:11px;opacity:.7">#FFC63D</div>
+        <div><div style="font-weight:700;font-size:19px;letter-spacing:-.02em">Amarillo <span style="font-weight:500;opacity:.7">· apoyo</span></div><div style="font-family:'Hanken Grotesk';font-size:13px;opacity:.85;margin-top:3px">Datos y métricas por convención; libre como croma</div></div>
+      </div>
+      <div style="border-radius:24px;padding:24px;background:#1FA8A0;color:#04211F;min-height:150px;display:flex;flex-direction:column;justify-content:space-between">
+        <div style="font-family:ui-monospace,monospace;font-size:11px;opacity:.7">#1FA8A0</div>
+        <div><div style="font-weight:700;font-size:19px;letter-spacing:-.02em">Turquesa <span style="font-weight:500;opacity:.7">· marca</span></div><div style="font-family:'Hanken Grotesk';font-size:13px;opacity:.85;margin-top:3px">Anillo que recibe. Producto, sistema y estado correcto</div></div>
+      </div>
+      <div style="border-radius:24px;padding:24px;background:#7B3E9C;color:#FFFFFF;min-height:150px;display:flex;flex-direction:column;justify-content:space-between">
+        <div style="font-family:ui-monospace,monospace;font-size:11px;opacity:.7">#7B3E9C</div>
+        <div><div style="font-weight:700;font-size:19px;letter-spacing:-.02em">Morado <span style="font-weight:500;opacity:.7">· marca</span></div><div style="font-family:'Hanken Grotesk';font-size:13px;opacity:.85;margin-top:3px">Anillo que entrega. Método, diagnóstico, research</div></div>
+      </div>
+      <div style="border-radius:24px;padding:24px;background:#F2662C;color:#1A0800;min-height:150px;display:flex;flex-direction:column;justify-content:space-between">
+        <div style="font-family:ui-monospace,monospace;font-size:11px;opacity:.7">#F2662C</div>
+        <div><div style="font-weight:700;font-size:19px;letter-spacing:-.02em">Naranja <span style="font-weight:500;opacity:.7">· apoyo</span></div><div style="font-family:'Hanken Grotesk';font-size:13px;opacity:.85;margin-top:3px">Campaña y calor. Croma pleno, nunca botón primario</div></div>
+      </div>
+      <div style="border-radius:24px;padding:24px;background:#141414;color:#FFFFFF;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid rgba(255,255,255,.12)">
+        <div style="display:flex;gap:7px"><span style="width:34px;height:34px;border-radius:9px;background:#1FA8A0"></span><span style="width:34px;height:34px;border-radius:9px;background:#FF5C5C"></span></div>
+        <div><div style="font-weight:700;font-size:19px;letter-spacing:-.02em">Estado</div><div style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;margin-top:3px">Correcto reusa el turquesa de marca · incorrecto es rojo</div></div>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Gradientes de marca — solo entradas y cierres. El brand-gradient es el par del logotipo</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px">
+      <div style="height:104px;border-radius:18px;display:flex;align-items:flex-end;padding:13px;color:#fff;font-size:11px;font-family:ui-monospace,monospace;background:linear-gradient(135deg,#7B3E9C 0%,#1FA8A0 100%)"><span style="background:rgba(0,0,0,.28);padding:3px 7px;border-radius:5px">brand-gradient</span></div>
+      <div style="height:104px;border-radius:18px;display:flex;align-items:flex-end;padding:13px;color:#fff;font-size:11px;font-family:ui-monospace,monospace;background:linear-gradient(135deg,#B62C64 0%,#2A0A17 100%)"><span style="background:rgba(0,0,0,.28);padding:3px 7px;border-radius:5px">pink-gradient</span></div>
+      <div style="height:104px;border-radius:18px;display:flex;align-items:flex-end;padding:13px;color:#fff;font-size:11px;font-family:ui-monospace,monospace;background:linear-gradient(137.63deg,#1C1C1C 0%,#000000 100%)"><span style="background:rgba(0,0,0,.28);padding:3px 7px;border-radius:5px">ink-gradient</span></div>
+      <div style="height:104px;border-radius:18px;display:flex;align-items:flex-end;padding:13px;color:#fff;font-size:11px;font-family:ui-monospace,monospace;background:linear-gradient(50deg,#FFDA80 -125%,#FFC63D 44.45%,#F2662C 100%)"><span style="background:rgba(0,0,0,.28);padding:3px 7px;border-radius:5px">yellow-gradient</span></div>
+      <div style="height:104px;border-radius:18px;display:flex;align-items:flex-end;padding:13px;color:#fff;font-size:11px;font-family:ui-monospace,monospace;background:linear-gradient(224deg,#7B3E9C -26%,#1FA8A0 40%,#FFC63D 112%)"><span style="background:rgba(0,0,0,.28);padding:3px 7px;border-radius:5px">spectrum-gradient</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="rampas" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#B62C64;margin-bottom:10px">04 — Escala de color</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Siete familias más estado</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Base negra, tipografía blanca, dos cromas de marca (morado y turquesa) y tres de apoyo (rosa, amarillo, naranja): uno domina cada pantalla. El turquesa hace doble turno — es marca y además el estado correcto — y el rojo solo marca lo incorrecto. El naranja es croma pleno: pinta fondos, bloques y gráficos, pero nunca un botón primario.</p>
+    <div style="display:flex;flex-direction:column;gap:26px">
+      <sc-for list="{{ ramps }}" as="ramp" hint-placeholder-count="5">
+        <div>
+          <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:9px;flex-wrap:wrap">
+            <div style="font-weight:700;font-size:15px;letter-spacing:-.02em">{{ ramp.name }}</div>
+            <div style="font-family:'Hanken Grotesk';font-size:12.5px;color:rgba(255,255,255,.55)">{{ ramp.note }}</div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(124px,1fr));gap:8px">
+            <sc-for list="{{ ramp.steps }}" as="s" hint-placeholder-count="4">
+              <div style="border:1px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden">
+                <div style="height:62px;background:{{ s.hex }}"></div>
+                <div style="padding:9px 11px">
+                  <div style="font-family:ui-monospace,monospace;font-size:11.5px;font-weight:600;color:#FFFFFF">{{ s.token }}</div>
+                  <div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55);margin-top:2px">{{ s.hex }}</div>
+                  <div style="font-family:'Hanken Grotesk';font-size:11.5px;color:rgba(255,255,255,.68);margin-top:4px;line-height:1.4">{{ s.use }}</div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+
+<section id="expansion" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#F2662C;margin-bottom:10px">04 · bis — Expansión</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px;color:#FFFFFF">Una familia más: el neutro cálido</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:720px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Morado y turquesa viven como cromas de marca, y rosa, amarillo y naranja como cromas de apoyo, todos con su rampa en la sección anterior. Falta un neutro: el blanco puro sale clínico en impresos y en modo claro. El <strong>arena</strong> resuelve eso sin entrar en la conversación cromática — no es un croma, es papel.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px;margin-bottom:20px">
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;background:#0A0A0A">
+        <div style="display:flex;height:96px"><div style="flex:1;background:#FBF8F1"></div><div style="flex:1;background:#F3EDE1"></div><div style="flex:1;background:#E3DACA"></div><div style="flex:1;background:#8C8272"></div></div>
+        <div style="padding:15px 18px;border-top:1px solid rgba(255,255,255,.12)">
+          <div style="font-weight:600;font-size:14px;color:#FFFFFF">Arena</div>
+          <div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:4px;line-height:1.55">Neutro cálido: modo claro, papelería, impresos</div>
+          <div style="display:flex;flex-direction:column;gap:5px;margin-top:12px"><div style="display:flex;gap:10px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:#FBF8F1;flex-shrink:0"></span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#D6D6D6;width:118px;flex-shrink:0">sand-100</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8A8A8A">#FBF8F1</span><span style="font-family:'Hanken Grotesk';font-size:12px;color:#8A8A8A;margin-left:auto;text-align:right">Fondo claro por defecto</span></div><div style="display:flex;gap:10px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:#F3EDE1;flex-shrink:0"></span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#D6D6D6;width:118px;flex-shrink:0">sand-200</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8A8A8A">#F3EDE1</span><span style="font-family:'Hanken Grotesk';font-size:12px;color:#8A8A8A;margin-left:auto;text-align:right">Superficie de card clara</span></div><div style="display:flex;gap:10px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:#E3DACA;flex-shrink:0"></span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#D6D6D6;width:118px;flex-shrink:0">sand-300</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8A8A8A">#E3DACA</span><span style="font-family:'Hanken Grotesk';font-size:12px;color:#8A8A8A;margin-left:auto;text-align:right">Bordes y separadores</span></div><div style="display:flex;gap:10px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:#8C8272;flex-shrink:0"></span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#D6D6D6;width:118px;flex-shrink:0">sand-500</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8A8A8A">#8C8272</span><span style="font-family:'Hanken Grotesk';font-size:12px;color:#8A8A8A;margin-left:auto;text-align:right">Texto terciario en claro</span></div></div>
+        </div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;background:#0A0A0A">
+        <div style="display:flex;height:96px"><div style="flex:1;background:#B62C64"></div><div style="flex:1;background:#FFC63D"></div><div style="flex:1;background:#1FA8A0"></div><div style="flex:1;background:#F2662C"></div><div style="flex:1;background:#B57FCB"></div><div style="flex:1;background:#F9A574"></div></div>
+        <div style="padding:15px 18px;border-top:1px solid rgba(255,255,255,.12)">
+          <div style="font-weight:600;font-size:14px;color:#FFFFFF">Serie de datos</div>
+          <div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:4px;line-height:1.55">Seis categóricos en orden fijo. Se usan siempre en esta secuencia para que dos gráficos distintos sean comparables de un vistazo.</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px"><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#0A0A0A;background:#B62C64;padding:5px 9px;border-radius:999px;font-weight:600">01 #B62C64</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#0A0A0A;background:#FFC63D;padding:5px 9px;border-radius:999px;font-weight:600">02 #FFC63D</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#0A0A0A;background:#1FA8A0;padding:5px 9px;border-radius:999px;font-weight:600">03 #1FA8A0</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#0A0A0A;background:#F2662C;padding:5px 9px;border-radius:999px;font-weight:600">04 #F2662C</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#0A0A0A;background:#B57FCB;padding:5px 9px;border-radius:999px;font-weight:600">05 #B57FCB</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#0A0A0A;background:#F9A574;padding:5px 9px;border-radius:999px;font-weight:600">06 #F9A574</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:26px 28px;background:#141414">
+      <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:14px">Cómo entran sin romper el sistema</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;font-family:'Hanken Grotesk';font-size:14px;color:#D6D6D6;line-height:1.65">
+        <div><strong style="color:#FFFFFF">El rosa sigue siendo el único CTA.</strong> Ninguna familia nueva pinta un botón primario ni un foco.</div>
+        <div><strong style="color:#FFFFFF">Un croma dominante por vista.</strong> Los otros aparecen en dosis bajo el 10% del área.</div>
+        <div><strong style="color:#FFFFFF">Arena solo en claro.</strong> Reemplaza al blanco puro en impresos y modo claro; no aparece sobre negro.</div>
+        <div><strong style="color:#FFFFFF">La serie es para gráficos.</strong> Fuera de un chart, esos hex no existen.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="oscuro" style="border-bottom:1px solid rgba(255,255,255,.12);background:#0A0A0A">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">05 — Modo claro</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px;color:#FFFFFF">Negro por defecto, claro solo en producto</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Regla dura: <strong style="color:#FFFFFF">marca, website y contenido van en negro</strong>; producto y documentación invierten a superficie clara. El oscuro no es un tema alternativo, es la cara pública de Relevo. La base es el negro; el claro es la excepción documentada, no un tema alternativo.</p>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#8A8A8A;margin-bottom:14px">Superficies</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:34px">
+      <div style="border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden"><div style="height:66px;background:#000000"></div><div style="padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:#FFFFFF">void</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:#B4B4B4;margin-top:2px">#000000</div></div></div>
+      <div style="border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden"><div style="height:66px;background:#0A0A0A"></div><div style="padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:#FFFFFF">base</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:#B4B4B4;margin-top:2px">#0A0A0A</div></div></div>
+      <div style="border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden"><div style="height:66px;background:#141414"></div><div style="padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:#FFFFFF">raised</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:#B4B4B4;margin-top:2px">#141414</div></div></div>
+      <div style="border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden"><div style="height:66px;background:#1C1C1C"></div><div style="padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:#FFFFFF">panel</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:#B4B4B4;margin-top:2px">#1C1C1C</div></div></div>
+      <div style="border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden"><div style="height:66px;background:#262626"></div><div style="padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:#FFFFFF">hover</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:#B4B4B4;margin-top:2px">#262626</div></div></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-bottom:34px">
+      <div style="border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:26px;background:#141414">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#8A8A8A;margin-bottom:16px">Texto sobre oscuro</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <div style="font-size:19px;font-weight:700;letter-spacing:-.03em;color:#FFFFFF">Primario — text-100 #FFFFFF</div>
+          <div style="font-family:'Hanken Grotesk';font-size:15px;color:#B4B4B4">Secundario — text-300 #B4B4B4</div>
+          <div style="font-family:'Hanken Grotesk';font-size:15px;color:#8A8A8A">Terciario — text-400 #8A8A8A</div>
+          <div style="font-family:ui-monospace,monospace;font-size:12.5px;color:#D6D6D6">Mono y links — rosa-300 #E06A96</div>
+        </div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:26px;background:#141414">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#8A8A8A;margin-bottom:16px">Acentos corregidos</div>
+        <div style="display:flex;flex-direction:column;gap:12px;font-family:'Hanken Grotesk';font-size:14px">
+          <div style="display:flex;align-items:center;gap:11px;color:#FFFFFF"><span style="width:26px;height:26px;border-radius:8px;background:#B62C64;flex-shrink:0"></span>Rosa en 500 · #B62C64</div>
+          <div style="display:flex;align-items:center;gap:11px;color:#FFFFFF"><span style="width:26px;height:26px;border-radius:8px;background:#B4B4B4;flex-shrink:0"></span>Blanco en 100 · #FFFFFF</div>
+          <div style="display:flex;align-items:center;gap:11px;color:#FFFFFF"><span style="width:26px;height:26px;border-radius:8px;background:#FFC63D;flex-shrink:0"></span>Amarillo en 500 · #FFC63D</div>
+          <div style="display:flex;align-items:center;gap:11px;color:#FFFFFF"><span style="width:26px;height:26px;border-radius:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);flex-shrink:0"></span>Bordes · blanco al 12%</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#8A8A8A;margin-bottom:14px">La misma card, los dos modos</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px">
+      <div style="border-radius:24px;padding:26px;background:#141414;border:1px solid rgba(255,255,255,.14)">
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(182,44,100,.16);display:flex;align-items:center;justify-content:center;margin-bottom:18px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div>
+        <h3 style="font-size:19px;font-weight:700;letter-spacing:-.03em;margin-bottom:8px;color:#FFFFFF">Diagnóstico operativo</h3>
+        <p style="font-family:'Hanken Grotesk';font-size:14px;color:#B4B4B4;line-height:1.6">Mapeamos dónde se pierde tiempo, dinero y contexto antes de escribir una línea de código.</p>
+        <div style="font-family:ui-monospace,monospace;font-size:10.5px;color:#B4B4B4;margin-top:20px;padding-top:14px;border-top:1px solid rgba(255,255,255,.1)">marca · web · contenido</div>
+      </div>
+      <div style="border-radius:24px;padding:26px;background:#F7F7F5;border:1px solid rgba(0,0,0,.1)">
+        <div style="width:44px;height:44px;border-radius:12px;background:#FDECF2;display:flex;align-items:center;justify-content:center;margin-bottom:18px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#98204F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div>
+        <h3 style="font-size:19px;font-weight:700;letter-spacing:-.03em;margin-bottom:8px;color:#111111">Diagnóstico operativo</h3>
+        <p style="font-family:'Hanken Grotesk';font-size:14px;color:#5A5A5A;line-height:1.6">Mapeamos dónde se pierde tiempo, dinero y contexto antes de escribir una línea de código.</p>
+        <div style="font-family:ui-monospace,monospace;font-size:10.5px;color:#8A8A8A;margin-top:20px;padding-top:14px;border-top:1px solid rgba(0,0,0,.1)">producto · documentación</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="claro" style="border-bottom:1px solid #E3DACA;background:#FBF8F1">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#98204F;margin-bottom:10px">05 · bis — Aplicaciones en claro</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px;color:#111111">La cara clara, documentada de punta a punta</h2>
+    <p style="font-family:'Hanken Grotesk';color:#6B6255;font-size:15px;max-width:720px;line-height:1.6;margin-bottom:38px;text-wrap:pretty">Producto, documentación e impresos viven en claro, y el claro no es el oscuro con los colores dados vuelta: el amarillo y el rosa pierden contraste sobre superficies claras y hay que corregirlos. La base es <strong style="color:#111111">arena, no blanco</strong> — el blanco queda para las cards, que así se levantan sin sombra.</p>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8C8272;margin-bottom:14px">Superficies</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:38px">
+      <div style="border:1px solid #E3DACA;border-radius:14px;overflow:hidden;background:#FFFFFF"><div style="height:66px;background:#FBF8F1"></div><div style="padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:#111111">sand-100</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#6B6255;margin-top:2px">#FBF8F1</div><div style="font-family:'Hanken Grotesk';font-size:11.5px;color:#8C8272;margin-top:4px;line-height:1.4">Fondo por defecto</div></div></div>
+      <div style="border:1px solid #E3DACA;border-radius:14px;overflow:hidden;background:#FFFFFF"><div style="height:66px;background:#FFFFFF"></div><div style="padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:#111111">surface</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#6B6255;margin-top:2px">#FFFFFF</div><div style="font-family:'Hanken Grotesk';font-size:11.5px;color:#8C8272;margin-top:4px;line-height:1.4">Card y panel elevado</div></div></div>
+      <div style="border:1px solid #E3DACA;border-radius:14px;overflow:hidden;background:#FFFFFF"><div style="height:66px;background:#F3EDE1"></div><div style="padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:#111111">sand-200</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#6B6255;margin-top:2px">#F3EDE1</div><div style="font-family:'Hanken Grotesk';font-size:11.5px;color:#8C8272;margin-top:4px;line-height:1.4">Superficie hundida</div></div></div>
+      <div style="border:1px solid #E3DACA;border-radius:14px;overflow:hidden;background:#FFFFFF"><div style="height:66px;background:#E3DACA"></div><div style="padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:#111111">sand-300</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#6B6255;margin-top:2px">#E3DACA</div><div style="font-family:'Hanken Grotesk';font-size:11.5px;color:#8C8272;margin-top:4px;line-height:1.4">Bordes y separadores</div></div></div>
+      <div style="border:1px solid #E3DACA;border-radius:14px;overflow:hidden;background:#FFFFFF"><div style="height:66px;background:#8C8272"></div><div style="padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:#111111">sand-500</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#6B6255;margin-top:2px">#8C8272</div><div style="font-family:'Hanken Grotesk';font-size:11.5px;color:#8C8272;margin-top:4px;line-height:1.4">Texto terciario</div></div></div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8C8272;margin-bottom:14px">El logo sobre fondo claro</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-bottom:38px">
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="height:130px;display:flex;align-items:center;justify-content:center;background:#FBF8F1;padding:0 20px"><div style="font-size:34px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#111111;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1B8F86" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#5A5A5A;margin-left:.16em">studio</span></div></div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Primario en claro</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;margin-top:6px">#FBF8F1 · #7B3E9C · #1B8F86</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">El morado pasa sin cambios (6.6:1 sobre arena); el turquesa baja a 600 · #1B8F86 para llegar a 3:1. El 500 de la cara oscura no alcanza sobre claro.</div></div>
+      </div>
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="height:130px;display:flex;align-items:center;justify-content:center;background:#FFFFFF;padding:0 20px"><div style="font-size:34px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#111111;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1B8F86" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#5A5A5A;margin-left:.16em">studio</span></div></div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Sobre blanco puro</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;margin-top:6px">#FFFFFF · #7B3E9C · #1B8F86</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Producto y documentación. Mismos anillos corregidos que sobre arena.</div></div>
+      </div>
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="height:130px;display:flex;align-items:center;justify-content:center;background:#F3EDE1;padding:0 20px"><div style="font-size:34px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#111111;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1B8F86" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#6B6255;margin-left:.16em">studio</span></div></div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Superficie hundida</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;margin-top:6px">#F3EDE1 · #7B3E9C · #1B8F86</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Cabeceras de tabla, barras de herramientas, bloques de código.</div></div>
+      </div>
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="height:130px;display:flex;align-items:center;justify-content:center;background:#FBF8F1;padding:0 20px"><div style="font-size:34px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#111111;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#111111" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#111111" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#111111;margin-left:.16em">studio</span></div></div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Un color · negro</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;margin-top:6px">#FBF8F1 · #111111 · #111111</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Grabado, sello, watermark. Los dos anillos en negro pleno; el solape se lee por el trazo.</div></div>
+      </div>
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="height:130px;display:flex;align-items:center;justify-content:center;background:#FFDA80;padding:0 20px"><div style="font-size:34px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#111111;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#111111" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#111111" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#0A0A0A;margin-left:.16em">studio</span></div></div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Sobre amarillo</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;margin-top:6px">#FFDA80 · #111111 · #111111</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Campaña. Todo a negro: el turquesa sobre amarillo pierde contraste y ensucia el solape.</div></div>
+      </div>
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="height:130px;display:flex;align-items:center;justify-content:center;background:#98204F;padding:0 20px"><div style="font-size:34px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#FFFFFF" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#6FD9CE" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#FFFFFF;margin-left:.16em">studio</span></div></div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Sobre rosa</div><div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;margin-top:6px">#B62C64 · #FFFFFF · #6FD9CE</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Inversa. La única pieza clara que no usa arena: el anillo que entrega pasa a blanco y el receptor a turquesa 300.</div></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px;margin-bottom:38px">
+      <div style="border:1px solid #E3DACA;border-radius:24px;padding:26px;background:#FFFFFF">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8C8272;margin-bottom:18px">Texto sobre claro</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <div style="font-size:19px;font-weight:700;letter-spacing:-.03em;color:#111111">Primario — ink #111111</div>
+          <div style="font-family:'Hanken Grotesk';font-size:15px;color:#3D362D">Cuerpo — #3D362D</div>
+          <div style="font-family:'Hanken Grotesk';font-size:15px;color:#6B6255">Secundario — #6B6255</div>
+          <div style="font-family:'Hanken Grotesk';font-size:15px;color:#8C8272">Terciario y labels — sand-500 #8C8272</div>
+          <div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;font-size:12.5px;color:#98204F">Mono y links — rosa-600 #98204F</div>
+        </div>
+      </div>
+      <div style="border:1px solid #E3DACA;border-radius:24px;padding:26px;background:#FFFFFF">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8C8272;margin-bottom:18px">Acentos corregidos</div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:8px;background:#98204F;border:1px solid rgba(0,0,0,.08);flex-shrink:0"></span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#111111;width:88px;flex-shrink:0;font-weight:600">rosa-600</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;width:76px;flex-shrink:0">#98204F</span><span style="font-family:'Hanken Grotesk';font-size:13px;color:#6B6255">CTA, links y foco. Reemplaza al 500 en toda la cara clara.</span></div>
+        <div style="display:flex;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:8px;background:#FDECF2;border:1px solid rgba(0,0,0,.08);flex-shrink:0"></span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#111111;width:88px;flex-shrink:0;font-weight:600">rosa-050</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;width:76px;flex-shrink:0">#FDECF2</span><span style="font-family:'Hanken Grotesk';font-size:13px;color:#6B6255">Superficie de estado y fondo de icono.</span></div>
+        <div style="display:flex;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:8px;background:#7A5A09;border:1px solid rgba(0,0,0,.08);flex-shrink:0"></span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#111111;width:88px;flex-shrink:0;font-weight:600">gold-800</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;width:76px;flex-shrink:0">#7A5A09</span><span style="font-family:'Hanken Grotesk';font-size:13px;color:#6B6255">Texto y cifras en amarillo sobre claro. El 500 solo como relleno.</span></div>
+        <div style="display:flex;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:8px;background:#FFF4D6;border:1px solid rgba(0,0,0,.08);flex-shrink:0"></span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#111111;width:88px;flex-shrink:0;font-weight:600">gold-050</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;width:76px;flex-shrink:0">#FFF4D6</span><span style="font-family:'Hanken Grotesk';font-size:13px;color:#6B6255">Fondo de dato y bloque destacado.</span></div>
+        <div style="display:flex;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:8px;background:#1B8F86;border:1px solid rgba(0,0,0,.08);flex-shrink:0"></span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#111111;width:88px;flex-shrink:0;font-weight:600">teal-700</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;width:76px;flex-shrink:0">#1B8F86</span><span style="font-family:'Hanken Grotesk';font-size:13px;color:#6B6255">Correcto y válido en claro.</span></div>
+        <div style="display:flex;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:8px;background:#C43333;border:1px solid rgba(0,0,0,.08);flex-shrink:0"></span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#111111;width:88px;flex-shrink:0;font-weight:600">err-700</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;width:76px;flex-shrink:0">#C43333</span><span style="font-family:'Hanken Grotesk';font-size:13px;color:#6B6255">Error y uso prohibido en claro.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8C8272;margin-bottom:14px">Componentes en claro</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-bottom:38px">
+      <div style="border:1px solid #E3DACA;border-radius:24px;padding:26px;background:#FFFFFF">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8C8272;margin-bottom:18px">Botones</div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+          <button style="font-family:inherit;font-weight:600;font-size:14px;letter-spacing:-.01em;padding:12px 22px;border-radius:999px;border:none;background:#98204F;color:#FFFFFF;cursor:pointer;transition:background .3s cubic-bezier(.25,1,.5,1)" style-hover="background:#96204F">Empezar</button>
+          <button style="font-family:inherit;font-weight:600;font-size:14px;letter-spacing:-.01em;padding:12px 22px;border-radius:999px;border:1px solid #C9C0AF;background:#FFFFFF;color:#111111;cursor:pointer;transition:background .3s cubic-bezier(.25,1,.5,1)" style-hover="background:#F3EDE1">Ver método</button>
+          <button style="font-family:inherit;font-weight:600;font-size:14px;letter-spacing:-.01em;padding:12px 8px;border-radius:999px;border:none;background:transparent;color:#98204F;cursor:pointer">Documentación →</button>
+          <button disabled style="font-family:inherit;font-weight:600;font-size:14px;padding:12px 22px;border-radius:999px;border:1px solid #EBE4D8;background:#F3EDE1;color:#A8A093;cursor:not-allowed">Deshabilitado</button>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
+          <span style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;padding:5px 12px;border-radius:999px;background:#FDECF2;color:#96204F">Producto</span>
+          <span style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;padding:5px 12px;border-radius:999px;background:#FFF4D6;color:#7A5A09">Dato</span>
+          <span style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;padding:5px 12px;border-radius:999px;background:#E2F4F0;color:#146E67">Activo</span>
+          <span style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;padding:5px 12px;border-radius:999px;background:#FBE4E4;color:#C43333">Bloqueado</span>
+        </div>
+      </div>
+
+      <div style="border:1px solid #E3DACA;border-radius:24px;padding:26px;background:#FFFFFF">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8C8272;margin-bottom:18px">Formulario</div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Hanken Grotesk';font-size:12.5px;font-weight:600;color:#3D362D">Nombre del proyecto</span><input value="Relevo · onboarding" style="font-family:'Hanken Grotesk';font-size:14px;padding:12px 14px;border-radius:14px;border:1px solid #C9C0AF;background:#FFFFFF;color:#111111;outline:none"></label>
+          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Hanken Grotesk';font-size:12.5px;font-weight:600;color:#98204F">Equipo · foco</span><input value="Operaciones" style="font-family:'Hanken Grotesk';font-size:14px;padding:12px 14px;border-radius:14px;border:1px solid #98204F;background:#FFFFFF;color:#111111;outline:none;box-shadow:0 0 0 3px rgba(152,32,79,.16)"></label>
+          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Hanken Grotesk';font-size:12.5px;font-weight:600;color:#C43333">Correo · error</span><input value="fer@" style="font-family:'Hanken Grotesk';font-size:14px;padding:12px 14px;border-radius:14px;border:1px solid #C43333;background:#FFFFFF;color:#111111;outline:none"><span style="font-family:'Hanken Grotesk';font-size:12px;color:#C43333">Falta el dominio.</span></label>
+        </div>
+      </div>
+
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="padding:26px 26px 0"><div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8C8272;margin-bottom:18px">Tabla y navegación</div></div>
+        <div style="display:flex;gap:4px;padding:0 26px;border-bottom:1px solid #EBE4D8">
+          <span style="font-family:'Hanken Grotesk';font-size:13px;font-weight:600;color:#111111;padding:10px 12px;border-bottom:2px solid #98204F">Sistemas</span>
+          <span style="font-family:'Hanken Grotesk';font-size:13px;font-weight:600;color:#8C8272;padding:10px 12px">Equipos</span>
+          <span style="font-family:'Hanken Grotesk';font-size:13px;font-weight:600;color:#8C8272;padding:10px 12px">Registros</span>
+        </div>
+        <div style="display:flex;padding:11px 26px;background:#F3EDE1;font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#6B6255;text-transform:uppercase;letter-spacing:.08em;font-weight:600"><span style="flex:1">Sistema</span><span style="width:96px">Estado</span><span style="width:64px;text-align:right">Ahorro</span></div>
+        <div style="display:flex;padding:14px 26px;border-bottom:1px solid #F0EBE1;font-family:'Hanken Grotesk';font-size:13.5px;color:#3D362D;align-items:center"><span style="flex:1">Ruteo de tickets</span><span style="width:96px"><span style="font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:#E2F4F0;color:#146E67">Andando</span></span><span style="width:64px;text-align:right;font-weight:600;color:#111111">31%</span></div>
+        <div style="display:flex;padding:14px 26px;border-bottom:1px solid #F0EBE1;font-family:'Hanken Grotesk';font-size:13.5px;color:#3D362D;align-items:center"><span style="flex:1">Cierre contable</span><span style="width:96px"><span style="font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:#FFF4D6;color:#7A5A09">En obra</span></span><span style="width:64px;text-align:right;font-weight:600;color:#111111">18%</span></div>
+        <div style="display:flex;padding:14px 26px;font-family:'Hanken Grotesk';font-size:13.5px;color:#3D362D;align-items:center"><span style="flex:1">Alta de proveedores</span><span style="width:96px"><span style="font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:#F3EDE1;color:#6B6255">En cola</span></span><span style="width:64px;text-align:right;font-weight:600;color:#8C8272">—</span></div>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8C8272;margin-bottom:14px">Atmósfera en claro</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-bottom:38px">
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="height:190px;position:relative;overflow:hidden;background:#FBF8F1">
+          <div style="position:absolute;left:50%;top:60%;width:280px;height:280px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(152,32,79,.20) 0%,rgba(152,32,79,.06) 40%,rgba(152,32,79,0) 70%)"></div>
+          <div style="position:absolute;left:50%;top:60%;width:110px;height:110px;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(17,17,17,.14)"></div>
+          <div style="position:absolute;left:50%;top:60%;width:9px;height:9px;transform:translate(-50%,-50%);border-radius:50%;background:#D19410"></div>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Halo tenue</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Mismo gesto, un tercio de la intensidad. Sobre claro el halo insinúa; no ilumina. Sin blur adicional.</div></div>
+      </div>
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="height:190px;position:relative;overflow:hidden;background:#FBF8F1">
+          <div style="position:absolute;inset:0;background:repeating-radial-gradient(circle at 50% 118%,rgba(17,17,17,.16) 0 1px,rgba(0,0,0,0) 1px 13px);-webkit-mask-image:radial-gradient(ellipse at 50% 118%,#000 18%,transparent 76%);mask-image:radial-gradient(ellipse at 50% 118%,#000 18%,transparent 76%)"></div>
+          <div style="position:absolute;left:20px;bottom:14px;font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272">λ 13 · tinta 16%</div>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Interferencia en tinta</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Un solo frente de onda en negro al 16%. En claro el segundo frente ensucia: se elimina.</div></div>
+      </div>
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="height:190px;position:relative;overflow:hidden;background:#FBF8F1;display:flex;align-items:center">
+          <div style="position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,rgba(0,0,0,0),#98204F 22%,#C24B15 50%,#D19410 78%,rgba(0,0,0,0))"></div>
+          <div style="position:absolute;left:0;right:0;bottom:24px;display:flex;justify-content:space-between;padding:0 20px"><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#98204F">380</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#C24B15">520</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#7A5A09">740</span></div>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Espectro</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Sobrevive intacto con los tres matices en 600–800. Es el único puente visual entre las dos caras.</div></div>
+      </div>
+      <div style="border:1px dashed #C9C0AF;border-radius:24px;overflow:hidden;background:#F3EDE1">
+        <div style="height:190px;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
+          <div>
+            <div style="font-size:40px;font-weight:800;color:#C9C0AF;letter-spacing:-.05em;line-height:1">grano</div>
+            <div style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272;margin-top:8px;text-transform:uppercase;letter-spacing:.14em">no aplica</div>
+          </div>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8;border-top-color:#E3DACA"><div style="font-weight:600;font-size:14px;color:#111111">Sin grano ni viñeta</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Sobre claro el grano se lee como impresión sucia y la viñeta como error de exportación. La arena ya aporta la calidez.</div></div>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8C8272;margin-bottom:14px">Papelería</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-bottom:38px">
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="padding:26px;background:#F3EDE1;display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
+          <div style="width:236px;height:136px;border-radius:12px;background:#FBF8F1;border:1px solid #E3DACA;padding:18px;display:flex;flex-direction:column;justify-content:space-between">
+            <div style="font-size:21px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#111111;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1B8F86" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#5A5A5A;margin-left:.16em">studio</span></div>
+            <div><div style="font-family:'Hanken Grotesk';font-size:11.5px;font-weight:600;color:#111111">Fernando Alvarado Pais</div><div style="font-family:'Hanken Grotesk';font-size:10.5px;color:#6B6255;margin-top:1px">Fundador · fer@relevo.studio</div></div>
+          </div>
+          <div style="width:236px;height:136px;border-radius:12px;background:#000000;padding:18px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden">
+            <div style="position:absolute;left:50%;top:130%;width:300px;height:300px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(182,44,100,.5) 0%,rgba(182,44,100,0) 66%)"></div>
+            <div style="position:relative"><div style="font-size:21px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1B8F86" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div></div>
+            <div style="position:relative"><div style="font-family:'Hanken Grotesk';font-size:11.5px;font-weight:600;color:#FFFFFF">relevo.studio</div><div style="font-family:'Hanken Grotesk';font-size:10.5px;color:#B4B4B4;margin-top:1px">Sistemas que quedan andando</div></div>
+          </div>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Tarjeta · dos caras</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Frente en arena con los anillos corregidos, dorso en negro con halo. Nunca las dos caras del mismo tono.</div></div>
+      </div>
+      <div style="border:1px solid #E3DACA;border-radius:24px;overflow:hidden;background:#FFFFFF">
+        <div style="padding:26px;background:#F3EDE1;display:flex;justify-content:center">
+          <div style="width:200px;height:270px;background:#FFFFFF;border:1px solid #E3DACA;padding:20px;display:flex;flex-direction:column">
+            <div style="font-size:17px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#111111;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1B8F86" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#5A5A5A;margin-left:.16em">studio</span></div>
+            <div style="height:2px;margin:16px 0;background:linear-gradient(90deg,#98204F,#C24B15 50%,#D19410)"></div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <div style="height:6px;background:#F3EDE1;width:72%"></div>
+              <div style="height:6px;background:#F3EDE1"></div>
+              <div style="height:6px;background:#F3EDE1"></div>
+              <div style="height:6px;background:#F3EDE1;width:56%"></div>
+              <div style="height:6px;background:#F3EDE1;margin-top:10px"></div>
+              <div style="height:6px;background:#F3EDE1"></div>
+              <div style="height:6px;background:#F3EDE1;width:40%"></div>
+            </div>
+            <div style="margin-top:auto;font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8C8272">relevo.studio · 01</div>
+          </div>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid #EBE4D8"><div style="font-weight:600;font-size:14px;color:#111111">Hoja y propuesta</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#6B6255;margin-top:4px;line-height:1.55">Logo arriba a la izquierda, espectro de 2px como única regla gráfica, folio en mono al pie. Márgenes de 20mm.</div></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px">
+      <div style="border:1px solid #98D3C9;border-radius:20px;padding:22px 24px;background:#EAF7F3">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#146E67;margin-bottom:12px">Sí</div>
+        <ul style="margin:0;padding-left:18px;font-family:'Hanken Grotesk';font-size:14px;color:#3D362D;line-height:1.85">
+          <li>Arena como fondo, blanco reservado a las cards</li>
+          <li>Rosa 600 y amarillo 800 para todo lo que sea texto</li>
+          <li>Bordes de 1px en sand-300 en vez de sombras</li>
+          <li>El espectro de 2px como única regla gráfica</li>
+        </ul>
+      </div>
+      <div style="border:1px solid #F0B8B8;border-radius:20px;padding:22px 24px;background:#FCEEEE">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#C43333;margin-bottom:12px">No</div>
+        <ul style="margin:0;padding-left:18px;font-family:'Hanken Grotesk';font-size:14px;color:#3D362D;line-height:1.85">
+          <li>Amarillo 500 como texto sobre claro: no llega a 3:1</li>
+          <li>Grano, viñeta o halos intensos</li>
+          <li>Blanco puro de fondo con cards blancas encima</li>
+          <li>Usar el claro en marca, website o piezas de campaña</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="atmosfera" style="border-bottom:1px solid rgba(255,255,255,.12);background:#000000">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#FFC63D;margin-bottom:10px">06 — Atmósfera</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px;color:#FFFFFF">Luz en el vacío</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:720px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">El negro de Relevo no es un fondo: es espacio vacío. Todo lo que se ve encima es luz comportándose de cuatro maneras — concentrada en un <em>halo</em>, difractada en <em>interferencia</em>, descompuesta en <em>espectro</em>, y ensuciada por el <em>grano</em> que le da cuerpo físico. Todo nativo en CSS y SVG, cero imágenes. Una sola textura por sección.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-bottom:18px">
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;background:#0A0A0A">
+        <div style="height:210px;position:relative;overflow:hidden;background:#000000">
+          <div style="position:absolute;left:50%;top:56%;width:300px;height:300px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(182,44,100,.62) 0%,rgba(182,44,100,.20) 36%,rgba(182,44,100,0) 68%);animation:rv-breathe 7s cubic-bezier(.4,0,.2,1) infinite;animation-play-state:{{ motionState }}"></div>
+          <div style="position:absolute;left:50%;top:56%;width:118px;height:118px;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(255,255,255,.26)"></div>
+          <div style="position:absolute;left:50%;top:56%;width:9px;height:9px;transform:translate(-50%,-50%);border-radius:50%;background:#FFDA80;box-shadow:0 0 20px 5px rgba(255,198,61,.55)"></div>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid rgba(255,255,255,.12)"><div style="display:flex;align-items:baseline;gap:8px"><span style="font-weight:600;font-size:14px;color:#FFFFFF">Halo</span><span style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:10px;color:#FFC63D">firma</span></div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:4px;line-height:1.55">Una sola fuente de luz rosa con un núcleo amarillo. Ancla el hero y los cierres. Respira lento, nunca parpadea.</div></div>
+      </div>
+
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;background:#0A0A0A">
+        <div style="height:210px;position:relative;overflow:hidden;background:#000000">
+          <div style="position:absolute;inset:0;background:repeating-radial-gradient(circle at 50% 118%,rgba(224,106,150,.5) 0 1px,rgba(0,0,0,0) 1px 13px);-webkit-mask-image:radial-gradient(ellipse at 50% 118%,#000 18%,transparent 76%);mask-image:radial-gradient(ellipse at 50% 118%,#000 18%,transparent 76%)"></div>
+          <div style="position:absolute;inset:0;background:repeating-radial-gradient(circle at 50% 118%,rgba(255,198,61,.28) 0 1px,rgba(0,0,0,0) 1px 17px);-webkit-mask-image:radial-gradient(ellipse at 50% 118%,#000 10%,transparent 62%);mask-image:radial-gradient(ellipse at 50% 118%,#000 10%,transparent 62%)"></div>
+          <div style="position:absolute;left:22px;bottom:16px;font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8A8A8A">λ 13 · 17</div>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid rgba(255,255,255,.12)"><div style="font-weight:600;font-size:14px;color:#FFFFFF">Interferencia</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:4px;line-height:1.55">Dos frentes de onda concéntricos con paso distinto. El moiré aparece solo donde se cruzan. Secciones de método y sistemas.</div></div>
+      </div>
+
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;background:#0A0A0A">
+        <div style="height:210px;position:relative;overflow:hidden;background:#000000;display:flex;align-items:center">
+          <div style="position:absolute;left:-10%;right:-10%;height:70px;filter:blur(30px);opacity:.6;background:linear-gradient(90deg,rgba(0,0,0,0),#B62C64 24%,#F2662C 50%,#FFC63D 76%,rgba(0,0,0,0))"></div>
+          <div style="position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,rgba(0,0,0,0),#B62C64 22%,#F2662C 50%,#FFC63D 78%,rgba(0,0,0,0))"></div>
+          <div style="position:absolute;left:0;right:0;bottom:28px;display:flex;justify-content:space-between;padding:0 22px">
+            <span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#E06A96">380</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#F9A574">520</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#FFDA80">740</span>
+          </div>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid rgba(255,255,255,.12)"><div style="font-weight:600;font-size:14px;color:#FFFFFF">Espectro</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:4px;line-height:1.55">La única línea del sistema donde rosa, naranja y amarillo conviven. Separa secciones y marca progreso. Grosor máximo 2px.</div></div>
+      </div>
+
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;background:#0A0A0A">
+        <div style="height:210px;position:relative;overflow:hidden;background:#000000">
+          <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,#1C1C1C 0%,#0A0A0A 52%,#000000 100%)"></div>
+          <svg viewBox="0 0 400 210" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;opacity:.34" aria-hidden="true"><filter id="rv-grain-b"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"></feTurbulence></filter><rect width="400" height="210" filter="url(#rv-grain-b)"></rect></svg>
+          <div style="position:absolute;inset:0;box-shadow:inset 0 0 90px 30px #000000"></div>
+          <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#B4B4B4;letter-spacing:.24em">GRANO 34% · VIÑETA 90</div>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid rgba(255,255,255,.12)"><div style="font-weight:600;font-size:14px;color:#FFFFFF">Grano y viñeta</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:4px;line-height:1.55">Se aplica siempre al final, sobre todo lo demás. Es lo que evita que el negro se vea plano y digital.</div></div>
+      </div>
+    </div>
+
+    <div style="border:1px solid rgba(255,255,255,.14);border-radius:32px;overflow:hidden;background:#000000;margin-bottom:20px">
+      <div style="position:relative;height:300px;overflow:hidden;display:flex;align-items:center;justify-content:center">
+        <div style="position:absolute;left:50%;top:118%;width:1000px;height:1000px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(182,44,100,.42) 0%,rgba(182,44,100,.10) 40%,rgba(182,44,100,0) 66%)"></div>
+        <div style="position:absolute;inset:0;background:repeating-radial-gradient(circle at 50% 118%,rgba(224,106,150,.34) 0 1px,rgba(0,0,0,0) 1px 26px);-webkit-mask-image:radial-gradient(ellipse at 50% 118%,#000 14%,transparent 72%);mask-image:radial-gradient(ellipse at 50% 118%,#000 14%,transparent 72%)"></div>
+        <div style="position:relative;text-align:center;padding:0 24px">
+          <div style="font-size:clamp(34px,6vw,58px);line-height:1.05;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div>
+          <p style="font-family:'Hanken Grotesk';font-size:14px;color:#B4B4B4;margin-top:12px">Halo + interferencia + espectro + grano, en ese orden</p>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,rgba(0,0,0,0),#B62C64 22%,#F2662C 50%,#FFC63D 78%,rgba(0,0,0,0))"></div>
+        <svg viewBox="0 0 1200 300" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;opacity:.26;pointer-events:none" aria-hidden="true"><filter id="rv-grain-c"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3"></feTurbulence></filter><rect width="1200" height="300" filter="url(#rv-grain-c)"></rect></svg>
+      </div>
+      <div style="padding:15px 18px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:22px;align-items:baseline">
+        <span style="font-weight:600;font-size:14px;color:#FFFFFF">Composición de hero</span>
+        <span style="font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8A8A8A">01 vacío · 02 halo · 03 interferencia · 04 contenido · 05 espectro · 06 grano</span>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px">
+      <div style="border:1px solid rgba(31,168,160,.3);border-radius:20px;padding:22px 24px;background:rgba(31,168,160,.07)">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1FA8A0;margin-bottom:12px">Sí</div>
+        <ul style="margin:0;padding-left:18px;font-family:'Hanken Grotesk';font-size:14px;color:#D6D6D6;line-height:1.85">
+          <li>Una sola fuente de luz por composición</li>
+          <li>El grano siempre en la capa superior, entre 20% y 35%</li>
+          <li>Líneas de 0.5–2px; el espectro nunca pasa de 2px</li>
+          <li>Texto sobre zonas de halo apagado, no sobre el núcleo</li>
+        </ul>
+      </div>
+      <div style="border:1px solid rgba(255,92,92,.3);border-radius:20px;padding:22px 24px;background:rgba(255,92,92,.07)">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#FF5C5C;margin-bottom:12px">No</div>
+        <ul style="margin:0;padding-left:18px;font-family:'Hanken Grotesk';font-size:14px;color:#D6D6D6;line-height:1.85">
+          <li>Dos halos en la misma pantalla</li>
+          <li>Interferencia detrás de párrafos o formularios</li>
+          <li>Estrellas, nebulosas, lens flares o partículas flotantes</li>
+          <li>El espectro como fondo o como relleno de un bloque</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tipografia" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">07 — Tipografía</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Plus Jakarta Sans, apretada y precisa</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Regla de amarillo: tracking <strong>−0.05em constante</strong> en todos los headers. Es lo que da el look apretado. Los overlines invierten a tracking positivo con mayúsculas. Hanken Grotesk acompaña en cuerpos largos y etiquetas de interfaz.</p>
+
+    <div style="display:flex;flex-direction:column">
+      <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;overflow:hidden"><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);width:168px;flex-shrink:0;line-height:1.5">header-1<br>62px · 800 · −.05em</span><span style="font-weight:800;letter-spacing:-.05em;white-space:nowrap;font-size:62px">Relevo Studio</span></div>
+      <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-top:1px dashed rgba(255,255,255,.14);overflow:hidden"><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);width:168px;flex-shrink:0;line-height:1.5">header-2<br>48px · 700 · −.05em</span><span style="font-weight:700;letter-spacing:-.05em;white-space:nowrap;font-size:48px">No consultamos. Construimos.</span></div>
+      <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-top:1px dashed rgba(255,255,255,.14);overflow:hidden"><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);width:168px;flex-shrink:0;line-height:1.5">header-3<br>40px · 700 · −.05em</span><span style="font-weight:700;letter-spacing:-.05em;white-space:nowrap;font-size:40px">Estrategia, producto e IA</span></div>
+      <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-top:1px dashed rgba(255,255,255,.14);overflow:hidden"><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);width:168px;flex-shrink:0;line-height:1.5">header-4<br>32px · 600 · −.05em</span><span style="font-weight:600;letter-spacing:-.05em;white-space:nowrap;font-size:32px">Del diagnóstico al sistema andando</span></div>
+      <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-top:1px dashed rgba(255,255,255,.14);overflow:hidden"><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);width:168px;flex-shrink:0;line-height:1.5">header-3 · énfasis<br>40px · 700 · cursiva</span><span style="font-weight:700;letter-spacing:-.05em;white-space:nowrap;font-size:40px">Sistemas que <em style="color:#E06A96">mueven</em> el negocio</span></div>
+      <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-top:1px dashed rgba(255,255,255,.14);overflow:hidden"><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);width:168px;flex-shrink:0;line-height:1.5">subheader<br>24px · 600 · 140%</span><span style="font-weight:600;letter-spacing:-.02em;white-space:nowrap;font-size:24px">Hacer ligero lo que pesa en la operación</span></div>
+      <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-top:1px dashed rgba(255,255,255,.14);overflow:hidden"><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);width:168px;flex-shrink:0;line-height:1.5">body-lg<br>18px · 500 · 160%</span><span style="font-weight:500;letter-spacing:-.01em;white-space:nowrap;font-size:18px">Entregamos sistemas que quedan funcionando, no presentaciones.</span></div>
+      <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-top:1px dashed rgba(255,255,255,.14);overflow:hidden"><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);width:168px;flex-shrink:0;line-height:1.5">body · Hanken<br>16px · 400 · 160%</span><span style="font-family:'Hanken Grotesk';font-weight:400;white-space:nowrap;font-size:16px">Diagnóstico, diseño del sistema, implementación y transferencia al equipo.</span></div>
+      <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-top:1px dashed rgba(255,255,255,.14);overflow:hidden"><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);width:168px;flex-shrink:0;line-height:1.5">caption · Hanken<br>13px · 500 · 150%</span><span style="font-family:'Hanken Grotesk';font-weight:500;white-space:nowrap;font-size:13px;color:#B4B4B4">Etiquetas de interfaz, notas al pie y metadatos.</span></div>
+      <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-top:1px dashed rgba(255,255,255,.14);overflow:hidden"><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);width:168px;flex-shrink:0;line-height:1.5">overline<br>12px · 600 · +.1em</span><span style="font-family:'Hanken Grotesk';font-weight:600;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;font-size:12px;color:#8A8A8A">Método Relevo</span></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:34px">
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px;background:#141414">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:12px">Pesos en uso</div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <div style="font-weight:800;font-size:22px;letter-spacing:-.04em">800 · ExtraBold — solo H1 y wordmark</div>
+          <div style="font-weight:700;font-size:22px;letter-spacing:-.04em">700 · Bold — H2 y H3</div>
+          <div style="font-weight:600;font-size:22px;letter-spacing:-.04em">600 · SemiBold — H4, botones, énfasis</div>
+          <div style="font-weight:500;font-size:22px;letter-spacing:-.02em">500 · Medium — cuerpo destacado</div>
+          <div style="font-weight:400;font-size:22px;letter-spacing:-.01em">400 · Regular — cuerpo largo</div>
+        </div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px;background:#141414">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:12px">Cursiva de énfasis</div>
+        <div style="font-weight:700;font-size:26px;letter-spacing:-.04em;line-height:1.15;margin-bottom:14px">Del diagnóstico al sistema <em style="color:#E06A96">andando</em></div>
+        <div style="font-family:'Hanken Grotesk';font-size:13.5px;color:#B4B4B4;line-height:1.7">
+          <strong>Una sola palabra en cursiva por titular</strong>, y siempre un verbo o el sustantivo que carga el sentido. Puede ir en rosa o quedarse en blanco.<br>
+          Nunca en overlines, botones, labels ni cuerpo. Si hay dos cursivas en una pantalla, sobra una.
+        </div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px;background:#141414">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:12px">Medidas de línea</div>
+        <div style="font-family:'Hanken Grotesk';font-size:13.5px;color:#B4B4B4;line-height:1.7">
+          Titulares: máximo <strong>2 líneas</strong> y hasta 24 caracteres por línea.<br>
+          Párrafos: <strong>60–75 caracteres</strong>, ancho máximo 700px.<br>
+          Interlineado: 1.02–1.1 en headers, 1.6 en cuerpo.<br>
+          <span style="display:inline-block;margin-top:10px;font-family:ui-monospace,monospace;font-size:11.5px;background:rgba(182,44,100,.1);color:#E06A96;padding:3px 7px;border-radius:5px">text-wrap: pretty</span> en todo el cuerpo.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="motion" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">08 — Motion</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">El diferenciador</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Todo corre en CSS nativo con el easing firma <span style="font-family:ui-monospace,monospace;font-size:12.5px;background:rgba(182,44,100,.1);color:#E06A96;padding:2px 6px;border-radius:5px">cubic-bezier(.25,1,.5,1)</span>. En el sitio se disparan por scroll con <span style="font-family:ui-monospace,monospace;font-size:12.5px;background:rgba(182,44,100,.1);color:#E06A96;padding:2px 6px;border-radius:5px">animation-timeline: view()</span>. Acá corren en loop para inspección.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px">
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(255,255,255,.025) 9px,rgba(255,255,255,.025) 18px)"><span style="display:block;font-size:30px;font-weight:700;letter-spacing:-.04em;animation:rv-reveal 4.2s cubic-bezier(.25,1,.5,1) infinite;animation-play-state:{{ motionState }}">Reveal</span></div>
+        <div style="padding:13px 15px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">reveal-from-center</div><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-top:4px;line-height:1.5">clip-path inset 50%→0<br>1s · quart</div></div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:150px;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;background:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(255,255,255,.025) 9px,rgba(255,255,255,.025) 18px)"><div style="overflow:hidden;padding-bottom:40px"><span style="display:block;font-size:30px;font-weight:700;letter-spacing:-.04em;animation:rv-text 4.2s cubic-bezier(.25,1,.5,1) infinite;animation-play-state:{{ motionState }}">Text reveal</span></div></div>
+        <div style="padding:13px 15px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">text-reveal</div><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-top:4px;line-height:1.5">translateY 110%→0 + máscara<br>1s · quart</div></div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#1C1C1C"><span style="font-size:30px;font-weight:700;letter-spacing:-.04em"><span style="display:inline-block;animation:rv-letter 4.2s cubic-bezier(.25,1,.5,1) infinite;animation-play-state:{{ motionState }}">R</span><span style="display:inline-block;animation:rv-letter 4.2s cubic-bezier(.25,1,.5,1) .06s infinite;animation-play-state:{{ motionState }}">e</span><span style="display:inline-block;animation:rv-letter 4.2s cubic-bezier(.25,1,.5,1) .12s infinite;animation-play-state:{{ motionState }}">l</span><span style="display:inline-block;animation:rv-letter 4.2s cubic-bezier(.25,1,.5,1) .18s infinite;animation-play-state:{{ motionState }}">e</span><span style="display:inline-block;animation:rv-letter 4.2s cubic-bezier(.25,1,.5,1) .24s infinite;animation-play-state:{{ motionState }}">v</span><span style="display:inline-block;animation:rv-letter 4.2s cubic-bezier(.25,1,.5,1) .3s infinite;animation-play-state:{{ motionState }}">o</span></span></div>
+        <div style="padding:13px 15px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">letter-reveal</div><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-top:4px;line-height:1.5">color naranja→off-white, stagger 60ms<br>.5s · quart</div></div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(255,255,255,.025) 9px,rgba(255,255,255,.025) 18px)"><div style="background:#1C1C1C;color:#FFFFFF;padding:14px 22px;border-radius:14px;font-weight:600;animation:rv-mask 4.2s cubic-bezier(.4,0,.2,1) infinite;animation-play-state:{{ motionState }}">Mask slide-in</div></div>
+        <div style="padding:13px 15px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">mask-slide-in</div><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-top:4px;line-height:1.5">translateY + opacity<br>1s · in-out</div></div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(255,255,255,.025) 9px,rgba(255,255,255,.025) 18px)"><div style="background:#B62C64;color:#fff;padding:14px 22px;border-radius:14px;font-weight:600;animation:rv-grow 4.2s cubic-bezier(.25,1,.5,1) infinite;animation-play-state:{{ motionState }}">Grow in</div></div>
+        <div style="padding:13px 15px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">grow-in</div><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-top:4px;line-height:1.5">scale .5→1 + opacity<br>1s · quart</div></div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(255,255,255,.025) 9px,rgba(255,255,255,.025) 18px)"><div style="background:#0A0A0A;color:#fff;padding:14px 22px;border-radius:14px;font-weight:600;animation:rv-slide 4.2s cubic-bezier(0,0,.2,1) infinite;animation-play-state:{{ motionState }}">Slide bottom</div></div>
+        <div style="padding:13px 15px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">slide-in-from-bottom</div><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-top:4px;line-height:1.5">translateY 33%→0<br>1s · ease-out</div></div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#0A0A0A">
+          <svg viewBox="6 0 90 55" width="115" height="70" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12" style="animation:rv-handoff 4.2s cubic-bezier(.25,1,.5,1) infinite;animation-play-state:{{ motionState }}"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12" style="animation:rv-handoff-b 4.2s cubic-bezier(.25,1,.5,1) infinite;animation-play-state:{{ motionState }}"></circle></svg>
+        </div>
+        <div style="padding:13px 15px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">handoff <span style="font-family:'Hanken Grotesk';font-size:11px;font-weight:600;color:#E06A96;letter-spacing:.06em;text-transform:uppercase">· firma</span></div><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-top:4px;line-height:1.5">el isotipo entrega la posta<br>4.2s · quart · loop</div></div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(255,255,255,.025) 9px,rgba(255,255,255,.025) 18px);padding:0 24px">
+          <div style="width:100%;height:8px;border-radius:999px;background:#262626;overflow:hidden"><div style="height:100%;background:#B62C64;transform-origin:left;animation:rv-bar 2.4s cubic-bezier(.25,1,.5,1) infinite;animation-play-state:{{ motionState }}"></div></div>
+        </div>
+        <div style="padding:13px 15px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">progress-fill</div><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-top:4px;line-height:1.5">scaleX 0→1, origen izquierdo<br>1.2s · quart</div></div>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin:34px 0 14px">Marquee — qué hacemos</div>
+    <div style="overflow:hidden;width:100%">
+      <div style="display:flex;gap:14px;width:max-content;animation:rv-marquee 24s linear infinite;animation-play-state:{{ motionState }}">
+        <sc-for list="{{ marquee }}" as="m" hint-placeholder-count="12">
+          <span style="background:#1C1C1C;color:#FFFFFF;padding:11px 21px;border-radius:999px;font-weight:600;white-space:nowrap">{{ m }} ↗</span>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin:34px 0 14px">Curvas de movimiento</div>
+    <div>
+      <div style="display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:18px;align-items:center;padding:10px 0"><div style="font-family:ui-monospace,monospace;font-size:12px;color:#B4B4B4"><b style="font-family:'Plus Jakarta Sans';font-size:13.5px;display:block;margin-bottom:2px;letter-spacing:-.01em;color:#FFFFFF">quart · firma</b>cubic-bezier(.25,1,.5,1)</div><div style="position:relative;height:34px;background:#1C1C1C;border-radius:999px;overflow:hidden"><div style="position:absolute;top:5px;width:24px;height:24px;border-radius:50%;background:#B62C64;animation:rv-ease 1.6s cubic-bezier(.25,1,.5,1) infinite alternate;animation-play-state:{{ motionState }}"></div></div></div>
+      <div style="display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:18px;align-items:center;padding:10px 0"><div style="font-family:ui-monospace,monospace;font-size:12px;color:#B4B4B4"><b style="font-family:'Plus Jakarta Sans';font-size:13.5px;display:block;margin-bottom:2px;letter-spacing:-.01em;color:#FFFFFF">in-out</b>cubic-bezier(.4,0,.2,1)</div><div style="position:relative;height:34px;background:#1C1C1C;border-radius:999px;overflow:hidden"><div style="position:absolute;top:5px;width:24px;height:24px;border-radius:50%;background:#B62C64;animation:rv-ease 1.6s cubic-bezier(.4,0,.2,1) infinite alternate;animation-play-state:{{ motionState }}"></div></div></div>
+      <div style="display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:18px;align-items:center;padding:10px 0"><div style="font-family:ui-monospace,monospace;font-size:12px;color:#B4B4B4"><b style="font-family:'Plus Jakarta Sans';font-size:13.5px;display:block;margin-bottom:2px;letter-spacing:-.01em;color:#FFFFFF">overshoot</b>cubic-bezier(.34,1.26,.64,1)</div><div style="position:relative;height:34px;background:#1C1C1C;border-radius:999px;overflow:hidden"><div style="position:absolute;top:5px;width:24px;height:24px;border-radius:50%;background:#B62C64;animation:rv-ease 1.6s cubic-bezier(.34,1.26,.64,1) infinite alternate;animation-play-state:{{ motionState }}"></div></div></div>
+      <div style="display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:18px;align-items:center;padding:10px 0"><div style="font-family:ui-monospace,monospace;font-size:12px;color:#B4B4B4"><b style="font-family:'Plus Jakarta Sans';font-size:13.5px;display:block;margin-bottom:2px;letter-spacing:-.01em;color:#FFFFFF">bounce</b>cubic-bezier(.175,.885,.32,1.2)</div><div style="position:relative;height:34px;background:#1C1C1C;border-radius:999px;overflow:hidden"><div style="position:absolute;top:5px;width:24px;height:24px;border-radius:50%;background:#B62C64;animation:rv-ease 1.6s cubic-bezier(.175,.885,.32,1.2) infinite alternate;animation-play-state:{{ motionState }}"></div></div></div>
+      <div style="display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:18px;align-items:center;padding:10px 0"><div style="font-family:ui-monospace,monospace;font-size:12px;color:#B4B4B4"><b style="font-family:'Plus Jakarta Sans';font-size:13.5px;display:block;margin-bottom:2px;letter-spacing:-.01em;color:#FFFFFF">carousel</b>cubic-bezier(.65,0,.35,1)</div><div style="position:relative;height:34px;background:#1C1C1C;border-radius:999px;overflow:hidden"><div style="position:absolute;top:5px;width:24px;height:24px;border-radius:50%;background:#1C1C1C;animation:rv-ease 1.6s cubic-bezier(.65,0,.35,1) infinite alternate;animation-play-state:{{ motionState }}"></div></div></div>
+    </div>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:14px;max-width:700px;line-height:1.6;margin-top:22px;text-wrap:pretty">Overshoot y bounce solo para micro-interacciones de estado. Nunca en secciones donde se juega la credibilidad: ahí el movimiento confirma, no entretiene.</p>
+  </div>
+</section>
+
+<section id="foundations" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">09 — Foundations</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Espaciado, forma y elevación</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Base 4px. Radios generosos: paneles a 32–40px, pills full-round. Dos sombras tokenizadas, tomadas tal cual del sistema de origen.</p>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Escala de espaciado</div>
+    <div style="display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:38px">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:4px;height:4px;background:rgba(182,44,100,.16);border:1px solid #B62C64;border-radius:2px"></div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55)">4</div></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:8px;height:8px;background:rgba(182,44,100,.16);border:1px solid #B62C64;border-radius:2px"></div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55)">8</div></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:12px;height:12px;background:rgba(182,44,100,.16);border:1px solid #B62C64;border-radius:3px"></div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55)">12</div></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:16px;height:16px;background:rgba(182,44,100,.16);border:1px solid #B62C64;border-radius:3px"></div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55)">16</div></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:24px;height:24px;background:rgba(182,44,100,.16);border:1px solid #B62C64;border-radius:3px"></div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55)">24</div></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:32px;height:32px;background:rgba(182,44,100,.16);border:1px solid #B62C64;border-radius:3px"></div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55)">32</div></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:48px;height:48px;background:rgba(182,44,100,.16);border:1px solid #B62C64;border-radius:3px"></div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55)">48</div></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:64px;height:64px;background:rgba(182,44,100,.16);border:1px solid #B62C64;border-radius:3px"></div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55)">64</div></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:96px;height:96px;background:rgba(182,44,100,.16);border:1px solid #B62C64;border-radius:3px"></div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55)">96</div></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:120px;height:120px;background:rgba(182,44,100,.16);border:1px solid #B62C64;border-radius:3px"></div><div style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.55)">120</div></div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Radios</div>
+    <div style="display:flex;gap:22px;flex-wrap:wrap;margin-bottom:38px">
+      <div style="width:104px"><div style="height:74px;background:rgba(182,44,100,.12);border:1.5px solid #B62C64;border-radius:8px"></div><div style="font-family:ui-monospace,monospace;font-size:11px;margin-top:8px;color:rgba(255,255,255,.55)">xs · 8px</div></div>
+      <div style="width:104px"><div style="height:74px;background:rgba(182,44,100,.12);border:1.5px solid #B62C64;border-radius:14px"></div><div style="font-family:ui-monospace,monospace;font-size:11px;margin-top:8px;color:rgba(255,255,255,.55)">sm · 14px</div></div>
+      <div style="width:104px"><div style="height:74px;background:rgba(182,44,100,.12);border:1.5px solid #B62C64;border-radius:20px"></div><div style="font-family:ui-monospace,monospace;font-size:11px;margin-top:8px;color:rgba(255,255,255,.55)">md · 20px</div></div>
+      <div style="width:104px"><div style="height:74px;background:rgba(182,44,100,.12);border:1.5px solid #B62C64;border-radius:32px"></div><div style="font-family:ui-monospace,monospace;font-size:11px;margin-top:8px;color:rgba(255,255,255,.55)">lg · 32px</div></div>
+      <div style="width:104px"><div style="height:74px;background:rgba(182,44,100,.12);border:1.5px solid #B62C64;border-radius:40px"></div><div style="font-family:ui-monospace,monospace;font-size:11px;margin-top:8px;color:rgba(255,255,255,.55)">xl · 40px</div></div>
+      <div style="width:104px"><div style="height:74px;background:rgba(182,44,100,.12);border:1.5px solid #B62C64;border-radius:999px"></div><div style="font-family:ui-monospace,monospace;font-size:11px;margin-top:8px;color:rgba(255,255,255,.55)">pill</div></div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Elevación</div>
+    <div style="display:flex;gap:26px;flex-wrap:wrap">
+      <div style="width:150px"><div style="height:78px;background:#141414;border-radius:18px;border:1px solid rgba(255,255,255,.08)"></div><div style="font-family:ui-monospace,monospace;font-size:11px;margin-top:10px;color:rgba(255,255,255,.55)">flat · borde 1px</div></div>
+      <div style="width:150px"><div style="height:78px;background:#141414;border-radius:18px;box-shadow:0 4px 16px rgba(182,44,100,.4)"></div><div style="font-family:ui-monospace,monospace;font-size:11px;margin-top:10px;color:rgba(255,255,255,.55)">shadow-cta</div></div>
+      <div style="width:150px"><div style="height:78px;background:#141414;border-radius:18px;box-shadow:0 24px 64px rgba(0,0,0,.22),0 4px 16px rgba(0,0,0,.1)"></div><div style="font-family:ui-monospace,monospace;font-size:11px;margin-top:10px;color:rgba(255,255,255,.55)">shadow-card</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="grid" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">10 — Grid y layout</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">La grilla del website</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Doce columnas, contenedor de 1140px, gutter de 24px. Las secciones respiran 120px arriba y abajo en desktop. El full-bleed se reserva para paneles de color y piezas de motion.</p>
+
+    <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;background:#141414;padding:26px;margin-bottom:20px">
+      <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:24px;height:190px">
+        <sc-for list="{{ cols }}" as="c" hint-placeholder-count="12">
+          <div style="background:rgba(182,44,100,.1);border-left:1px solid rgba(182,44,100,.4);border-right:1px solid rgba(182,44,100,.4);border-radius:2px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:8px;font-family:ui-monospace,monospace;font-size:10px;color:#E06A96">{{ c }}</div>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-bottom:34px">
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:20px;background:#141414"><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-bottom:6px">container</div><div style="font-weight:700;font-size:22px;letter-spacing:-.03em">1140px</div><div style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;margin-top:4px">Márgenes de 40px en desktop, 22px en mobile.</div></div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:20px;background:#141414"><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-bottom:6px">gutter</div><div style="font-weight:700;font-size:22px;letter-spacing:-.03em">24px</div><div style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;margin-top:4px">16px por debajo de 720px de ancho.</div></div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:20px;background:#141414"><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-bottom:6px">section-y</div><div style="font-weight:700;font-size:22px;letter-spacing:-.03em">120 / 72px</div><div style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;margin-top:4px">Desktop y mobile. Nunca menos de 56px.</div></div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:20px;background:#141414"><div style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55);margin-bottom:6px">breakpoints</div><div style="font-weight:700;font-size:22px;letter-spacing:-.03em">720 · 1024</div><div style="font-family:'Hanken Grotesk';font-size:13px;color:#B4B4B4;margin-top:4px">Mobile, tablet, desktop. Nada intermedio.</div></div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Ritmo de página</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:16px;overflow:hidden;background:#141414"><div style="height:120px;background:#0A0A0A;padding:14px;display:flex;flex-direction:column;justify-content:center;gap:7px"><div style="height:10px;width:70%;background:#1C1C1C;border-radius:3px"></div><div style="height:6px;width:50%;background:#262626;border-radius:3px"></div><div style="height:20px;width:38%;background:#B62C64;border-radius:999px;margin-top:6px"></div></div><div style="padding:11px 14px;border-top:1px solid rgba(255,255,255,.1);font-family:'Hanken Grotesk';font-size:12.5px;font-weight:600">Hero · texto a 7 columnas</div></div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:16px;overflow:hidden;background:#141414"><div style="height:120px;background:#1C1C1C;padding:14px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px"><div style="background:rgba(255,255,255,.14);border-radius:6px"></div><div style="background:rgba(255,255,255,.14);border-radius:6px"></div><div style="background:rgba(255,255,255,.14);border-radius:6px"></div></div><div style="padding:11px 14px;border-top:1px solid rgba(255,255,255,.1);font-family:'Hanken Grotesk';font-size:12.5px;font-weight:600">Panel full-bleed · 3 × 4 col</div></div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:16px;overflow:hidden;background:#141414"><div style="height:120px;background:#0A0A0A;padding:14px;display:grid;grid-template-columns:5fr 7fr;gap:12px;align-items:center"><div style="height:100%;background:#262626;border-radius:8px"></div><div style="display:flex;flex-direction:column;gap:6px"><div style="height:8px;width:80%;background:#1C1C1C;border-radius:3px"></div><div style="height:5px;width:100%;background:#262626;border-radius:3px"></div><div style="height:5px;width:90%;background:#262626;border-radius:3px"></div></div></div><div style="padding:11px 14px;border-top:1px solid rgba(255,255,255,.1);font-family:'Hanken Grotesk';font-size:12.5px;font-weight:600">Split · 5 + 7 col</div></div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:16px;overflow:hidden;background:#141414"><div style="height:120px;background:#0A0A0A;padding:14px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px"><div style="height:9px;width:55%;background:#1C1C1C;border-radius:3px"></div><div style="height:5px;width:40%;background:#262626;border-radius:3px"></div></div><div style="padding:11px 14px;border-top:1px solid rgba(255,255,255,.1);font-family:'Hanken Grotesk';font-size:12.5px;font-weight:600">Centrado · 8 col</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="iconos" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">11 — Iconografía</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Línea de 1.75px, terminación redonda</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Grilla de 24, trazo 1.75px, esquinas y puntas redondeadas. Siempre monocromos con <span style="font-family:ui-monospace,monospace;font-size:12.5px;background:rgba(182,44,100,.1);color:#E06A96;padding:2px 6px;border-radius:5px">currentColor</span>. Nunca emoji como ícono funcional, nunca relleno sólido salvo en estados activos.</p>
+
+    <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;background:#141414;padding:30px;display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:22px;margin-bottom:22px;color:#FFFFFF">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">arrow-ur</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">check</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.5 16.5L21 21"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">search</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">calendar</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15a3 3 0 0 1-3 3H8l-4 3V6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3z"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">message</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">zap</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"></path><path d="M3 13l9 5 9-5"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">layers</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19a8 8 0 1 1 16 0"></path><path d="M12 15l4-4"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">gauge</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"></circle><path d="M3 20a6 6 0 0 1 12 0"></path><path d="M16 5.5a3.5 3.5 0 0 1 0 6M18 20a6 6 0 0 0-2-4.5"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">users</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">file</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">chart</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:9px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V21a2 2 0 1 1-4 0v-.1A1.6 1.6 0 0 0 7.5 19.4a2 2 0 1 1-2.8-2.8l.1-.1A1.6 1.6 0 0 0 3 13.8 2 2 0 1 1 3 9.8a1.6 1.6 0 0 0 1.8-2.3l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.6 1.6 0 0 0 10.2 3 2 2 0 1 1 14.2 3a1.6 1.6 0 0 0 2.3 1.8l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1A1.6 1.6 0 0 0 21 10.2a2 2 0 1 1 0 4 1.6 1.6 0 0 0-1.6.8z"></path></svg><span style="font-family:ui-monospace,monospace;font-size:10px;color:rgba(255,255,255,.55)">settings</span></div>
+    </div>
+
+    <div style="display:flex;gap:26px;flex-wrap:wrap;align-items:center;border:1px solid rgba(255,255,255,.1);border-radius:20px;background:#141414;padding:22px 26px">
+      <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55)">Tamaños</div>
+      <div style="display:flex;align-items:center;gap:10px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.75" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.5 16.5L21 21"></path></svg><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55)">14 · inline</span></div>
+      <div style="display:flex;align-items:center;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C1C1C" stroke-width="1.75" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.5 16.5L21 21"></path></svg><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55)">16 · botón</span></div>
+      <div style="display:flex;align-items:center;gap:10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1C1C" stroke-width="1.75" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.5 16.5L21 21"></path></svg><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55)">20 · nav</span></div>
+      <div style="display:flex;align-items:center;gap:10px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B62C64" stroke-width="1.75" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.5 16.5L21 21"></path></svg><span style="font-family:ui-monospace,monospace;font-size:11px;color:rgba(255,255,255,.55)">26 · destacado</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="foto" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">12 — Fotografía</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Trabajo real, no stock de oficina</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Personas trabajando, pantallas encendidas, operaciones en curso. Nada de handshakes, gente riéndose frente a un laptop, ni renders de robots. Los marcos de abajo son referencias de tratamiento, no imágenes finales.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-bottom:26px">
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="aspect-ratio:3/2;background:linear-gradient(135deg,#7B3E9C,#0A0A0A);display:flex;align-items:center;justify-content:center;position:relative">
+          <span style="font-family:'Hanken Grotesk';font-size:12.5px;color:rgba(255,255,255,.7);letter-spacing:.06em;text-transform:uppercase">Referencia</span>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">Duotono rosa</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:4px;line-height:1.55">Fotos de proceso y equipo. Sombras a rosa-800, luces a text-100. Contraste alto.</div></div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="aspect-ratio:3/2;background:#262626;display:flex;align-items:center;justify-content:center">
+          <span style="font-family:'Hanken Grotesk';font-size:12.5px;color:rgba(255,255,255,.55);letter-spacing:.06em;text-transform:uppercase">Referencia</span>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">Natural cálida</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:4px;line-height:1.55">Retratos y casos. Temperatura tirando a papel, saturación baja, sin filtros de moda.</div></div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:20px;overflow:hidden;background:#141414">
+        <div style="aspect-ratio:3/2;background:#1C1C1C;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden">
+          <div style="position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 7px,rgba(255,255,255,.04) 7px,rgba(255,255,255,.04) 14px)"></div>
+          <span style="font-family:'Hanken Grotesk';font-size:12.5px;color:rgba(255,255,255,.6);letter-spacing:.06em;text-transform:uppercase;position:relative">Referencia</span>
+        </div>
+        <div style="padding:15px 18px;border-top:1px solid rgba(255,255,255,.1)"><div style="font-weight:600;font-size:14px">Captura de producto</div><div style="font-family:'Hanken Grotesk';font-size:12.5px;color:#B4B4B4;margin-top:4px;line-height:1.55">Pantallas reales sobre ink-300, con radio 20px y shadow-card. Datos verosímiles, nunca lorem.</div></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px">
+      <div style="border:1px solid rgba(31,168,160,.3);border-radius:20px;padding:22px 24px;background:rgba(31,168,160,.07)">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#1FA8A0;margin-bottom:12px">Sí</div>
+        <ul style="margin:0;padding-left:18px;font-family:'Hanken Grotesk';font-size:14px;color:#D6D6D6;line-height:1.85">
+          <li>Equipos trabajando en contexto real</li>
+          <li>Detalle de manos, pantallas, pizarras</li>
+          <li>Recortes a 3:2 y 4:5, radio 20px</li>
+          <li>Grano sutil, profundidad de campo natural</li>
+        </ul>
+      </div>
+      <div style="border:1px solid rgba(255,92,92,.3);border-radius:20px;padding:22px 24px;background:rgba(255,92,92,.07)">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#FF5C5C;margin-bottom:12px">No</div>
+        <ul style="margin:0;padding-left:18px;font-family:'Hanken Grotesk';font-size:14px;color:#D6D6D6;line-height:1.85">
+          <li>Stock corporativo genérico</li>
+          <li>Cerebros, circuitos, robots, hologramas</li>
+          <li>Gradientes morados de IA</li>
+          <li>Personas señalando gráficos que no existen</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="componentes" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">13 — Componentes</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Las piezas del website</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Pills full-round con flecha ↗ que se desplaza en hover, eyebrows en rosa, paneles de color sólido con la flecha ↙ decorativa. Todo lo interactivo responde en 300ms con el easing firma.</p>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Botones</div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px">
+      <a href="#componentes" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;border-radius:999px;padding:14px 24px;text-decoration:none;background:#1C1C1C;color:#FFFFFF;transition:transform .3s cubic-bezier(.25,1,.5,1),box-shadow .3s cubic-bezier(.25,1,.5,1)" style-hover="transform:translateY(-2px);box-shadow:0 4px 16px rgba(182,44,100,.4)">Agendar diagnóstico <span>↗</span></a>
+      <a href="#componentes" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;border-radius:999px;padding:14px 24px;text-decoration:none;background:#B62C64;color:#FFFFFF;transition:transform .3s cubic-bezier(.25,1,.5,1),box-shadow .3s cubic-bezier(.25,1,.5,1)" style-hover="transform:translateY(-2px);box-shadow:0 4px 16px rgba(182,44,100,.4)">Empezar ahora <span>↗</span></a>
+      <a href="#componentes" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;border-radius:999px;padding:14px 24px;text-decoration:none;background:#1C1C1C;color:#FFFFFF;transition:transform .3s cubic-bezier(.25,1,.5,1),box-shadow .3s cubic-bezier(.25,1,.5,1)" style-hover="transform:translateY(-2px);box-shadow:0 4px 16px rgba(182,44,100,.4)">Cómo trabajamos <span>↗</span></a>
+      <a href="#componentes" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;border-radius:999px;padding:13px 23px;text-decoration:none;background:transparent;color:#FFFFFF;border:1.5px solid rgba(255,255,255,.25);transition:border-color .3s cubic-bezier(.25,1,.5,1)" style-hover="border-color:#FFFFFF">Ver casos <span>↗</span></a>
+      <a href="#componentes" style="display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:15px;text-decoration:none;color:#E06A96;padding:8px 2px;border-bottom:1.5px solid rgba(182,44,100,.3);transition:border-color .3s" style-hover="border-color:#E06A96">Leer el método <span>↗</span></a>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:34px">
+      <span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;border-radius:999px;padding:11px 20px;background:#1C1C1C;color:#FFFFFF">Small <span>↗</span></span>
+      <span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:18px;border-radius:999px;padding:17px 30px;background:#1C1C1C;color:#FFFFFF">Large <span>↗</span></span>
+      <span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;border-radius:999px;padding:14px 24px;background:#262626;color:rgba(255,255,255,.32);cursor:not-allowed">Deshabilitado</span>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Badges y estados</div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:34px">
+      <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;background:#2A0A17;color:#E06A96"><span style="width:8px;height:8px;border-radius:50%;background:#B62C64;display:inline-block;animation:rv-pulse 2s ease-in-out infinite;animation-play-state:{{ motionState }}"></span>En construcción</span>
+      <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;background:#FFDA80;color:#E06A96"><span style="width:8px;height:8px;border-radius:50%;background:#B62C64;display:inline-block"></span>Esperando definición</span>
+      <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;background:#1C1C1C;color:rgba(255,255,255,.68)"><span style="width:8px;height:8px;border-radius:50%;background:rgba(94,26,16,.6);display:inline-block"></span>Entregado</span>
+      <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;background:#1C1C1C;color:#FFFFFF">Sprint 3 · día 12</span>
+      <span style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:6px;font-weight:600;font-size:12px;background:rgba(182,44,100,.12);color:#E06A96;font-family:'Hanken Grotesk';letter-spacing:.04em;text-transform:uppercase">Nuevo</span>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Barra de navegación</div>
+    <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;overflow:hidden;margin-bottom:34px">
+      <div style="display:flex;align-items:center;gap:26px;padding:16px 26px;background:#0A0A0A;border-bottom:1px solid rgba(255,255,255,.1);flex-wrap:wrap">
+        <div style="font-size:24px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap;margin-right:auto">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div>
+        <a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;font-weight:500;color:#FFFFFF">Qué hacemos</a>
+        <a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;font-weight:500;color:#B4B4B4">Método</a>
+        <a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;font-weight:500;color:#B4B4B4">Casos</a>
+        <a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;font-weight:500;color:#B4B4B4">Productos</a>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:14px;border-radius:999px;padding:10px 18px;background:#1C1C1C;color:#FFFFFF">Hablemos <span>↗</span></span>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Paneles de sección</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-bottom:34px">
+      <div style="border-radius:32px;padding:30px;color:#FFFFFF;min-height:200px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 64px rgba(0,0,0,.22),0 4px 16px rgba(0,0,0,.1);background:#B62C64"><span style="align-self:flex-end;font-size:26px;opacity:.85">↙</span><h3 style="font-size:25px;font-weight:700;letter-spacing:-.04em;line-height:1.1">Estrategia que se implementa</h3></div>
+      <div style="border-radius:32px;padding:30px;color:#FFFFFF;min-height:200px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 64px rgba(0,0,0,.22),0 4px 16px rgba(0,0,0,.1);background:#4A0F26"><span style="align-self:flex-end;font-size:26px;opacity:.85">↙</span><h3 style="font-size:25px;font-weight:700;letter-spacing:-.04em;line-height:1.1">IA aplicada a la operación real</h3></div>
+      <div style="border-radius:32px;padding:30px;color:#0A0A0A;min-height:200px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 64px rgba(0,0,0,.22),0 4px 16px rgba(0,0,0,.1);background:#FFC63D"><span style="align-self:flex-end;font-size:26px;opacity:.7">↙</span><h3 style="font-size:25px;font-weight:700;letter-spacing:-.04em;line-height:1.1">Producto de punta a punta</h3></div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Cards</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;margin-bottom:34px">
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:26px;background:#141414">
+        <div style="width:44px;height:44px;border-radius:12px;background:#2A0A17;display:flex;align-items:center;justify-content:center;margin-bottom:18px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div>
+        <h3 style="font-size:19px;font-weight:700;letter-spacing:-.03em;margin-bottom:8px">Diagnóstico operativo</h3>
+        <p style="font-family:'Hanken Grotesk';font-size:14px;color:#B4B4B4;line-height:1.6">Mapeamos dónde se pierde tiempo, dinero y contexto antes de escribir una sola línea de código.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:26px;background:#141414">
+        <div style="width:44px;height:44px;border-radius:12px;background:#FFDA80;display:flex;align-items:center;justify-content:center;margin-bottom:18px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#98204F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"></path></svg></div>
+        <h3 style="font-size:19px;font-weight:700;letter-spacing:-.03em;margin-bottom:8px">Sistemas en producción</h3>
+        <p style="font-family:'Hanken Grotesk';font-size:14px;color:#B4B4B4;line-height:1.6">Entregamos software funcionando y transferido al equipo, no un documento con recomendaciones.</p>
+      </div>
+      <div style="border-radius:24px;padding:26px;background:#1C1C1C;color:#FFFFFF">
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;margin-bottom:18px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg></div>
+        <h3 style="font-size:19px;font-weight:700;letter-spacing:-.03em;margin-bottom:8px">Medición desde el día uno</h3>
+        <p style="font-family:'Hanken Grotesk';font-size:14px;color:#B4B4B4;line-height:1.6">Cada sistema define su métrica antes de construirse. Si no se puede medir, no se construye.</p>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Pricing</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:34px">
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:30px;background:#141414">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#8A8A8A;margin-bottom:14px">Diagnóstico</div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:6px"><span style="font-size:40px;font-weight:800;letter-spacing:-.05em">2</span><span style="font-family:'Hanken Grotesk';font-size:15px;color:#B4B4B4">semanas</span></div>
+        <p style="font-family:'Hanken Grotesk';font-size:14px;color:#B4B4B4;line-height:1.6;margin-bottom:20px">Mapa de operación, oportunidades priorizadas y plan de implementación.</p>
+        <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:24px">
+          <div style="display:flex;gap:9px;align-items:flex-start;font-family:'Hanken Grotesk';font-size:14px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12.5l5 5L20 6.5"></path></svg>Entrevistas con el equipo</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-family:'Hanken Grotesk';font-size:14px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12.5l5 5L20 6.5"></path></svg>Mapa de procesos y datos</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-family:'Hanken Grotesk';font-size:14px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12.5l5 5L20 6.5"></path></svg>Roadmap con estimaciones</div>
+        </div>
+        <span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;border-radius:999px;padding:13px 22px;background:#1C1C1C;color:#FFFFFF">Consultar <span>↗</span></span>
+      </div>
+      <div style="border-radius:28px;padding:30px;background:#1C1C1C;color:#FFFFFF;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.22),0 4px 16px rgba(0,0,0,.1)">
+        <span style="position:absolute;top:22px;right:26px;font-family:'Hanken Grotesk';font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;background:#B62C64;color:#FFFFFF;padding:5px 12px;border-radius:999px">Más elegido</span>
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#D6D6D6;margin-bottom:14px">Sistema</div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:6px"><span style="font-size:40px;font-weight:800;letter-spacing:-.05em">8–12</span><span style="font-family:'Hanken Grotesk';font-size:15px;color:#B4B4B4">semanas</span></div>
+        <p style="font-family:'Hanken Grotesk';font-size:14px;color:#B4B4B4;line-height:1.6;margin-bottom:20px">Diseño, construcción, puesta en producción y transferencia al equipo interno.</p>
+        <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:24px">
+          <div style="display:flex;gap:9px;align-items:flex-start;font-family:'Hanken Grotesk';font-size:14px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12.5l5 5L20 6.5"></path></svg>Todo lo del diagnóstico</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-family:'Hanken Grotesk';font-size:14px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12.5l5 5L20 6.5"></path></svg>Sistema en producción</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-family:'Hanken Grotesk';font-size:14px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12.5l5 5L20 6.5"></path></svg>Capacitación y documentación</div>
+        </div>
+        <span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;border-radius:999px;padding:13px 22px;background:#B62C64;color:#FFFFFF">Agendar <span>↗</span></span>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:30px;background:#141414">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#8A8A8A;margin-bottom:14px">Socio operativo</div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:6px"><span style="font-size:40px;font-weight:800;letter-spacing:-.05em">Continuo</span></div>
+        <p style="font-family:'Hanken Grotesk';font-size:14px;color:#B4B4B4;line-height:1.6;margin-bottom:20px">Equipo dedicado para operar, medir y expandir los sistemas mes a mes.</p>
+        <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:24px">
+          <div style="display:flex;gap:9px;align-items:flex-start;font-family:'Hanken Grotesk';font-size:14px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12.5l5 5L20 6.5"></path></svg>Roadmap trimestral</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-family:'Hanken Grotesk';font-size:14px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12.5l5 5L20 6.5"></path></svg>Soporte y evolución</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-family:'Hanken Grotesk';font-size:14px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFC63D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12.5l5 5L20 6.5"></path></svg>Reporte mensual de impacto</div>
+        </div>
+        <span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;border-radius:999px;padding:13px 22px;background:#1C1C1C;color:#FFFFFF">Consultar <span>↗</span></span>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Formulario</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-bottom:34px">
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:28px;background:#141414;display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <label for="rv-nombre" style="font-family:'Hanken Grotesk';font-size:13px;font-weight:600;color:#FFFFFF">Nombre</label>
+          <input id="rv-nombre" type="text" placeholder="Cómo te llamás" style="font-family:'Hanken Grotesk';font-size:15px;padding:13px 16px;border-radius:14px;border:1.5px solid rgba(255,255,255,.16);background:#0A0A0A;color:#FFFFFF;outline:none;transition:border-color .3s cubic-bezier(.25,1,.5,1)" style-focus="border-color:#8A8A8A">
+        </div>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <label for="rv-mail" style="font-family:'Hanken Grotesk';font-size:13px;font-weight:600;color:#FFFFFF">Correo de trabajo</label>
+          <input id="rv-mail" type="email" placeholder="nombre@empresa.com" style="font-family:'Hanken Grotesk';font-size:15px;padding:13px 16px;border-radius:14px;border:1.5px solid rgba(255,255,255,.16);background:#0A0A0A;color:#FFFFFF;outline:none;transition:border-color .3s cubic-bezier(.25,1,.5,1)" style-focus="border-color:#8A8A8A">
+        </div>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <label for="rv-msg" style="font-family:'Hanken Grotesk';font-size:13px;font-weight:600;color:#FFFFFF">Qué querés resolver</label>
+          <textarea id="rv-msg" rows="3" placeholder="Contanos el problema operativo, no la solución" style="font-family:'Hanken Grotesk';font-size:15px;padding:13px 16px;border-radius:14px;border:1.5px solid rgba(255,255,255,.16);background:#0A0A0A;color:#FFFFFF;outline:none;resize:vertical;transition:border-color .3s cubic-bezier(.25,1,.5,1)" style-focus="border-color:#8A8A8A"></textarea>
+        </div>
+        <span style="display:inline-flex;align-self:flex-start;align-items:center;gap:8px;font-weight:600;font-size:15px;border-radius:999px;padding:13px 24px;background:#1C1C1C;color:#FFFFFF">Enviar <span>↗</span></span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <span style="font-family:'Hanken Grotesk';font-size:13px;font-weight:600;color:#E06A96">Estado válido</span>
+          <div style="font-family:'Hanken Grotesk';font-size:15px;padding:13px 16px;border-radius:14px;border:1.5px solid #B62C64;background:#0A0A0A;color:#FFFFFF">nombre@empresa.com</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <span style="font-family:'Hanken Grotesk';font-size:13px;font-weight:600;color:#E06A96">Estado con error</span>
+          <div style="font-family:'Hanken Grotesk';font-size:15px;padding:13px 16px;border-radius:14px;border:1.5px solid #98204F;background:#0A0A0A;color:#FFFFFF">nombre@</div>
+          <span style="font-family:'Hanken Grotesk';font-size:12.5px;color:#E06A96">Falta el dominio del correo.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <span style="font-family:'Hanken Grotesk';font-size:13px;font-weight:600;color:rgba(255,255,255,.55)">Deshabilitado</span>
+          <div style="font-family:'Hanken Grotesk';font-size:15px;padding:13px 16px;border-radius:14px;border:1.5px solid rgba(255,255,255,.1);background:#1C1C1C;color:rgba(255,255,255,.32)">No editable</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:14px">Footer</div>
+    <div style="border-radius:32px;background:#1C1C1C;color:#FFFFFF;padding:44px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:34px">
+      <div style="grid-column:1/-1;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:22px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.14)">
+        <div>
+          <div style="font-size:32px;line-height:1.1;letter-spacing:-.05em;font-weight:800;color:#FFFFFF;white-space:nowrap;margin-bottom:10px">relev<svg viewBox="6 0 90 55" style="width:.9em;height:.55em;vertical-align:baseline;margin-bottom:-.012em" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"></circle><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"></circle></svg><span style="font-weight:600;font-size:.58em;letter-spacing:-.04em;color:#D6D6D6;margin-left:.16em">studio</span></div>
+          <p style="font-family:'Hanken Grotesk';font-size:15px;color:#B4B4B4;max-width:380px;line-height:1.6">Sistemas inteligentes para organizaciones en movimiento.</p>
+        </div>
+        <span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;border-radius:999px;padding:14px 24px;background:#B62C64;color:#FFFFFF">Agendar diagnóstico <span>↗</span></span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px"><div style="font-family:'Hanken Grotesk';font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#D6D6D6;margin-bottom:2px">Estudio</div><a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;color:#D6D6D6">Qué hacemos</a><a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;color:#D6D6D6">Método</a><a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;color:#D6D6D6">Casos</a></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><div style="font-family:'Hanken Grotesk';font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#D6D6D6;margin-bottom:2px">Productos</div><a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;color:#D6D6D6">Relevo Outreach</a><a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;color:#D6D6D6">Serchi</a></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><div style="font-family:'Hanken Grotesk';font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#D6D6D6;margin-bottom:2px">Contacto</div><a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;color:#D6D6D6">hola@relevo.studio</a><a href="#componentes" style="font-family:'Hanken Grotesk';font-size:14.5px;color:#D6D6D6">LinkedIn</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="voz" style="border-bottom:1px solid rgba(255,255,255,.12)">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">14 — Voz y tono</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Cómo suena Relevo</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Directo, específico y sin hype. Hablamos de operación y resultados, no de tecnología. Español neutro de LATAM, frases cortas, verbos concretos. Si una frase se puede acortar, se acorta.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:34px">
+      <div style="border:1px solid rgba(31,168,160,.3);border-radius:24px;padding:26px;background:rgba(31,168,160,.07)">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#1FA8A0;margin-bottom:16px">Decimos</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-family:'Hanken Grotesk';font-size:15px;color:#D6D6D6;line-height:1.55">
+          <div>sistemas · operación · conversaciones calificadas</div>
+          <div>recuperación de leads · evidencia de decisión</div>
+          <div>claridad operativa · flujos inteligentes</div>
+          <div style="font-family:'Plus Jakarta Sans';font-weight:600;letter-spacing:-.02em;padding-top:12px;border-top:1px solid rgba(182,44,100,.2)">"Tu equipo pierde 40% de los leads por no responder a tiempo. Eso se arregla."</div>
+        </div>
+      </div>
+      <div style="border:1px solid rgba(255,92,92,.3);border-radius:24px;padding:26px;background:rgba(255,92,92,.07)">
+        <div style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#FF5C5C;margin-bottom:16px">No decimos</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-family:'Hanken Grotesk';font-size:15px;color:#D6D6D6;line-height:1.55">
+          <div>magia de la IA · chatbot · automatización genérica</div>
+          <div>ingresos pasivos · totalmente autónomo</div>
+          <div>revolucionario · disruptivo · game changer</div>
+          <div style="font-family:'Plus Jakarta Sans';font-weight:600;letter-spacing:-.02em;padding-top:12px;border-top:1px solid rgba(255,198,61,.2)">"Potenciamos tu negocio con el poder transformador de la inteligencia artificial."</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px">
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px;background:#141414"><div style="font-weight:700;font-size:16px;letter-spacing:-.02em;margin-bottom:6px">Preciso</div><p style="font-family:'Hanken Grotesk';font-size:13.5px;color:#B4B4B4;line-height:1.6">Números, plazos y alcances concretos. Si no lo podemos sostener, no lo escribimos.</p></div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px;background:#141414"><div style="font-weight:700;font-size:16px;letter-spacing:-.02em;margin-bottom:6px">Opinado</div><p style="font-family:'Hanken Grotesk';font-size:13.5px;color:#B4B4B4;line-height:1.6">Recomendamos un camino y explicamos por qué. No enumeramos opciones neutras.</p></div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px;background:#141414"><div style="font-weight:700;font-size:16px;letter-spacing:-.02em;margin-bottom:6px">Sin adorno</div><p style="font-family:'Hanken Grotesk';font-size:13.5px;color:#B4B4B4;line-height:1.6">Cero adjetivos de relleno. El adjetivo se gana con un dato al lado.</p></div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px;background:#141414"><div style="font-weight:700;font-size:16px;letter-spacing:-.02em;margin-bottom:6px">Cercano</div><p style="font-family:'Hanken Grotesk';font-size:13.5px;color:#B4B4B4;line-height:1.6">Tuteo, nunca "usted". Somos socios operativos, no proveedores formales.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tokens">
+  <div style="max-width:1140px;margin:0 auto;padding:72px 40px">
+    <p style="font-family:'Hanken Grotesk';font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E06A96;margin-bottom:10px">15 — Tokens</p>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-.04em;margin-bottom:10px">Referencia rápida</h2>
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:15px;max-width:700px;line-height:1.6;margin-bottom:34px;text-wrap:pretty">Los nombres canónicos para el equipo de desarrollo. Las rampas completas siguen el patrón <span style="font-family:ui-monospace,monospace;font-size:12.5px;background:rgba(182,44,100,.1);color:#E06A96;padding:2px 6px;border-radius:5px">--rv-{color}-{50…900}</span>.</p>
+
+    <div style="border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;background:#141414">
+      <sc-for list="{{ tokenGroups }}" as="g" hint-placeholder-count="5">
+        <div>
+          <div style="padding:14px 24px;background:#1C1C1C;font-family:'Hanken Grotesk';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.68);border-bottom:1px solid rgba(255,255,255,.1)">{{ g.title }}</div>
+          <sc-for list="{{ g.rows }}" as="row" hint-placeholder-count="6">
+            <div style="display:grid;grid-template-columns:minmax(180px,1fr) minmax(160px,1fr) 1.4fr;gap:18px;padding:12px 24px;border-bottom:1px solid rgba(255,255,255,.07);align-items:baseline">
+              <span style="font-family:ui-monospace,monospace;font-size:12.5px;color:#E06A96">{{ row.token }}</span>
+              <span style="font-family:ui-monospace,monospace;font-size:12.5px;color:#FFFFFF">{{ row.value }}</span>
+              <span style="font-family:'Hanken Grotesk';font-size:13.5px;color:#B4B4B4">{{ row.use }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </sc-for>
+    </div>
+
+    <p style="font-family:'Hanken Grotesk';color:#B4B4B4;font-size:14px;line-height:1.7;margin-top:34px;max-width:760px;text-wrap:pretty"><strong style="color:#FFFFFF">Nota.</strong> Plus Jakarta Sans y Hanken Grotesk son libres y licenciables. Este es el sistema base de Relevo Studio: cubre marca, website y las piezas de comunicación. La escala de color es idéntica a la del sistema de origen, valor por valor. Del latín <em>relevare</em> — hacer ligero lo que pesa.</p>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;pausarMotion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Documento&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const r = (name, note, prefix, steps) => ({
+      name, note,
+      steps: steps.map(([n, hex, use]) => ({ token: '--rv-' + prefix + '-' + n, hex, use }))
+    });
+    return {
+      waveDots: (() => {
+        const out = [];
+        for (let c = 0; c < 46; c++) {
+          for (let r = 0; r < 11; r++) {
+            const x = 12 + c * 8.4;
+            const phase = (c / 46) * Math.PI * 2.4;
+            const y = 30 + r * 16 + Math.sin(phase) * 26 + Math.sin(phase * 1.7) * 8;
+            const near = c / 46;
+            out.push({
+              x: x.toFixed(1),
+              y: y.toFixed(1),
+              r: (0.9 + near * 1.5).toFixed(2),
+              fill: near > 0.86 ? '#B62C64' : (near > 0.66 ? '#FFC63D' : '#B4B4B4'),
+              o: (0.18 + near * 0.62).toFixed(2)
+            });
+          }
+        }
+        return out;
+      })(),
+      tokenGroups: [
+        { title: 'Color', rows: [
+          { token: '--rv-ink-000', value: '#000000', use: 'Void: hero, atmósfera, cierres' },
+          { token: '--rv-ink-100', value: '#0A0A0A', use: 'Fondo por defecto' },
+          { token: '--rv-ink-200', value: '#141414', use: 'Superficie de card' },
+          { token: '--rv-ink-300', value: '#1C1C1C', use: 'Panel y fondo hundido' },
+          { token: '--rv-ink-400', value: '#262626', use: 'Hover y bordes fuertes' },
+          { token: '--rv-text-100', value: '#FFFFFF', use: 'Titulares y texto primario' },
+          { token: '--rv-text-200', value: '#D6D6D6', use: 'Cuerpo largo' },
+          { token: '--rv-text-300', value: '#B4B4B4', use: 'Texto secundario' },
+          { token: '--rv-text-400', value: '#8A8A8A', use: 'Terciario, labels, placeholders' },
+          { token: '--rv-pink-500', value: '#B62C64', use: 'Acción: CTA, énfasis, foco' },
+          { token: '--rv-pink-600', value: '#98204F', use: 'Hover de acción' },
+          { token: '--rv-pink-300', value: '#E06A96', use: 'Overlines y links' },
+          { token: '--rv-pink-200', value: '#2A0A17', use: 'Superficie de acento' },
+          { token: '--rv-purple-500', value: '#7B3E9C', use: 'Logo: anillo que entrega. Método y research' },
+          { token: '--rv-purple-600', value: '#5F2A7D', use: 'Hover y trazo sobre claro' },
+          { token: '--rv-purple-300', value: '#B57FCB', use: 'Texto morado sobre negro' },
+          { token: '--rv-purple-200', value: '#1D0E24', use: 'Superficie de método' },
+          { token: '--rv-yellow-500', value: '#FFC63D', use: 'Datos, métricas, nodos' },
+          { token: '--rv-yellow-400', value: '#FFDA80', use: 'Texto amarillo sobre negro' },
+          { token: '--rv-yellow-200', value: '#2A1F08', use: 'Superficie de dato' },
+          { token: '--rv-teal-500', value: '#1FA8A0', use: 'Logo: anillo que recibe. Producto y sistema' },
+          { token: '--rv-teal-600', value: '#1B8F86', use: 'Hover de turquesa' },
+          { token: '--rv-teal-200', value: '#072622', use: 'Superficie de producto' },
+          { token: '--rv-state-ok', value: '#1FA8A0', use: 'Correcto, válido, activo (mismo turquesa)' },
+          { token: '--rv-state-err', value: '#FF5C5C', use: 'Incorrecto, error, prohibido' },
+          { token: '--rv-orange-500', value: '#F2662C', use: 'Campaña, gráficos y acentos de producto' },
+          { token: '--rv-orange-600', value: '#C24B15', use: 'Hover de naranja' },
+          { token: '--rv-orange-200', value: '#2A1108', use: 'Superficie de campaña' },
+          { token: '--rv-line', value: 'rgba(255,255,255,.12)', use: 'Bordes y divisores' }
+        ]},
+        { title: 'Modo claro (solo producto)', rows: [
+          { token: '--rv-lt-base', value: '#F7F7F5', use: 'Fondo de producto y documentación' },
+          { token: '--rv-lt-text', value: '#111111', use: 'Texto primario en claro' },
+          { token: '--rv-lt-muted', value: '#5A5A5A', use: 'Texto secundario en claro' },
+          { token: '--rv-lt-pink-surface', value: '#FDECF2', use: 'Superficie de acento en claro' },
+          { token: '--rv-lt-line', value: 'rgba(0,0,0,.1)', use: 'Bordes en claro' }
+        ]},
+
+        { title: 'Tipografía', rows: [
+          { token: '--rv-font-display', value: 'Plus Jakarta Sans', use: 'Headers, botones, wordmark' },
+          { token: '--rv-font-text', value: 'Hanken Grotesk', use: 'Cuerpo largo y etiquetas de UI' },
+          { token: '--rv-tracking-head', value: '-0.05em', use: 'Constante en todos los headers' },
+          { token: '--rv-tracking-over', value: '0.1em', use: 'Overlines en mayúsculas' },
+          { token: '--rv-tracking-desc', value: '0.28em', use: 'Descriptor apilado del wordmark' },
+          { token: '--rv-leading-head', value: '1.02–1.1', use: 'Interlineado de titulares' },
+          { token: '--rv-leading-body', value: '1.6', use: 'Interlineado de cuerpo' }
+        ]},
+        { title: 'Forma y elevación', rows: [
+          { token: '--rv-radius-sm', value: '14px', use: 'Inputs, chips, cards chicas' },
+          { token: '--rv-radius-md', value: '20px', use: 'Cards, imágenes' },
+          { token: '--rv-radius-lg', value: '32px', use: 'Paneles de sección' },
+          { token: '--rv-radius-xl', value: '40px', use: 'Contenedores hero' },
+          { token: '--rv-radius-pill', value: '999px', use: 'Botones y badges' },
+          { token: '--rv-shadow-cta', value: '0 4px 16px rgba(182,44,100,.4)', use: 'Hover de botón' },
+          { token: '--rv-shadow-card', value: '0 24px 64px rgba(0,0,0,.22),0 4px 16px rgba(0,0,0,.1)', use: 'Paneles flotantes' }
+        ]},
+        { title: 'Layout', rows: [
+          { token: '--rv-container', value: '1140px', use: 'Ancho máximo de contenido' },
+          { token: '--rv-gutter', value: '24px', use: 'Separación entre columnas' },
+          { token: '--rv-margin', value: '40px / 22px', use: 'Márgenes desktop / mobile' },
+          { token: '--rv-section-y', value: '120px / 72px', use: 'Aire vertical de sección' },
+          { token: '--rv-bp-sm', value: '720px', use: 'Corte a mobile' },
+          { token: '--rv-bp-lg', value: '1024px', use: 'Corte a desktop' }
+        ]},
+        { title: 'Motion', rows: [
+          { token: '--rv-ease-quart', value: 'cubic-bezier(.25,1,.5,1)', use: 'Easing firma, uso por defecto' },
+          { token: '--rv-ease-inout', value: 'cubic-bezier(.4,0,.2,1)', use: 'Transiciones simétricas' },
+          { token: '--rv-ease-overshoot', value: 'cubic-bezier(.34,1.26,.64,1)', use: 'Micro-interacciones de estado' },
+          { token: '--rv-ease-bounce', value: 'cubic-bezier(.175,.885,.32,1.2)', use: 'Confirmaciones puntuales' },
+          { token: '--rv-ease-carousel', value: 'cubic-bezier(.65,0,.35,1)', use: 'Sliders y carruseles' },
+          { token: '--rv-dur-fast', value: '300ms', use: 'Hover y estados' },
+          { token: '--rv-dur-base', value: '1s', use: 'Entradas por scroll' }
+        ]}
+      ],
+      cols: [1,2,3,4,5,6,7,8,9,10,11,12],
+      marquee: ['Estrategia','Producto','IA aplicada','Automatización','Diseño','Implementación','Estrategia','Producto','IA aplicada','Automatización','Diseño','Implementación'],
+      motionState: (this.props.pausarMotion ?? false) ? 'paused' : 'running',
+      ramps: [
+        r('Negro', 'la base: superficies y elevación', 'ink', [
+          ['000', '#000000', 'Void: hero y atmósfera'],
+          [100, '#0A0A0A', 'Fondo por defecto'],
+          [200, '#141414', 'Superficie de card'],
+          [300, '#1C1C1C', 'Panel y fondo hundido'],
+          [400, '#262626', 'Hover y bordes fuertes']
+        ]),
+        r('Blanco', 'tipografía y jerarquía de texto', 'text', [
+          [100, '#FFFFFF', 'Titulares y texto primario'],
+          [200, '#D6D6D6', 'Cuerpo largo'],
+          [300, '#B4B4B4', 'Texto secundario'],
+          [400, '#8A8A8A', 'Terciario, labels y placeholders']
+        ]),
+        r('Rosa', 'acción · CTA, foco y énfasis', 'pink', [
+          [100, '#26060F', 'Superficie de estado'],
+          [200, '#2A0A17', 'Fondo de bloque rosa'],
+          [300, '#E06A96', 'Overlines y texto de acento'],
+          [500, '#B62C64', 'Acción principal'],
+          [600, '#98204F', 'Hover de acción'],
+          [800, '#4A0F26', 'Parada oscura del gradiente']
+        ]),
+        r('Morado', 'logotipo y método: el anillo que entrega', 'purple', [
+          [100, '#140A18', 'Fondo de método'],
+          [200, '#1D0E24', 'Superficie de bloque morado'],
+          [300, '#B57FCB', 'Texto morado sobre negro'],
+          [500, '#7B3E9C', 'Anillo izquierdo del logotipo'],
+          [600, '#5F2A7D', 'Hover y trazo sobre claro'],
+          [800, '#2C1436', 'Parada oscura del gradiente']
+        ]),
+        r('Turquesa', 'marca y producto: el anillo que recibe', 'teal', [
+          [100, '#072622', 'Superficie de producto'],
+          [300, '#6FD9CE', 'Texto turquesa sobre negro'],
+          [500, '#1FA8A0', 'Anillo derecho del logotipo · estado correcto'],
+          [600, '#1B8F86', 'Hover de turquesa'],
+          [800, '#146E67', 'Trazos y bordes oscuros']
+        ]),
+        r('Amarillo', 'datos, métricas y destacados', 'yellow', [
+          [100, '#1A1305', 'Fondo de dato'],
+          [200, '#2A1F08', 'Bloque de advertencia'],
+          [300, '#3D2D0C', 'Bordes amarillos'],
+          [400, '#FFDA80', 'Texto amarillo sobre negro'],
+          [500, '#FFC63D', 'Acento de dato y nodos'],
+          [600, '#D19410', 'Hover de amarillo']
+        ]),
+        r('Naranja', 'campaña y calor: piezas de vida corta', 'orange', [
+          [200, '#2A1108', 'Superficie de campaña'],
+          [300, '#F9A574', 'Texto naranja sobre negro'],
+          [500, '#F2662C', 'Base de campaña y gráficos'],
+          [600, '#C24B15', 'Hover y trazos']
+        ]),
+        r('Estado', 'correcto e incorrecto', 'state', [
+          ['ok', '#1FA8A0', 'Correcto, válido, activo'],
+          ['ok-bg', '#0B2A25', 'Superficie de estado válido'],
+          ['err', '#FF5C5C', 'Incorrecto, error, uso prohibido'],
+          ['err-bg', '#2E0F12', 'Superficie de error']
+        ])
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>
