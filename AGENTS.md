@@ -12,6 +12,10 @@
   the required experience brief. Read it before proposing homepage structure,
   motion architecture, 3D concepts, conversion flows, messaging, copy, or major
   interaction patterns.
+- [`context/technical-architecture-v1.md`](context/technical-architecture-v1.md)
+  is the approved v1 technical direction. Read it before scaffolding the app,
+  adding rendering or animation dependencies, changing the Scene Lab approach,
+  or proposing a different production stack.
 - [`design-system/`](design-system/) is the visual source of truth. Inspect its
   README, relevant docs, tokens, and Claude Design reference before building UI.
 - Canonical values live in `design-system/tokens/tokens.css`; preserved Claude
@@ -46,8 +50,8 @@
   customer-facing brand.
 - Do not invent the public relationship between Cauvia and Relevo Studio.
 - Final headline, final chapter order, public case-study permissions, exact agent
-  flow, service taxonomy, pricing, and production stack remain open decisions.
-  Surface them instead of guessing.
+  flow, service taxonomy and pricing remain open decisions. Surface them instead
+  of guessing.
 
 ## Experience direction
 
@@ -96,6 +100,38 @@
 - Photography, if used, should show real work and operations, not generic office
   stock, robots, circuits, holograms, or fabricated charts.
 
+## Approved technical direction
+
+- Build the production site with **Next.js + TypeScript**.
+- Use **Three.js directly** for the persistent WebGL scene. Do not introduce React
+  Three Fiber unless an explicit later decision changes the architecture.
+- Use **custom GLSL** when it materially improves GPU-driven particle morphing or
+  another visual behavior; do not shader-ize simple effects without reason.
+- Use **GSAP + ScrollTrigger** as the primary narrative timeline and scroll-scene
+  orchestration layer.
+- Use **CSS Modules / scoped plain CSS** driven by canonical Relevo design tokens.
+  Do not introduce Tailwind by default.
+- Treat **Vercel** as the intended initial production deployment target.
+- **Lenis is deferred** until native scrolling and ScrollTrigger work correctly;
+  do not add it merely because smooth-scroll is fashionable.
+- Do not add overlapping visual stacks such as Spline, Rive, Framer Motion or
+  extra particle libraries without a concrete requirement and explicit approval.
+- Higgsfield or similar generative video tools may be used only for creative
+  previsualization/reference, not as the production renderer for the interactive
+  scene.
+
+## Scene Lab first
+
+- Do not begin by building the complete homepage.
+- The first implementation milestone is an isolated `experiments/particle-scene/`
+  Scene Lab that proves the core visual engine and interaction quality.
+- Progress from world/camera/depth → performant particles → original sculpture →
+  multiple target states → GPU morphing → reversible scroll timeline → camera
+  choreography → mobile/reduced-motion/performance tiers.
+- Integrate the visual engine into Next.js only after the Scene Lab reaches the
+  quality gate defined in `context/technical-architecture-v1.md`.
+- Do not hide a mediocre scene behind more sections, cards, copy or effects.
+
 ## Motion architecture and accessibility
 
 - The intended experience should be designed around a persistent visual scene,
@@ -110,13 +146,25 @@
   must preserve the story rather than merely disable everything.
 - Mobile is a first-class composition, not a shrunken desktop scene.
 - Existing motion tokens and keyframes describe approved motion language but do
-  not define the final technical architecture.
-- Do not assume CSS scroll timelines are the final website solution.
+  not define every scene implementation detail.
 - The signature easing is `cubic-bezier(.25,1,.5,1)`. Overshoot and bounce are
   limited to state micro-interactions, never credibility-critical sections.
-- No production framework, styling library, WebGL stack, rendering approach,
-  smooth-scroll library, scroll system, or animation stack is approved yet. Do
-  not initialize one without instruction.
+- Avoid unnecessary allocations in the render loop and design for explicit GPU
+  resource lifecycle, device-pixel-ratio caps and quality tiers.
+
+## AI-assisted development workflow
+
+- Claude Code is the preferred primary builder for the initial Scene Lab and
+  heavy visual implementation. Model selection is operational and may change
+  without changing the architecture.
+- Cursor is appropriate for fast local visual iteration, code navigation and
+  targeted implementation changes.
+- Codex or another independent coding agent may be used to audit major
+  milestones, especially WebGL architecture, performance, shader/buffer design,
+  mobile degradation, accessibility, bundle boundaries and later agent/server
+  security.
+- No coding agent may override repository sources of truth merely because it can
+  generate a plausible alternative.
 
 ## Conversion experience
 
