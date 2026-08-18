@@ -1,0 +1,375 @@
+/* Relevo Scene Lab v1 — scoped plain CSS driven by canonical Festa tokens.
+   Values are copied from design-system/tokens/tokens.css. Nothing invented. */
+
+:root {
+  --rv-ink-000: #000000;
+  --rv-ink-100: #0A0A0A;
+  --rv-ink-300: #1C1C1C;
+
+  --rv-text-100: #FFFFFF;
+  --rv-text-200: #D6D6D6;
+  --rv-text-300: #B4B4B4;
+  --rv-text-400: #8A8A8A;
+
+  --rv-purple-500: #7B3E9C;
+  --rv-teal-300: #6FD9CE;
+  --rv-teal-500: #1FA8A0;
+  --rv-pink-300: #E06A96;
+  --rv-pink-500: #B62C64;
+  --rv-yellow-500: #FFC63D;
+  --rv-orange-500: #F2662C;
+
+  --rv-line: rgba(255, 255, 255, .12);
+
+  --rv-font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --rv-font-text: "Hanken Grotesk", system-ui, sans-serif;
+
+  --rv-space-2: 8px;
+  --rv-space-3: 12px;
+  --rv-space-4: 16px;
+  --rv-space-6: 24px;
+  --rv-space-8: 32px;
+  --rv-margin: 40px;
+  --rv-margin-mobile: 22px;
+  --rv-container: 1140px;
+
+  --rv-radius-pill: 999px;
+  --rv-ease-quart: cubic-bezier(.25, 1, .5, 1);
+  --rv-dur-fast: 300ms;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--rv-ink-000); }
+
+body {
+  margin: 0;
+  background: var(--rv-ink-000);
+  color: var(--rv-text-100);
+  font-family: var(--rv-font-display);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  overscroll-behavior-y: none;
+}
+
+h2, p { margin: 0; }
+
+#gl {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+}
+
+/* ---------------------------------------------------------------------------
+   Atmósfera — Festa section 06, composited over the canvas in the documented
+   order. Every layer is inert to input.
+--------------------------------------------------------------------------- */
+.atmos {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 1 · Halo. One light source, breathing slowly, never blinking. Anchors the
+      frame and stops the WebGL void reading as a flat black rectangle. */
+.atmos__halo {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  width: 150vmax;
+  height: 150vmax;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  opacity: .5;
+  background: radial-gradient(circle,
+    rgba(123, 62, 156, .16) 0%,
+    rgba(31, 168, 160, .07) 34%,
+    rgba(31, 168, 160, 0) 62%);
+  animation: rv-breathe 19s cubic-bezier(.4, 0, .2, 1) infinite;
+}
+
+/* 2 · Interferencia. Two concentric wavefronts at different pitch; the moiré
+      only appears where they cross. Held very low — in the design system this
+      is a texture, and here the 3D scene is already made of interference. */
+.atmos__interference {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: screen;
+  opacity: .16;
+  background:
+    repeating-radial-gradient(circle at 50% 118%, rgba(224, 106, 150, .30) 0 1px, rgba(0,0,0,0) 1px 26px),
+    repeating-radial-gradient(circle at 50% 118%, rgba(255, 198, 61, .14) 0 1px, rgba(0,0,0,0) 1px 34px);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 118%, #000 12%, transparent 70%);
+  mask-image: radial-gradient(ellipse at 50% 118%, #000 12%, transparent 70%);
+}
+
+/* 4 · Grano y viñeta. Always last, over everything. This is what keeps the
+      black from looking digital, and it is the cheapest premium cue available:
+      a static SVG turbulence costs one composite. */
+.atmos__grain {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .13;
+  mix-blend-mode: overlay;
+}
+
+.atmos__vignette {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 22vmax 9vmax #000;
+}
+
+@keyframes rv-breathe {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: .44; }
+  50%      { transform: translate(-50%, -50%) scale(1.08); opacity: .56; }
+}
+
+/* 3 · Espectro. Festa: the only line where pink, orange and yellow coexist;
+      it separates sections and marks progress; 2px maximum. */
+.spectrum {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  z-index: 4;
+  pointer-events: none;
+  background: rgba(255, 255, 255, .06);
+}
+
+.spectrum i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  background: linear-gradient(90deg,
+    var(--rv-pink-500) 0%,
+    var(--rv-orange-500) 52%,
+    var(--rv-yellow-500) 100%);
+}
+
+/* ---------------------------------------------------------------------------
+   Content. Semantic DOM over the scene, never text baked into WebGL.
+--------------------------------------------------------------------------- */
+#scroller {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.mark {
+  position: fixed;
+  top: var(--rv-space-6);
+  left: var(--rv-margin);
+  right: var(--rv-margin);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: var(--rv-space-3);
+}
+
+.lockup {
+  font-family: var(--rv-font-display);
+  font-weight: 800;
+  letter-spacing: -.05em;
+  line-height: 1.1;
+  font-size: 19px;
+  color: var(--rv-text-100);
+  white-space: nowrap;
+}
+
+.lockup svg {
+  width: .9em;
+  height: .55em;
+  vertical-align: baseline;
+  margin-bottom: -.012em;
+  overflow: visible;
+}
+
+.lockup__d {
+  font-weight: 600;
+  font-size: .58em;
+  letter-spacing: -.04em;
+  color: var(--rv-text-200);
+  margin-left: .16em;
+}
+
+.mark__tag {
+  font-family: var(--rv-font-text);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--rv-text-400);
+  border: 1px solid var(--rv-line);
+  border-radius: var(--rv-radius-pill);
+  padding: 5px 12px;
+}
+
+/* Each chapter occupies a tall band of scroll but its copy sticks to the
+   viewport while that band passes. Without this the text drifts up and out
+   during its own chapter, which reads as the content sliding off a scene that
+   is standing still — exactly the "stack of sections over a canvas" feeling the
+   architecture is supposed to avoid. Native sticky, no JS positioning. */
+.band {
+  position: relative;
+  display: block;
+}
+
+.chapter {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--rv-margin);
+  max-width: 640px;
+  will-change: opacity, transform;
+  pointer-events: none;
+}
+
+.chapter > * { pointer-events: auto; }
+
+/* Asymmetric framing. The sculpture is composed off-centre per chapter, so the
+   text has to move with it rather than sitting in one column all the way down. */
+.chapter--right { margin-left: auto; text-align: right; align-items: flex-end; }
+
+.chapter--center {
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+  align-items: center;
+}
+
+/* Chapters 2 and 4 sit at the top of their band so the flat compositions below
+   them keep their negative space. */
+[data-i="4"] .chapter, [data-i="5"] .chapter { justify-content: flex-end; padding-bottom: 13vh; }
+
+.chapter__over {
+  font-family: var(--rv-font-text);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--rv-text-400);
+  margin-bottom: var(--rv-space-4);
+}
+
+.chapter__title {
+  font-family: var(--rv-font-display);
+  font-size: clamp(2.1rem, 5vw, 56px);
+  font-weight: 800;
+  letter-spacing: -.05em;
+  line-height: 1.02;
+  color: var(--rv-text-100);
+}
+
+.chapter__body {
+  font-family: var(--rv-font-text);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--rv-text-300);
+  max-width: 46ch;
+  margin-top: var(--rv-space-6);
+  text-wrap: pretty;
+}
+
+.chapter--right .chapter__body { margin-left: auto; }
+.chapter--center .chapter__body { margin-inline: auto; }
+
+/* ---------------------------------------------------------------------------
+   Debug. Kept off-screen by default; the visual experience must never carry a
+   HUD. Toggled with D.
+--------------------------------------------------------------------------- */
+.debug {
+  position: fixed;
+  right: var(--rv-space-3);
+  bottom: var(--rv-space-6);
+  z-index: 5;
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 1.55;
+  color: var(--rv-text-300);
+  background: rgba(10, 10, 10, .82);
+  border: 1px solid var(--rv-line);
+  border-radius: 8px;
+  padding: 10px 13px;
+  white-space: pre;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+}
+
+.debug b { color: var(--rv-teal-300); font-weight: 600; }
+.debug u { color: var(--rv-yellow-500); text-decoration: none; }
+
+.hint {
+  position: fixed;
+  left: var(--rv-margin);
+  bottom: var(--rv-space-6);
+  z-index: 3;
+  margin: 0;
+  font-family: ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .18);
+  pointer-events: none;
+}
+
+@media (max-width: 720px) {
+  :root { --rv-margin: var(--rv-margin-mobile); }
+
+  .mark { top: var(--rv-space-4); }
+  .lockup { font-size: 17px; }
+  .mark__tag { display: none; }
+
+  /* Portrait composition: the sculpture is framed in the upper half by the
+     camera, so every chapter's text drops to the lower half and gets a
+     legibility scrim. Text over particles is the one place this scene can
+     become unreadable, and it is not acceptable for it to. */
+  .chapter,
+  .chapter--right,
+  .chapter--center {
+    max-width: none;
+    margin: 0;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 15vh;
+  }
+
+  .chapter--right .chapter__body,
+  .chapter--center .chapter__body { margin-left: 0; }
+
+  .chapter::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 64%;
+    background: linear-gradient(to top, rgba(0,0,0,.88) 0%, rgba(0,0,0,.56) 44%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .chapter__body { font-size: 14.5px; margin-top: var(--rv-space-4); }
+  .hint { display: none; }
+  .atmos__interference { opacity: .1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atmos__halo { animation: none; }
+  .spectrum i { transition: none; }
+}
