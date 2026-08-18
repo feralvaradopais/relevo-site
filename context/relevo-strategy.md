@@ -4,6 +4,8 @@ This file is a website-specific strategic brief derived from the stable Relevo S
 
 It is intentionally concise. `relevo-studio-os` remains the strategic source of truth; this file gives website implementation agents enough approved context to make content and narrative decisions without inventing positioning.
 
+For the approved v1 experience direction, also read `context/website-experience-brief.md`.
+
 ## What Relevo Studio is
 
 Relevo Studio is an AI-native systems studio.
@@ -41,9 +43,29 @@ The website should therefore favor:
 - clarity and specificity over abstract technology language;
 - the connection between people, workflows, data and software over standalone agents or chatbots.
 
+## Website v1 decisions
+
+The first public website has a specific strategic job:
+
+- act as a premium credibility artifact for prospects arriving from outreach, proposals, referrals and demos;
+- make the Relevo thesis understandable through an experiential narrative rather than a conventional service catalog;
+- show concrete evidence of how Relevo diagnoses and builds;
+- lead toward an intelligent conversational experience rather than relying only on a generic contact form.
+
+The v1 homepage should sell the **studio capability**, not a portfolio of Relevo products.
+
+- Do not create a Products section by default.
+- Do not mention Workieo anywhere on the public Relevo Studio website.
+- Serchi and Cauvia should remain absent from the v1 public homepage unless explicitly approved later.
+- Do not invent or imply a public corporate relationship between Cauvia and Relevo Studio beyond approved source-of-truth material.
+
+The intended visitor is primarily a decision-maker evaluating whether Relevo is credible enough to trust with an important operational or commercial problem. The initial site should be especially strong for warm prospects who already encountered Relevo through a commercial interaction.
+
+The detailed storytelling, visual behavior and agent direction live in `context/website-experience-brief.md`.
+
 ## Current product / business context
 
-Stable Relevo context currently includes:
+The following context remains useful internally even though the v1 homepage is not a product portfolio.
 
 ### Relevo Outreach
 
@@ -74,6 +96,24 @@ Current Cauvia strategy and product truth live in the separate `cauvia-os` repos
 ### Relevo Engage
 
 `Relevo Engage` is historical context only and must not be used as a current customer-facing brand.
+
+## Commercial pattern to preserve
+
+Current Relevo proposal work consistently follows a systems-first pattern:
+
+1. inspect the business before prescribing a solution;
+2. identify where a sale, decision, workflow or body of knowledge gets stuck;
+3. frame the problem in operational terms;
+4. design a system rather than an isolated feature;
+5. combine people, data, software, workflows and AI where each belongs;
+6. build enough to demonstrate the idea concretely;
+7. deliver a working system rather than stopping at a presentation.
+
+Two recurring ideas are strategically useful, although neither is automatically final homepage copy:
+
+> No es trabajo de una persona. Es trabajo de un sistema.
+
+> Entregamos el sistema funcionando, no la presentación.
 
 ## Language guidance
 
@@ -107,22 +147,24 @@ When shaping site structure or copy, preserve these principles:
 2. Explain Relevo through systems and outcomes rather than a catalog of AI features.
 3. Make the work feel concrete: workflows, decisions, conversations, tools, data and operational actions.
 4. Keep the brand premium and technically credible; avoid futurist AI clichés.
-5. Use the products and systems as evidence of the studio thesis when appropriate, but do not force a portfolio architecture that has not been explicitly approved.
+5. Favor specific evidence and demonstrations over a generic logo wall or service grid.
 6. Treat visual spectacle and motion as a way to reinforce the systems narrative, not as a substitute for a clear value proposition.
+7. Preserve the central experience idea of complexity becoming a working system.
 
 ## What is not yet decided
 
-This brief does **not** define the final website strategy. The following remain open until explicitly approved:
+The following remain open until explicitly approved:
 
-- primary website audience;
-- primary CTA;
-- final homepage information architecture;
-- exact service/package taxonomy;
-- which products should appear on the public site and how prominently;
-- customer proof and case studies;
-- pricing or commercial packaging;
-- final relationship between Cauvia and Relevo Studio on the public site;
-- final copy and messaging hierarchy;
+- final headline and copy hierarchy;
+- final homepage chapter count and exact information architecture;
+- exact service/package taxonomy, if one is needed at all on the homepage;
+- which client examples can be named publicly;
+- which commercial findings are approved as public evidence;
+- pricing or commercial packaging on the public site;
+- whether Serchi or Cauvia should appear anywhere beyond the v1 homepage in a later site architecture;
+- final public relationship between Cauvia and Relevo Studio;
+- exact public agent conversation flow and integrations;
+- proposal-aware agent implementation;
 - production framework and motion/rendering architecture.
 
 Agents must surface these as open decisions rather than silently resolving them.
