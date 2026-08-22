@@ -16,6 +16,11 @@
   is the approved v1 technical direction. Read it before scaffolding the app,
   adding rendering or animation dependencies, changing the Scene Lab approach,
   or proposing a different production stack.
+- [`context/homepage-storyboard-v1.md`](context/homepage-storyboard-v1.md) is the
+  approved narrative and cinematic direction for the next homepage / Scene Lab
+  iteration. Read it before changing chapter structure, copy direction, particle
+  hierarchy, the persistent visual protagonist, camera / transition choreography,
+  mobile composition, evidence behavior, or Scene Lab quality criteria.
 - [`design-system/`](design-system/) is the visual source of truth. Inspect its
   README, relevant docs, tokens, and Claude Design reference before building UI.
 - Canonical values live in `design-system/tokens/tokens.css`; preserved Claude
@@ -49,15 +54,24 @@
 - `Relevo Engage` is historical context only and must not be used as a current
   customer-facing brand.
 - Do not invent the public relationship between Cauvia and Relevo Studio.
-- Final headline, final chapter order, public case-study permissions, exact agent
-  flow, service taxonomy and pricing remain open decisions. Surface them instead
-  of guessing.
+- The current homepage direction uses seven cognitive acts and one persistent
+  visual protagonist. Final exact copy, public proof, exact agent flow, service
+  taxonomy, pricing, geometry, micro-beats and production timings remain open
+  decisions. Surface them instead of guessing.
 
 ## Experience direction
 
 - The core narrative is **complexity becoming a working system**.
 - The conceptual progression is: weight/friction → understanding → orchestration
   → system → evidence → conversation.
+- The current homepage storyboard resolves this into **seven cognitive acts** with
+  roughly 12–15 internal cinematic beats. Do not turn every cinematic beat into
+  a separate section or headline.
+- The current opening direction is **“Hay trabajo que no debería costar tanto
+  trabajo.”** Treat it as the preferred v1 direction while the supporting copy is
+  still being refined through human creative review.
+- The visual experience should be carried by one persistent original protagonist,
+  internally called **The Relevo Organism**, rather than unrelated hero objects.
 - Dala is the primary reference for the grammar and ambition of the experience,
   not for Relevo's identity or source assets.
 - It is acceptable to reinterpret Dala-like mechanics such as a persistent
@@ -67,12 +81,17 @@
   experience.
 - Never copy Dala source code, proprietary assets, exact models, exact geometry,
   exact object sequence, exact choreography, timings, camera paths, composition,
-  copy, typography, or page structure.
+  copy, typography, page structure, or its characteristic triangle particle
+  primitive.
 - A brain-like or organic particle sculpture may be explored only as an original
   Relevo asset, not as a reproduction of Dala's sculpture.
 - Particles are meaningful generative material, not decoration. They can
   represent work, information, decisions, conversations, actions and knowledge
   becoming coordinated.
+- Preserve particle hierarchy: atmospheric particles for depth, larger structural
+  particles for the protagonist and a limited number of hero / transfer particles
+  for meaningful spatial events. Do not equate sophistication with maximum
+  particle count or a homogeneous field of tiny points.
 - Avoid unrelated visual tricks. Every major motion idea should support the
   systems narrative or the emotional pacing of the page.
 
@@ -128,8 +147,14 @@
 - Progress from world/camera/depth → performant particles → original sculpture →
   multiple target states → GPU morphing → reversible scroll timeline → camera
   choreography → mobile/reduced-motion/performance tiers.
+- The next Scene Lab iteration must be evaluated against
+  `context/homepage-storyboard-v1.md`: particle scale and hierarchy, memorable
+  silhouette, meaningful friction behavior, structure-revealing camera movement,
+  a strong Act 04 coordination payoff, quiet evidence states and authored mobile
+  composition.
 - Integrate the visual engine into Next.js only after the Scene Lab reaches the
-  quality gate defined in `context/technical-architecture-v1.md`.
+  quality gates defined in both `context/technical-architecture-v1.md` and
+  `context/homepage-storyboard-v1.md`.
 - Do not hide a mediocre scene behind more sections, cards, copy or effects.
 
 ## Motion architecture and accessibility
@@ -174,6 +199,8 @@
   about the process, people, tools, manual work, volume, friction and desired
   outcome; summarize what it understood; and propose a cautious system
   hypothesis rather than pretending to know a definitive solution.
+- The current conversation entry direction is to ask about work that costs more
+  effort than it should, not to ask what the visitor wants to automate.
 - A future proposal-aware mode may explain a specific approved proposal using a
   secure non-guessable link or token and strict context isolation.
 - Do not treat a sequential quotation number as sufficient access control.
@@ -184,13 +211,19 @@
 
 - Write in direct, specific LATAM Spanish: short sentences, concrete verbs,
   operational outcomes, no hype or generic AI language.
+- The preferred copy direction is extremely understandable, close and empathetic.
+  As visual sophistication increases, keep language simpler rather than more
+  abstract.
 - Balance conceptual cinematic statements with concrete evidence.
 - Prefer concepts such as systems, operations, intelligent workflows,
   operational clarity, decision evidence, qualified conversations, and lead
   recovery when they accurately describe the content.
 - Avoid claims framed as AI magic, chatbots, passive income, fully autonomous
   operation, no-code empires, or generic automation.
-- Proposal findings can inspire evidence patterns, but are not automatically
-  public case studies or verified outcome claims.
-- Do not publish client names, confidential data, performance claims, or
-  commercial details without explicit approval.
+- Proposal findings can inspire evidence patterns and methodology, but are not
+  automatically public case studies or verified outcome claims.
+- Do not publish prospect names, prospect logos, confidential data, identifying
+  proposal metrics, performance claims, or commercial details without explicit
+  approval.
+- Do not imply that a proposal, demo or prospect engagement is completed client
+  work unless that status and public permission are explicitly approved.
