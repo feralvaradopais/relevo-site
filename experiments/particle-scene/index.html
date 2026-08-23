@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Relevo Scene Lab v1</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="theme-color" content="#000000" />
+
+<!-- Scene Lab only. The production site must self-host both families as WOFF2
+     with font-display:swap, per the design system. Not a production decision. -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+
+<canvas id="gl" aria-hidden="true"></canvas>
+
+<!-- ---------------------------------------------------------------------
+     Festa atmosphere, section 06: "El negro de Relevo no es un fondo: es
+     espacio vacío." Four behaviours of light, composited in the documented
+     order — halo, interferencia, espectro, grano y viñeta.
+
+     Deliberately CSS and SVG rather than a post-processing chain. The design
+     system builds these natively with zero images, they cost no fill rate on
+     top of a 168k-point scene, and putting them in a shader would have meant
+     reinventing an approved part of the brand.
+------------------------------------------------------------------------ -->
+<div class="atmos" aria-hidden="true">
+  <div class="atmos__halo"></div>
+  <div class="atmos__interference"></div>
+  <svg class="atmos__grain" preserveAspectRatio="none">
+    <filter id="rv-grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" /></filter>
+    <rect width="100%" height="100%" filter="url(#rv-grain)" />
+  </svg>
+  <div class="atmos__vignette"></div>
+</div>
+
+<!-- Espectro: the one line in the system where pink, orange and yellow coexist.
+     Festa gives it exactly two jobs — separate sections and mark progress —
+     and caps it at 2px. Used here as the scene-progress readout. -->
+<div class="spectrum" aria-hidden="true"><i id="spectrum-fill"></i></div>
+
+<main id="scroller">
+  <header class="mark">
+    <span class="lockup">relev<svg viewBox="6 0 90 55" aria-hidden="true"><circle cx="39" cy="27.5" r="21.5" fill="none" stroke="#7B3E9C" stroke-width="12"/><circle cx="63" cy="27.5" r="21.5" fill="none" stroke="#1FA8A0" stroke-width="12"/></svg><span class="lockup__d">studio</span></span>
+    <span class="mark__tag">Scene Lab v1</span>
+  </header>
+
+  <!-- Experimental scene labels, NOT homepage copy. They exist so the states
+       are identifiable while art-directing. -->
+  <section class="band" data-i="0"><div class="chapter">
+    <p class="chapter__over">01 — Latente</p>
+    <h2 class="chapter__title">Dos fuentes,<br />una sola forma.</h2>
+    <p class="chapter__body">La estructura no existe por sí sola. La produce enteramente la relación entre quien entrega y quien recibe.</p>
+  </div></section>
+
+  <section class="band" data-i="1"><div class="chapter chapter--right">
+    <p class="chapter__over">02 — Peso</p>
+    <h2 class="chapter__title">Capas que no<br />se alcanzan.</h2>
+    <p class="chapter__body">El trabajo se acumula contra el traspaso. Nada cruza entre una capa y la siguiente.</p>
+  </div></section>
+
+  <section class="band" data-i="2"><div class="chapter">
+    <p class="chapter__over">03 — Canales</p>
+    <h2 class="chapter__title">La materia se<br />vuelve direccional.</h2>
+    <p class="chapter__body">Lo disperso encuentra ruta. La luz viaja por el canal antes que la materia.</p>
+  </div></section>
+
+  <section class="band" data-i="3"><div class="chapter chapter--right">
+    <p class="chapter__over">04 — Relevo</p>
+    <h2 class="chapter__title">Se acorta<br />la distancia.</h2>
+    <p class="chapter__body">Acercar las dos fuentes es lo que vuelve densa y coherente una estructura que estaba vaga.</p>
+  </div></section>
+
+  <section class="band" data-i="4"><div class="chapter chapter--center">
+    <p class="chapter__over">05 — Lectura</p>
+    <h2 class="chapter__title">El sistema, medido.</h2>
+    <p class="chapter__body">Aquí el ruido baja a propósito.</p>
+  </div></section>
+
+  <section class="band" data-i="5"><div class="chapter chapter--center">
+    <p class="chapter__over">06 — Apertura</p>
+    <h2 class="chapter__title">Se gira hacia<br />quien mira.</h2>
+    <p class="chapter__body">Fin del prototipo. La integración a producción ocurre después de la revisión visual.</p>
+  </div></section>
+</main>
+
+<div id="debug" class="debug" hidden></div>
+<p class="hint" aria-hidden="true">D · debug</p>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
