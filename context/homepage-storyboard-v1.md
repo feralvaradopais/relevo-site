@@ -1,15 +1,10 @@
-# Relevo Studio — Homepage Storyboard v1
+# Relevo Studio — Homepage Storyboard & Motion Direction v1
 
 ## Status
 
-Approved creative direction for the **next homepage / Scene Lab iteration**.
+Approved narrative and visual direction for the **homepage keyframe phase and the next Scene Lab iteration**.
 
-This document does **not** freeze final production copy, exact scroll distances, exact
-particle counts, exact geometry, final case-study content, or the final agent flow.
-
-It does define the narrative architecture, cinematic grammar, visual protagonist,
-particle hierarchy, act-level communication goals, mobile principles, and the quality
-bar that should guide the next implementation.
+This document freezes the current **six-act homepage copy** and the core cinematic story. It does **not** freeze exact production geometry, final keyframe artwork, scroll distances, particle counts, shader implementation, agent UX details, or final performance budgets.
 
 Read together with:
 
@@ -19,1051 +14,915 @@ Read together with:
 - `design-system/` — canonical Relevo Studio v5 “Festa” visual system;
 - `AGENTS.md` — repository-wide implementation guardrails.
 
-If this storyboard conflicts with a more fundamental approved source of truth, surface
-the conflict instead of guessing.
+If this storyboard conflicts with a more fundamental approved source of truth, surface the conflict instead of guessing.
 
 ---
 
 ## 1. Creative thesis
 
-The homepage should feel like **one continuous interactive film**, not seven separate
-animated sections.
+The homepage should feel like **one continuous interactive film**, not six independent animated sections.
 
-The narrative remains:
+The cinematic progression is:
 
-> complexity becoming a working system
+> **WORLD → DISASSEMBLY → INSPECTION → REORGANIZATION → VERIFICATION → RESOLVED WORLD**
 
-The more concrete communication frame for the current iteration is:
+The business narrative underneath it is:
 
-> There is work that costs too much work.
+> A company already works, but some work still depends too much on people bridging gaps between information, tools, decisions and systems. Relevo first understands what is really happening, then connects what already exists and builds what is missing. The result is less friction, more capacity, more conversion and an operation better prepared to work with AI.
+
+The core visual metaphor is therefore:
+
+> **A complete world reveals the systems it is made of. Relevo finds the gap, reorganizes the same matter into a working system, proves it works, and returns to the world now lighter and more resolved.**
+
+The user should never feel that they moved from “hero animation” to “particle section” to “lens section” to “another 3D section”. Everything must visibly come from the **same matter and the same world**.
+
+---
+
+## 2. Homepage copy — approved six-act version
+
+### 01 — RELEVO
+
+> ## Hacer ligero lo que pesa.
 >
-> Relevo understands how that work happens today, designs how it should work, and
-> builds the missing system around the tools, data, decisions, people and AI that
-> actually matter.
+> Construimos sistemas para que tu operación avance con menos fricción y más capacidad.
+>
+> **Para empresas que ya funcionan y quieren crecer mejor con software, datos e IA.**
 
-The current Spanish opening candidate is:
+### 02 — EL PUNTO
 
-> **Hay trabajo que no debería costar tanto trabajo.**
+> ## Tu empresa funciona.
+>
+> ## Pero demasiado trabajo todavía depende de alguien.
+>
+> Alguien busca.
+>
+> Alguien responde.
+>
+> Alguien conecta lo que debería estar conectado.
+>
+> ## Y mientras tanto, una venta, una decisión o un cliente espera.
 
-The site should begin and end with **work**, not with AI.
+### 03 — LO QUE REALMENTE PASA
 
-AI is important, but it is not the category-level protagonist of the story. The site
-should communicate that Relevo knows when AI adds value because it first understands
-the system around the work.
+> ## El problema que se ve no siempre es el problema real.
+>
+> Por eso no empezamos por la tecnología.
+>
+> ## Primero entendemos qué está frenando el negocio.
+>
+> Después decidimos qué construir, qué automatizar y dónde la IA aporta.
+>
+> **Antes de sumar otra persona al mismo proceso, vale la pena preguntarse si el proceso debería cambiar.**
 
----
+### 04 — EL SISTEMA
 
-## 2. Communication principles
+> ## El sistema empieza antes que la IA.
+>
+> **Conectamos lo que ya existe.  
+> Construimos lo que falta.**
+>
+> Puede ser un agente.  
+> Una herramienta.  
+> Un flujo.  
+> Una capa de datos.
+>
+> ## La forma cambia. El objetivo no.
+>
+> **Más conversión.  
+> Más capacidad para el equipo.  
+> Una operación preparada para trabajar con IA.**
 
-The copy should be:
+### 05 — LA FORMA RELEVO
 
-- easy to understand on first read;
-- close, empathetic and conversational;
-- specific without becoming technical for its own sake;
-- built from ordinary verbs before abstract nouns;
-- confident without sounding like a consultancy deck;
-- technologically sophisticated without depending on AI jargon.
+> ## Construimos lo que el día a día nunca alcanza a construir.
+>
+> **Observamos.  
+> Construimos.  
+> Probamos.**
+>
+> Sobre datos, procesos y operación reales.
+>
+> ## Primero lo comprobamos.
+>
+> ## Después lo dejamos funcionando.
 
-Prefer verbs such as:
+### 06 — CONVERSACIÓN
 
-- buscar;
-- copiar;
-- revisar;
-- preguntar;
-- esperar;
-- entender;
-- diseñar;
-- construir;
-- conectar;
-- mejorar.
+> ## Hay una parte de tu operación que podría estar funcionando mucho mejor.
+>
+> ## Encontrémosla.
+>
+> Cuéntanos qué está pasando.
+>
+> **Nosotros hacemos las preguntas.  
+> Tú no necesitas tener clara la solución.**
+>
+> **Empezar conversación →**
+>
+> **Prefiero hablar con una persona →**
 
-Avoid generic market language such as:
-
-- transformación digital;
-- automatización inteligente as an unexplained umbrella;
-- agentes IA as the category-level promise;
-- AI-native as the public-facing headline;
-- orchestration / agentic / RAG / LLM jargon in primary copy;
-- generic efficiency claims without a concrete operational meaning.
-
-### Empathy guardrail
-
-Do not tell prospects that their company is broken.
-
-The stronger frame is:
-
-> **Tu empresa ya funciona.**
-
-The opportunity is that some work still functions because people manually bridge gaps
-that systems do not yet cover.
-
----
-
-## 3. Public-proof guardrail
-
-The current commercial proposals and demos are useful evidence for understanding how
-Relevo thinks, but they are **not automatically public case studies**.
-
-For homepage v1:
-
-- do not name prospects without explicit approval;
-- do not show prospect logos without explicit approval;
-- do not present proposals or demos as completed client work;
-- do not publish prospect-specific commercial information;
-- avoid highly identifying figures if they effectively reveal the prospect;
-- do not fabricate outcomes or imply measured impact that does not exist.
-
-What may be extracted from proposal work is the **repeatable Relevo method**:
-
-1. inspect what actually exists;
-2. identify the structural cause behind the visible symptom;
-3. design the missing system;
-4. test the hypothesis concretely when practical;
-5. reduce uncertainty before scaling;
-6. leave working capability rather than only a presentation.
-
-Evidence in v1 should therefore prove **how Relevo works**, not pretend that prospect
-work is already a public portfolio.
+The loader / prelude may exist before Act 01, but it is not a separate cognitive chapter.
 
 ---
 
-## 4. Narrative architecture — seven cognitive acts
+## 3. Narrative architecture
 
-There are **seven acts of meaning**, but they may contain more cinematic beats.
-
-The visitor should not have to remember eleven ideas. The page should leave a small
-number of strong impressions.
-
-| Act | Narrative job | Candidate copy direction | Visual role |
+| Act | Business question answered | Visual state | Emotional job |
 | --- | --- | --- | --- |
-| **01 · El trabajo** | Establish the human problem and create intrigue. | **Hay trabajo que no debería costar tanto trabajo.** | First appearance of the Relevo visual world and protagonist. |
-| **02 · La fricción** | Make the visitor recognize work that still depends too much on people bridging gaps. | **Tu empresa ya funciona. Pero parte de ese trabajo todavía depende demasiado de alguien.** | The protagonist reveals interruption, waiting, repetition and incomplete handoffs. |
-| **03 · Entender** | Show that Relevo does not arrive with a predetermined technology solution. | **Primero entendemos cómo funciona hoy. Después diseñamos cómo debería funcionar.** | Apparent complexity becomes legible structure. |
-| **04 · El sistema** | Explain what Relevo actually builds and where AI belongs. | **El sistema empieza antes que la IA.** / **Construimos lo que falta. Conectamos lo que ya existe.** | Main cinematic climax: the same matter becomes coordinated and operational. |
-| **05 · Comprobar** | Prove that Relevo investigates, tests and reduces uncertainty before scaling. | **Antes de proponer, comprobamos.** | The spectacle drops. Evidence and reading take priority. |
-| **06 · La forma Relevo** | Resolve the method and the meaning of the brand. | **Primero el trabajo. Después la tecnología.** / **Entender. Diseñar. Construir. Mejorar.** / **Relevare. Hacer ligero lo que pesa.** | Complexity becomes lighter, more essential and coordinated. |
-| **07 · Conversación** | Turn the story into a discovery experience for the visitor. | **¿Qué trabajo hoy cuesta más de lo que debería?** | The visual world stops being only a film and becomes a responsive interface. |
+| **01 · Relevo** | What does Relevo do and for whom? | Complete world | Awe / possibility |
+| **02 · El punto** | What problem should I recognize in my operation? | Fragmented world / friction | Recognition |
+| **03 · Lo que realmente pasa** | Why does Relevo think differently? | Inspected world | Curiosity / understanding |
+| **04 · El sistema** | What do they actually build and what value can it create? | Reorganized world | Possibility / payoff |
+| **05 · La forma Relevo** | Why should I trust how they work? | Verified working system | Confidence |
+| **06 · Conversación** | How do we start? | Resolved world / interface | Openness / action |
 
-The loader / prelude exists before Act 01, but it is not a separate cognitive chapter.
-
----
-
-## 5. Cinematic master principle
-
-The homepage should not contain seven unrelated hero objects.
-
-It should have **one persistent visual protagonist** moving through seven states.
-
-Internal working name:
-
-> **The Relevo Organism**
-
-This name is not public copy.
-
-The Relevo Organism is an abstract representation of an operation: people,
-information, decisions, tools, exceptions, memory and flow behaving as one living
-system.
-
-It is:
-
-- organic but engineered;
-- complex but coherent;
-- spatial and sculptural;
-- beautiful enough to hold attention when no text is changing;
-- capable of becoming more open, more legible, more coordinated and more responsive;
-- original to Relevo.
-
-It is **not**:
-
-- a literal brain;
-- a generic neural-network visualization;
-- a sphere with particles;
-- a giant Relevo logo;
-- a Dala object recreation;
-- a random procedural blob;
-- a sequence of unrelated morph targets with no narrative continuity.
-
-A useful conceptual blend is:
-
-> topology + current + matter + architecture
-
-The important idea is continuity: **the same matter changes how it behaves**.
+There are **six cognitive acts**, but approximately **12–16 internal cinematic beats**. Do not create new sections just because a transition contains multiple visual events.
 
 ---
 
-## 6. Particle hierarchy
+## 4. Visual language — only three materials
 
-Do not equate sophistication with a maximum particle count.
+The entire homepage should be constructed from three visual materials.
 
-The current direction explicitly prefers **fewer, more legible and better-art-directed
-particles** over a huge homogeneous field of tiny points.
+### 4.1 WORLD
 
-Use three visual hierarchies.
+Atmospheric digital landscape, topography, aerial sculptural forms, haze, depth and environmental light.
 
-### 6.1 Atmospheric particles
+Use for:
 
-Purpose:
+- hero / Act 01;
+- the final resolution / Act 06;
+- spatial continuity underneath particle states.
 
-- spatial depth;
-- parallax;
-- world continuity;
-- subtle foreground / background atmosphere.
+### 4.2 MATTER
 
-Characteristics:
+A persistent particle system capable of representing:
 
-- smallest visual scale;
-- lower density than a starfield cliché;
-- distributed across meaningful depth planes;
-- they do not define the main sculpture.
+- atmosphere;
+- terrain;
+- fragmentation;
+- flows and handoffs;
+- friction;
+- structures;
+- morphing into working systems;
+- reconstruction of the final world.
 
-### 6.2 Structural particles
+Particles are meaningful material, not decoration.
 
-Purpose:
+### 4.3 OPTICS
 
-- form the visible Relevo Organism;
-- carry the silhouette;
-- make the object readable on desktop and mobile;
-- communicate density, topology and state.
+A restrained inspection language using:
 
-Characteristics:
+- lensing;
+- refraction;
+- focus;
+- subtle halo;
+- depth;
+- controlled distortion.
 
-- materially larger and more legible than the atmospheric layer;
-- not thousands of visually identical micro-dots;
-- clear enough to perceive individual marks in important areas;
-- must retain form and hierarchy on a phone.
+Use primarily in Act 03 and selectively in Act 05.
 
-### 6.3 Hero / transfer particles
+### Do not introduce unrelated visual languages
 
-Purpose:
+Avoid:
 
-- communicate handoff, movement, release, waiting, transfer or reconnection;
-- occasionally cross meaningful camera depth;
-- create high-value spatial moments.
+- generic AI brains;
+- robots;
+- Matrix/code rain;
+- floating SaaS dashboards;
+- random holograms;
+- cyberpunk HUDs;
+- decorative 3D cards;
+- generic glowing cubes;
+- literal database icons;
+- literal magnifying-glass props;
+- tourism photography;
+- literal colourful Cappadocia balloons.
 
-Characteristics:
-
-- relatively few;
-- visually stronger than the background field;
-- used selectively;
-- never a constant “particles flying at the user” gimmick.
-
-### Primitive vocabulary
-
-Do not copy Dala’s characteristic open triangles.
-
-Explore a Relevo-native primitive vocabulary with **at most one or two particle
-families**. A structural mark may conceptually relate to continuity, incomplete pieces,
-handoff or two elements that gain meaning together, but should not simply be a mini
-logo repeated thousands of times.
+Fewer visual materials should create a stronger Relevo identity.
 
 ---
 
-## 7. Intensity curve
+## 5. Design-system guardrails
 
-Spectacle must be choreographed.
+Relevo Studio v5 **Festa** is canonical.
 
-The experience should have peaks and quiet moments instead of trying to be maximally
-animated at every scroll position.
+The generated hero exploration is an **art-direction reference only**. Do not copy any typography, navigation, UI or tokens invented by image generation.
+
+Production UI must follow `design-system/`.
+
+Key principles:
+
+- public experience is dark-first;
+- Plus Jakarta Sans for display and Hanken Grotesk for body/UI roles according to Festa;
+- purple and teal are identity colors;
+- pink is action / signal / CTA color and is not a general decorative replacement for identity colors;
+- one chroma should dominate each scene;
+- restrained amber/yellow/orange may appear as environmental or data light, not as a competing rainbow palette;
+- use Festa spacing, layout, typography, radii and motion tokens for DOM/UI;
+- preserve `prefers-reduced-motion` behavior.
+
+The visual world may feel rich and cinematic; the UI around it should remain precise and restrained.
+
+---
+
+## 6. Act 01 — RELEVO
+
+### Narrative objective
+
+Establish Relevo as a sophisticated systems studio without beginning with AI jargon.
+
+The visual should embody the brand idea:
+
+> **Hacer ligero lo que pesa.**
+
+### Keyframe direction
+
+A wide, original digital landscape.
+
+Characteristics:
+
+- dark, premium and cinematic;
+- a vast valley / canyon / topographic world at dusk or night;
+- deep foreground and distant layers;
+- atmospheric haze;
+- restrained stars / particles;
+- strong negative space for copy;
+- 5–8 aerial sculptural forms rising through the scene.
+
+The aerial forms may be **loosely reminiscent of hot-air balloons**, but they must feel original, digital and sculptural rather than touristic.
+
+They can read as:
+
+- capsules;
+- inflated sculptural bodies;
+- suspended entities;
+- engineered aerial forms.
+
+Do not use literal Cappadocia photography or colourful travel balloons.
+
+### Motion
+
+- extremely slow ascent;
+- different drift speeds per aerial form;
+- subtle parallax between foreground, valley, atmosphere and sky;
+- slight haze movement;
+- almost imperceptible camera push-in;
+- no dramatic orbit or game-camera feeling.
+
+The scene should feel **monumental and quiet**.
+
+### Composition
+
+Keep generous clean space for the approved copy. The visual world can be strongest center/right while the copy has a clear readable territory.
+
+### Chroma
+
+Near-black / charcoal dominant.
+
+Purple atmosphere may dominate. Warm environmental light can live inside or beneath aerial forms. Teal and pink should be minimal at this stage.
+
+### Keyframe status
+
+**Keyframe 01 — HERO WORLD: visual direction approved; final production artwork not frozen.**
+
+---
+
+## 7. Transition 01 → 02 — WORLD TO MATTER
+
+This is one of the most important transitions in the entire website.
+
+The hero must **not fade out**.
+
+It physically reveals that it is built from particles.
+
+Suggested sequence:
+
+1. illuminated areas begin to expose particulate structure;
+2. surfaces of the aerial forms release subtle particles;
+3. terrain edges become granular;
+4. haze turns into particle matter;
+5. the camera continues forward into the same space;
+6. the landscape loses its continuous surface and becomes the persistent particle world.
+
+Do not make it a violent explosion.
+
+The feeling is:
+
+> **the complete world is revealing what it is made of.**
+
+Scrolling backward must reconstruct the hero coherently.
+
+---
+
+## 8. Act 02 — EL PUNTO
+
+### Narrative objective
+
+Create recognition without telling the visitor their company is broken.
+
+The company already works. The problem is that some work still depends on people manually completing missing connections.
+
+### Visual state
+
+The particle world forms several distinct clusters / regions.
+
+Represent operational friction through **behavior**, not icons.
+
+Examples:
+
+- a particle flow repeatedly travels between two clusters because no direct connection exists;
+- a signal arrives and waits;
+- information takes an unnecessarily long route;
+- a transfer must return to a previous node before continuing;
+- a small bridge action is repeatedly required for two otherwise functional regions to work together.
+
+The important metaphor is:
+
+> **a person ends up acting as the bridge between things that should work together.**
+
+### Motion
+
+More active than Act 01, but not chaotic.
+
+The desired feeling is **friction and dependency**.
+
+### Chroma
+
+Dark world remains dominant. Action pink can appear sparingly as a friction / waiting signal.
+
+### Camera
+
+Continue into the matter from the hero. Avoid a reset or scene cut.
+
+### Keyframe status
+
+**Keyframe 02 — FRICTION / FRAGMENTATION: TBD.**
+
+---
+
+## 9. Transition 02 → 03 — ISOLATE THE REAL PROBLEM
+
+The system gradually slows.
+
+The camera identifies one suspicious area.
+
+Other clusters recede in depth and importance.
+
+An abstract optical inspection lens enters the scene.
+
+Do **not** create a literal detective magnifying glass.
+
+The lens should be perceived through:
+
+- a subtle edge or rim;
+- refraction;
+- controlled distortion;
+- focus;
+- halo;
+- particle reaction.
+
+The world should feel as if we are changing **how we read it**, not importing a new prop from another design language.
+
+---
+
+## 10. Act 03 — LO QUE REALMENTE PASA
+
+### Narrative objective
+
+Show that Relevo does not begin with a predetermined technology solution.
+
+The visible symptom is not necessarily the structural cause.
+
+### Visual state
+
+Outside the lens:
+
+- ambiguity;
+- noise;
+- apparently unrelated activity.
+
+Inside the lens:
+
+- relationships become legible;
+- routes separate into layers;
+- dependencies become visible;
+- the difference between useful flow and repeated friction becomes clear.
+
+The lens may reveal abstract layers corresponding to:
+
+- information;
+- tools;
+- decisions;
+- people.
+
+These do not need to become literal labeled diagrams.
+
+### Key moment
+
+The lens stops on one missing relationship — a visible **gap** between parts of the system that should be able to coordinate.
+
+That gap is the visual answer to:
+
+> **Primero entendemos qué está frenando el negocio.**
+
+### Chroma
+
+Teal becomes the dominant inspection / legibility chroma.
+
+### Camera
+
+Analytical rather than spectacular.
+
+A slight perspective change can reveal that what looked like noise already contained structure.
+
+### Keyframe status
+
+**Keyframe 03 — INSPECTION LENS / STRUCTURAL GAP: TBD.**
+
+---
+
+## 11. Transition 03 → 04 — ENTER THE REVEALED SYSTEM
+
+The inspection lens grows until its edge moves outside the viewport.
+
+The viewer is no longer looking **through** the lens.
+
+The viewer is now **inside what the lens revealed**.
+
+Particles begin to establish trajectories.
+
+Disconnected regions start attracting, aligning and forming new relationships.
+
+The feeling should be:
+
+> understanding has made redesign possible.
+
+---
+
+## 12. Act 04 — EL SISTEMA
+
+### Narrative objective
+
+Deliver the central commercial and cinematic payoff.
+
+This is the primary spectacle peak of the homepage.
+
+### Visual state
+
+The same particle matter begins behaving like architecture.
+
+Do not render four unrelated literal objects for:
+
+- agent;
+- tool;
+- flow;
+- data layer.
+
+Instead use **one persistent structure** that morphs through four abstract configurations while remaining recognizably made from the same underlying matter.
+
+Possible interpretations:
+
+#### “Un agente”
+
+The structure forms a coordinated core with inputs and outputs.
+
+#### “Una herramienta”
+
+The same matter becomes more compact and task-oriented.
+
+#### “Un flujo”
+
+The structure extends into clear directional pathways.
+
+#### “Una capa de datos”
+
+The same matter reorganizes into stratified / legible layers.
+
+These are cinematic states, not service icons.
+
+### Final resolution
+
+All states converge into one coherent working system connecting regions that were previously separate.
+
+The visual behavior should support the three outcomes:
+
+> **Más conversión.**  
+> **Más capacidad para el equipo.**  
+> **Una operación preparada para trabajar con IA.**
+
+Prefer behavioral proof over infographics:
+
+- signals reach their destination;
+- throughput increases;
+- routes become shorter;
+- previously isolated regions participate in the same flow.
+
+### Chroma
+
+Purple may return as dominant identity chroma. Teal remains a secondary information / connection signal.
+
+Avoid rainbow spectacle.
+
+### Keyframe status
+
+**Keyframe 04 — WORKING SYSTEM / MORPH CLIMAX: TBD.**
+
+---
+
+## 13. Transition 04 → 05 — FROM POSSIBILITY TO CREDIBILITY
+
+Stop escalating spectacle.
+
+The camera stabilizes.
+
+Environmental particle noise decreases.
+
+The assembled system holds its position.
+
+The emotional shift is:
+
+> **This can be built → now prove that it works.**
+
+This quieter transition is intentional.
+
+---
+
+## 14. Act 05 — LA FORMA RELEVO
+
+### Narrative objective
+
+Create confidence in the Relevo method without falling into a generic consultancy process diagram.
+
+### Visual sequence
+
+Reuse the existing visual language.
+
+#### OBSERVAMOS
+
+A restrained inspection sweep reads the working structure.
+
+#### CONSTRUIMOS
+
+One missing or imperfect element is assembled / adjusted.
+
+#### PROBAMOS
+
+A signal enters the system.
+
+It travels through the system.
+
+It exits successfully.
+
+Then another.
+
+Then another.
+
+Nothing celebrates.
+
+Nothing explodes.
+
+The system simply keeps operating.
+
+### Key payoff
+
+On:
+
+> **Primero lo comprobamos.**
+
+we see the successful test.
+
+On:
+
+> **Después lo dejamos funcionando.**
+
+we stop modifying the scene while the system continues to operate on its own.
+
+This should feel like **quiet confidence**.
+
+### Keyframe status
+
+**Keyframe 05 — VERIFIED SYSTEM: TBD.**
+
+---
+
+## 15. Transition 05 → 06 — SYSTEM BACK TO WORLD
+
+The functioning system remains alive while the camera slowly pulls far back.
+
+As scale changes:
+
+- nodes become distant lights;
+- paths become routes / valleys;
+- clusters become topographic forms;
+- suspended particles become atmosphere;
+- the working system progressively reconstructs a landscape.
+
+The viewer realizes:
+
+> **we are returning to the visual world of the hero.**
+
+But not to the identical world.
+
+---
+
+## 16. Act 06 — CONVERSACIÓN
+
+### Narrative objective
+
+Turn the cinematic experience into a discovery interface.
+
+### Visual state
+
+Return to the same visual family as Act 01.
+
+The final landscape should feel:
+
+- more open;
+- more legible;
+- calmer;
+- lighter;
+- better connected.
+
+Aerial forms may appear higher in the atmosphere than in the hero.
+
+The horizon may be more open and the routes more coherent.
+
+This is not a literal “before / after” or a triumphal ending.
+
+The feeling is **possibility**.
+
+### Conversation interface
+
+Create significant negative space for the conversational experience.
+
+The Relevo agent should **not** feel like a generic floating chatbot in the bottom corner.
+
+It should become the primary interface of the final scene.
+
+The environment remains alive with extremely restrained ambient motion while the conversation begins.
+
+The conventional human-contact path remains available as fallback.
+
+### Keyframe status
+
+**Keyframe 06 — RESOLVED WORLD / CONVERSATION: TBD.**
+
+---
+
+## 17. Emotional and visual intensity curve
+
+The experience should have peaks and quiet moments.
 
 Approximate relative intensity:
 
-```text
-ACT 01    █████        5.0   first impression
-ACT 02    ████         4.0   friction revealed
-ACT 03    ███          3.0   understanding / legibility
-ACT 04    █████        5.0   main cinematic climax
-ACT 05    ██           2.0   evidence / calm
-ACT 06    ███▌         3.5   elegant resolution
-ACT 07    ████         4.0   responsive conversion
-```
+| Act | Emotional state | Relative intensity |
+| --- | --- | ---: |
+| 01 · Relevo | awe / possibility | 85% |
+| 02 · El punto | recognition / friction | 70% |
+| 03 · Lo que realmente pasa | curiosity / discovery | 90% |
+| 04 · El sistema | possibility / payoff | **100%** |
+| 05 · La forma Relevo | confidence / evidence | 50% |
+| 06 · Conversación | openness / action | 75% |
 
-The page should have **no more than four major spectacle peaks**.
+Act 04 is the main cinematic climax.
 
-A useful distinction:
+Act 05 must deliberately become quieter.
 
-- **7 cognitive acts**;
-- approximately **12–15 internal cinematic beats**;
-- one persistent world.
-
-Do not turn every internal beat into a new section or headline.
+Act 06 opens the world again instead of trying to beat the Act 04 spectacle.
 
 ---
 
-## 8. Act 01 — El trabajo
+## 18. Approximate narrative scroll allocation
 
-### Narrative objective
+Do not assume one act equals one viewport.
 
-The visitor should immediately feel that the site is different, while understanding a
-human truth rather than being confronted with technology jargon.
+Initial planning distribution:
 
-### Primary copy candidate
+| Act | Approx. narrative scroll share |
+| --- | ---: |
+| 01 | 16% |
+| 02 | 17% |
+| 03 | 18% |
+| 04 | 21% |
+| 05 | 14% |
+| 06 | 14% |
 
-> **Hay trabajo que no debería costar tanto trabajo.**
+Transitions live **inside these ranges**.
 
-This is the preferred opening direction for the current iteration.
+Exact production distances remain open until tested in the browser.
 
-Do not automatically add a corporate descriptor immediately underneath. Give the line
-space to breathe before the story expands.
+Avoid a structure of:
 
-Possible micro-beats, to be used selectively rather than as a mandatory checklist:
+> section → fade → section → fade → section
 
-> Buscar.
->
-> Copiar.
->
-> Revisar.
->
-> Preguntar.
->
-> Esperar.
->
-> Acordarse.
-
-### Visual state
-
-The Relevo Organism first appears as:
-
-- large;
-- sculptural;
-- dense;
-- stable enough to feel intentional;
-- alive internally;
-- complex without looking broken.
-
-It should feel like an operation that already functions.
-
-Internal currents, breathing and subtle transfer may be visible, but nothing should
-announce “problem state” yet.
-
-### Camera
-
-- very slow approach or slight lateral drift;
-- strong depth without a game-camera feeling;
-- asymmetric composition is preferred over automatically centering the object;
-- no dramatic orbit or bounce.
-
-### Transition into Act 02
-
-Do not explode the object.
-
-The camera and/or topology gradually reveals that the apparently coherent organism
-contains dependencies, gaps and local inefficiencies.
-
-### Mobile
-
-- hero object must remain visually dominant;
-- it may occupy roughly 60–70% of the useful composition and extend beyond the frame;
-- structural particles should be larger and clearer than desktop micro-detail;
-- text and object should have distinct readable territories;
-- do not simply scale the desktop canvas down.
-
-### Risk to avoid
-
-A beautiful starfield with no memorable protagonist.
+The experience must be continuously scrubbed and reversible.
 
 ---
 
-## 9. Act 02 — La fricción
+## 19. Camera principles
 
-### Narrative objective
+Camera movement exists to reveal meaning.
 
-Make a prospect think:
+Use:
 
-> “Sí. Esto pasa acá.”
+- slow push / pull;
+- authored perspective changes;
+- parallax;
+- selective spatial isolation;
+- analytical reframing in Act 03;
+- deliberate stability in Act 05.
 
-without telling them that their company is broken.
+Avoid:
 
-### Copy direction
+- free orbit for spectacle;
+- game-camera movement;
+- constant dramatic zooms;
+- camera motion that competes with copy;
+- motion that cannot reverse cleanly.
 
-> **Tu empresa ya funciona.**
->
-> **Pero parte de ese trabajo todavía depende demasiado de alguien.**
-
-Potential supporting beats:
-
-> Alguien sabe dónde buscar.
->
-> Alguien sabe qué revisar.
->
-> Alguien sabe a quién preguntarle.
->
-> Alguien tiene que acordarse de lo que viene después.
-
-A useful conceptual line to keep open during copy refinement:
-
-> **Cuando el sistema no sabe, una persona completa lo que falta.**
-
-Transition candidate:
-
-> **No siempre necesitas otra herramienta.**
-
-The exact copy is not frozen yet.
-
-### Visual state
-
-The same Relevo Organism remains intact enough to prove that the operation works, but
-its internal behavior reveals friction.
-
-Prefer behavioral metaphors over random disorder:
-
-#### Loops
-
-A flow repeats a route unnecessarily.
-
-#### Wait states
-
-Particles accumulate because something else must happen before progress continues.
-
-#### Handoffs
-
-One region cannot continue until another region receives or interprets something.
-
-#### Missing context
-
-A flow arrives without what the next region needs and must reroute, wait or return.
-
-#### Manual bridge
-
-A small transfer only succeeds through an additional bridging action.
-
-### Camera
-
-Move closer or slightly inside the structure so the viewer discovers that the problem
-was already there.
-
-### Transition into Act 03
-
-The world should become **more readable**, not simply less chaotic.
-
-The change is from:
-
-> visible friction → desire to understand the underlying structure
-
-### Mobile
-
-- fewer simultaneous friction behaviors;
-- one dominant readable event at a time;
-- no dense micro-animation that becomes texture;
-- preserve strong silhouette.
-
-### Risk to avoid
-
-“Problem = object explodes into particles.”
-
-That metaphor is overused and loses the important idea that the company already works.
+The strongest camera change may be the Act 05 → 06 pullback that turns the working system back into landscape.
 
 ---
 
-## 10. Act 03 — Entender
+## 20. Scroll and reversibility
 
-### Narrative objective
+The desktop experience should be mapped deterministically to normalized scroll / chapter progress.
 
-Show Relevo’s defining behavior before technology selection:
+Scrolling upward must reproduce the cinematic sequence backward without:
 
-> understand how work happens today, then design how it should happen.
+- procedural resets;
+- random state mismatches;
+- popping geometry;
+- particle teleports;
+- irreversible one-shot animations.
 
-### Primary copy candidates
+Where procedural ambient motion is used, keep it visually secondary to the deterministic narrative state.
 
-> **Primero entendemos cómo funciona hoy.**
->
-> **Después diseñamos cómo debería funcionar.**
-
-Supporting direction:
-
-> Seguimos el trabajo de principio a fin hasta entender qué lo está haciendo más
-> difícil de lo necesario.
-
-Then:
-
-> **Recién entonces decidimos qué conviene construir, qué automatizar y dónde la IA
-> realmente aporta.**
-
-Possible transition thought:
-
-> **La tecnología viene después de entender el trabajo.**
-
-The exact supporting copy remains open to editing.
-
-### Visual state
-
-Do not replace the protagonist.
-
-Change **our ability to read it**.
-
-The same object that felt opaque begins to reveal:
-
-- layers;
-- trajectories;
-- dependencies;
-- density differences;
-- critical paths;
-- repeated routes;
-- internal logic.
-
-Some information can fade or quiet down while important relationships become more
-legible.
-
-### Cinematic metaphor
-
-A small change in perspective can reveal that what looked like noise actually had a
-structure.
-
-This is an important Relevo metaphor:
-
-> understanding changes what becomes visible.
-
-### Camera
-
-- more analytical than spectacular;
-- slight lateral, dolly or controlled perspective change;
-- no full free orbit;
-- camera movement should reveal structure, not just show off 3D.
-
-### Transition into Act 04
-
-The structure is now understood well enough that it can be redesigned.
-
-The user should feel anticipation before the main transformation.
-
-### Mobile
-
-Show one major relationship or layer at a time. Avoid displaying a microscopic system
-map all at once.
-
-### Risk to avoid
-
-Turning the scene into a generic network diagram or a literal process flowchart.
+Dala is a reference for the ambition of a reversible scroll-driven world, not for exact sequence, geometry, timing or camera paths.
 
 ---
 
-## 11. Act 04 — El sistema
+## 21. Mobile direction
 
-### Narrative objective
+Do not try to brute-force the desktop composition on a phone.
 
-Deliver the central intellectual and cinematic payoff.
+Preserve the same story with fewer simultaneous effects.
 
-### Primary copy candidates
+Recommended mobile simplification:
 
-> **El sistema empieza antes que la IA.**
+> **Hero 2.5D / lightweight world → particles → inspection lens → one primary system morph → verification → resolved world**
 
-Then:
-
-> **Construimos lo que falta.**
->
-> **Conectamos lo que ya existe.**
-
-Resolution direction:
-
-> **Para que funcione como una sola operación.**
-
-Possible component words, if they improve the experience rather than creating a
-capability list:
-
-> Datos.
->
-> Software.
->
-> Decisiones.
->
-> Personas.
->
-> IA.
-
-These words are optional cinematic material, not a required services menu.
-
-### Internal cinematic beats
-
-This act deserves its own multi-beat sequence without becoming multiple cognitive
-sections.
-
-#### Beat 4A — suspension
-
-The understood organism pauses or reaches a moment of controlled tension while:
-
-> **El sistema empieza antes que la IA.**
-
-lands.
-
-#### Beat 4B — separation
-
-Useful layers or regions become slightly distinct. The viewer can perceive that a
-working system contains different responsibilities and materials.
-
-#### Beat 4C — build / connect
-
-New pathways appear only where needed. Existing parts do not disappear simply because
-Relevo arrived.
-
-This is where:
-
-> **Construimos lo que falta. Conectamos lo que ya existe.**
-
-is expressed visually.
-
-#### Beat 4D — coordinated operation
-
-The system reconverges into a more capable state.
-
-The same material that previously waited, looped and lost context now moves with
-purpose.
-
-This should be the primary **screen-recording-worthy moment** of the website.
-
-### Motion language
-
-Possible ingredients, used selectively:
-
-- controlled dispersion;
-- directional transfer;
-- attraction;
-- compression and release;
-- propagation waves;
-- depth migration;
-- selective reconnection;
-- regional coordination;
-- convergence.
-
-Do not use every effect at once.
-
-### Camera
-
-This is the strongest camera sequence:
-
-- deliberate dolly;
-- meaningful scale change;
-- layered parallax;
-- a few hero particles crossing near camera;
-- composition changing with the transformation.
-
-The camera must still feel expensive and controlled, never like an interactive model
-viewer.
-
-### Mobile
-
-Act 04 needs a **portrait-specific composition**.
-
-Prefer:
+Mobile principles:
 
 - fewer particles;
+- fewer aerial forms;
 - larger structural marks;
-- clearer silhouette;
-- fewer simultaneous pathways;
-- a morph designed for the viewport rather than cropped from desktop.
-
-### Risk to avoid
-
-A technically impressive but semantically empty point-cloud morph.
-
-The viewer should feel that behavior improved, not merely that shape A became shape B.
+- reduced depth complexity;
+- one dominant visual event at a time;
+- authored text / visual territories;
+- simplified camera paths;
+- retain the same six cognitive acts;
+- never shrink desktop composition mechanically.
 
 ---
 
-## 12. Act 05 — Comprobar
+## 22. Reduced motion
 
-### Narrative objective
+`prefers-reduced-motion` is mandatory.
 
-Build credibility by demonstrating Relevo’s way of reducing uncertainty.
+Reduced-motion mode must preserve comprehension and brand quality.
 
-### Primary copy candidate
+Use:
 
-> **Antes de proponer, comprobamos.**
+- six excellent static / near-static scene states;
+- restrained fades / dissolves;
+- no long scrubbed camera journeys;
+- no required particle explosions or complex morphs to understand the copy;
+- no aggressive optical distortion.
 
-Possible proof structure:
-
-**Miramos lo que realmente existe.**
-
-Datos, procesos, sistemas, conversaciones.
-
-**Buscamos la causa, no solo el síntoma.**
-
-**Cuando podemos, construimos una forma de probarla.**
-
-**Escalamos después de tener evidencia.**
-
-The exact wording remains open.
-
-### Public-proof behavior
-
-This act should not manufacture anonymous “case studies” from prospects.
-
-For v1, it may prove the method using:
-
-- real but non-confidential process artifacts;
-- approved demos;
-- methodology evidence;
-- before/after system logic where rights are clear;
-- eventually public customer outcomes once approved.
-
-### Visual state
-
-The Relevo Organism remains present but quiet.
-
-- slower internal movement;
-- less near-camera activity;
-- lower contrast where necessary;
-- more negative space;
-- evidence and readable content take priority.
-
-### Camera
-
-Nearly static.
-
-This calm is intentional and protects credibility.
-
-### Mobile
-
-Text wins. The visual system moves to areas that preserve reading comfort.
-
-### Risk to avoid
-
-Trying to maintain Act 04 spectacle behind evidence paragraphs.
+The narrative must still work if the canvas were replaced by six art-directed still frames.
 
 ---
 
-## 13. Act 06 — La forma Relevo
+## 23. Technical implementation principles
 
-### Narrative objective
+Follow `context/technical-architecture-v1.md`.
 
-Resolve the method and allow the visitor to reinterpret the name Relevo after
-experiencing the transformation.
+For this storyboard specifically:
 
-### Copy direction
+- keep one persistent Three.js world wherever practical;
+- use GSAP + ScrollTrigger for narrative orchestration;
+- map major WebGL states deterministically to scroll progress;
+- prefer morphing / reconfiguration over scene replacement;
+- use custom GLSL where it materially improves GPU-driven particle morphing;
+- reuse particle buffers, target data and materials rather than allocating large systems during scroll;
+- keep semantic copy and interactive UI in the DOM;
+- WebGL is presentation and must never be the only carrier of essential meaning;
+- create adaptive quality tiers for DPR, particle count, atmosphere, postprocessing and shader complexity;
+- maintain explicit GPU resource lifecycle;
+- preserve native-scroll correctness before considering Lenis.
 
-> **Primero el trabajo. Después la tecnología.**
-
-Then, with minimal explanation:
-
-> **Entender.**
->
-> **Diseñar.**
->
-> **Construir.**
->
-> **Mejorar.**
-
-Brand resolution:
-
-> **Relevare.**
->
-> Hacer ligero lo que pesa.
-
-Do not force “Hacer ligero lo que pesa” to carry the homepage opening anymore. Its role
-is stronger here because the visitor now understands what “peso” means operationally.
-
-### Visual state
-
-The system becomes:
-
-- lighter;
-- more essential;
-- cleaner;
-- calmer;
-- coordinated without becoming sterile.
-
-The Relevo rings may influence the choreography indirectly through handoff, overlap,
-continuity or transfer.
-
-Do **not** form a giant literal logo from particles.
-
-### Signature Relevo moment
-
-Explore two currents or regions that:
-
-1. approach;
-2. overlap / transfer;
-3. continue with new information or capability.
-
-The metaphor should feel like **relevo / handoff**, without explaining the logo in the
-animation.
-
-### Camera
-
-Contemplative, potentially with a subtle pullback.
-
-### Mobile
-
-A compact, elegant sculpture can work especially well here. This act should feel
-beautiful, not information-dense.
-
-### Risk to avoid
-
-Turning the brand explanation into an “About us” section or a logo animation demo.
+Do not integrate the full homepage before the Scene Lab proves the required transitions and visual quality.
 
 ---
 
-## 14. Act 07 — Conversación
+## 24. Keyframe phase — next creative gate
 
-### Narrative objective
+Before asking a coding agent to implement the entire cinematic sequence, create and approve six static keyframes from the **same film**:
 
-Make the conversion experience feel like the logical continuation of the story.
+1. **Hero World** — Act 01;
+2. **Friction / Fragmentation** — Act 02;
+3. **Inspection Lens / Structural Gap** — Act 03;
+4. **Working System / Morph Climax** — Act 04;
+5. **Verified System** — Act 05;
+6. **Resolved World / Conversation** — Act 06.
 
-### Primary copy candidate
+These are not six independent illustrations.
 
-> **¿Qué trabajo hoy cuesta más de lo que debería?**
+They must share:
 
-Supporting candidate:
+- world geometry language;
+- matter / particle language;
+- optical language;
+- chroma logic;
+- atmosphere;
+- camera logic;
+- recognizable continuity of the same underlying material.
 
-> **Cuéntanos qué está pasando.**
->
-> No necesitas saber qué tecnología necesitas.
+The purpose of the keyframes is to remove unnecessary art-direction invention from the coding agent.
 
-Potential first agent message:
+After keyframe approval, the implementation problem becomes:
 
-> **¿Qué está pasando hoy?**
-
-The agent should not begin by asking what the visitor wants to automate. The point is to
-understand the work before deciding the solution.
-
-### Visual state
-
-The Relevo Organism does not disappear behind a conventional contact form.
-
-Instead:
-
-- the cinematic world stabilizes;
-- activity concentrates around the conversation area;
-- particles move toward edges / depth to preserve legibility;
-- the visual system becomes subtly responsive.
-
-Possible low-intensity responses to interaction:
-
-- focus;
-- typing;
-- message send;
-- agent response.
-
-These reactions must remain subtle and should never interfere with input performance or
-readability.
-
-### Transition
-
-The visitor should feel:
-
-> film → responsive system
-
-not:
-
-> WebGL section → contact widget
-
-### Mobile
-
-The agent becomes the clear protagonist. The scene must step back and support the
-interface.
-
-### Risk to avoid
-
-A beautiful cinematic page that ends in a generic “Contact us” form.
+> **connect these approved visual states into one reversible scroll-driven film.**
 
 ---
 
-## 15. Loader / prelude
+## 25. Scene Lab success criteria
 
-A controlled loading experience is appropriate because the visual world may need to
-prepare shaders, buffers and assets before first presentation.
+The next Scene Lab iteration should prove at least the following:
 
-The goal is to avoid showing a half-loaded hero.
+1. the hero world can begin revealing that it is made from particles;
+2. the same matter can communicate operational friction without becoming random chaos;
+3. an abstract inspection lens can reveal a structural gap without looking like a gimmick;
+4. particle matter can reorganize into a memorable, coherent working system;
+5. the working system can be tested and then continue operating quietly;
+6. the system can pull back and reconstruct the final landscape;
+7. all important states reverse correctly with scroll;
+8. mobile and reduced-motion variants preserve the story;
+9. the result follows Festa rather than generic AI visual tropes.
 
-However:
-
-- do not create a long loader simply because it looks cinematic;
-- progress should be real when practical;
-- if the scene is ready quickly, enter quickly;
-- do not copy Dala’s exact loader composition or symbols;
-- the loader should transform naturally into Act 01 rather than cutting to a new page.
-
-The loading experience may use Relevo identity, rings or particle behavior in an
-original, minimal way.
+Do not hide a mediocre core scene behind more sections, copy, postprocessing or decorative effects.
 
 ---
 
-## 16. Desktop / mobile composition principle
+## 26. Quality rubric
 
-Mobile is not a reduced-quality screenshot of desktop.
-
-### Desktop
-
-Can support:
-
-- richer depth;
-- more simultaneous spatial relationships;
-- more lateral composition;
-- stronger foreground particle behavior;
-- longer camera travel.
-
-### Mobile
-
-Should prioritize:
-
-- stronger object silhouette;
-- larger structural particles;
-- reduced particle count where useful;
-- one dominant visual relationship at a time;
-- portrait-native framing;
-- clear separation between copy and sculpture;
-- less simultaneous motion;
-- deliberate placement above, behind or partially outside the text region depending on
-  the act.
-
-Do not mechanically repeat the same “object above / text below” template for every act,
-but that composition is a useful mobile pattern when it improves clarity.
-
-The scene should remain art-directed when the object extends outside the viewport.
-Cropping can create scale; accidental clipping cannot.
-
----
-
-## 17. Dala reference — what to learn and what not to copy
-
-Dala remains the primary reference for **experience grammar**, especially:
-
-- one persistent visual world;
-- a protagonist that survives the page;
-- highly legible particle sculptures;
-- meaningful scale changes;
-- scroll as reversible time;
-- strong separation between cinematic peaks and reading moments;
-- generous darkness and negative space;
-- mobile compositions where the sculpture retains presence;
-- text and scene behaving as one composition rather than fighting each other.
-
-Do not copy:
-
-- Dala’s triangle primitive;
-- brain geometry;
-- lightbulb geometry;
-- exact object sequence;
-- exact camera path;
-- exact section layout;
-- exact timings;
-- proprietary code or assets;
-- exact mobile compositions.
-
-Relevo needs its own visual metaphor and primitive language.
-
----
-
-## 18. Scene Lab evaluation rubric
-
-When reviewing the current or next Scene Lab, do not use only “me gusta / no me gusta”.
-
-Evaluate:
-
-### Particle scale
-
-- Are the structural particles individually legible?
-- Are there too many tiny homogeneous points?
-- Does the sculpture hold together on mobile?
-
-### Silhouette
-
-- Does the protagonist have a memorable overall shape?
-- Could the object be recognized from a screenshot?
-
-### Hierarchy
-
-- Are atmosphere, structure and hero/transfer particles visibly different in role?
+Before full homepage integration, review the visual engine against five dimensions.
 
 ### Continuity
 
-- Does one protagonist persist through the states?
-- Or does it feel like unrelated particle demos?
+Does every major state visibly come from the same world and matter?
 
-### Friction behavior
+### Meaning
 
-- Do loops, waiting, missing context and handoff read as behavior?
-- Or is friction just noise / explosion?
+Does motion explain the story, or is it only decorative?
 
-### Understanding
+### Art direction
 
-- Does camera / visual emphasis reveal structure?
-- Or does the scene only rotate around an object?
+Does the experience feel original, premium, restrained and unmistakably coherent?
 
-### System transformation
+### Legibility
 
-- Does Act 04 feel like improved coordination?
-- Or merely a geometrical morph?
+Can the visitor read the copy and understand the visual idea without excessive cognitive load?
 
-### Camera
+### Performance
 
-- Does camera movement reveal meaning and depth?
-- Is it controlled enough to feel cinematic?
+Can the intended quality survive real devices, mobile degradation and reduced-motion requirements?
 
-### Pacing
-
-- Are there quiet states?
-- Is spectacle reserved for specific peaks?
-
-### Mobile
-
-- Is portrait composition authored separately?
-- Are particles large enough to remain visual marks rather than texture?
-
-### Originality
-
-- Does the scene feel like Relevo?
-- Does it avoid becoming “Dala with different colors” or a generic Three.js demo?
+A scene that scores poorly on continuity or meaning should not be rescued with more effects.
 
 ---
 
-## 19. Quality gate before homepage implementation
+## 27. Explicit non-goals for this phase
 
-Do not integrate the visual engine into the full homepage merely because the technical
-prototype works.
+Do not use this storyboard PR to:
 
-Before moving forward, the scene direction should demonstrate:
+- build the production homepage;
+- create a public case-study section;
+- publish prospect names, logos, proposal figures or implied client outcomes;
+- introduce Serchi, Cauvia or Workieo to the homepage;
+- define proposal-aware agent security;
+- choose exact final particle counts;
+- lock final shader code;
+- create a service catalog;
+- redesign Festa;
+- add visual libraries beyond the approved technical stack.
 
-- a compelling original Relevo Organism;
-- clear structural particle scale;
-- hierarchy between atmospheric, structural and hero particles;
-- strong desktop and mobile silhouette;
-- meaningful friction behavior;
-- an “understanding” state where relationships become legible;
-- a memorable Act 04 coordination / system payoff;
-- quiet visual treatment for evidence;
-- a credible Relevo / handoff resolution;
-- a path from cinematic world into the future conversational interface;
-- reversible scroll choreography;
-- no obvious Dala asset / geometry / primitive copying;
-- visual quality appropriate to a premium international creative-technology studio.
-
-If those conditions are not met, continue the Scene Lab instead of hiding weaknesses
-behind more sections or content.
+The immediate next artifact is **keyframe art direction**, followed by a storyboard-aligned Scene Lab iteration.
 
 ---
 
-## 20. Current open decisions
+## 28. One-sentence implementation brief
 
-The following remain deliberately open:
-
-- final exact homepage copy;
-- exact supporting lines and micro-copy;
-- exact number of micro-beats used from the candidate lists;
-- exact Relevo Organism geometry;
-- final Relevo particle primitive;
-- exact particle counts and performance tiers;
-- exact scroll distances and chapter percentages;
-- exact camera coordinates and timings;
-- final public evidence available for Act 05;
-- final loader treatment;
-- final navigation behavior;
-- exact agent UX / backend;
-- final reduced-motion composition;
-- final photo / UI / demo assets, if any.
-
-Do not invent these as permanent decisions during implementation. Prototype where needed
-and surface the strongest alternatives for human creative review.
-
----
-
-## 21. Immediate next implementation use
-
-The next visual iteration should use this storyboard to evaluate and redirect the
-existing Scene Lab rather than starting from “make cooler particles”.
-
-The implementation brief should translate each act into concrete scene state,
-particle behavior, camera behavior and mobile composition while preserving the approved
-technical architecture.
-
-The goal is no longer to prove only that a GPU particle engine can morph.
-
-The goal is to prove that the engine can tell **this Relevo story**.
+> Build one dark, cinematic Relevo world that rises calmly, reveals itself as particle matter, exposes the hidden operational gap through inspection, reorganizes that same matter into a working system, proves it works, and resolves back into a lighter version of the original world where the conversation begins.
