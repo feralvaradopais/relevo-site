@@ -1,0 +1,2 @@
+# Layout
+Proposed desktop canvas 1440px, content max 1280px, margins 64–80px, 12 columns, 24px gutter. Hero 5/7 narrative/visual split. Tablet adapts to 8 columns; mobile 4 columns, 20px margins, 16px gutters, narrative first. Spacing base 4px: 4,8,12,16,24,32,48,64,96,120. Sections 96–120 desktop, 64–72 mobile. Hairlines and whitespace establish hierarchy. Candidate 4px controls and 8px panels, no default elevation. Avoid fixed heights and horizontal clipping; verify at 320px and 200% zoom. Breakpoints are exploratory.
