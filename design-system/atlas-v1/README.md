@@ -1,0 +1,5 @@
+# Relevo Systems Atlas v1
+Status: exploratory design system; direction A selected by Fernando, foundations pending visual approval. Not production tokens. Read ../../context/brand-and-website-direction-v1.md and ../../context/hero-direction-v1.md first.
+Editorial modernism meets engineering. Clarity over complexity; intelligence by design; systems not decoration; motion with meaning; evidence over promises; quiet sophistication.
+Read FESTA-AUDIT.md, foundations/color.md, typography.md, layout.md, identity.md, components.md, illustration-system.md and motion.md. tokens.css is a scoped prototype starting point. The existing Festa directory and Scene Lab are historical sources, not active requirements for Atlas.
+Next gate: high-fidelity hero at 1440 and 390 px, responsive checks at 320/768/1024; review with Fernando before locking tokens or extending the homepage. No new brand logo, production font, technical stack or launch approved. Commercial positioning remains subject to founder alignment.

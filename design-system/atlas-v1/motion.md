@@ -1,0 +1,2 @@
+# Motion
+Purpose: explain transformation, reveal relationships, confirm actions. Retain Festa quart easing cubic-bezier(.25,1,.5,1) as candidate. Prototype interaction 180–300ms; diagrams 500–900ms, no endless decorative loops. Motion never gates access to headline, CTA or content. Prefer SVG/CSS if adequate; no mandatory WebGL, ScrollTrigger or scroll hijacking. Reduced-motion retains essential state feedback and uses static diagram/end state. Test keyboard, mobile and performance. No technical stack approval implied.

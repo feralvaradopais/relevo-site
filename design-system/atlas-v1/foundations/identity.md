@@ -1,0 +1,2 @@
+# Identity
+Festa two-ring metaphor (deliver/receive) is worth preserving. Existing canonical exports remain unchanged. Explore original monochrome assets and a Forest/Moss treatment maintaining original ring geometry, order and proportions. Do not treat text-only relevo. in chat wireframes as approved wordmark. Audit the actual SVG lockup, legibility at favicon sizes, clear space and descriptor before choosing. No new logo or brand asset is approved. Study identity on Paper and dark surfaces, in one ink and print.
