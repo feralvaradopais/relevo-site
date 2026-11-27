@@ -5,7 +5,7 @@ Status: Editorial Systems Atlas (A) selected by Fernando as the creative directi
 ## Strategic territory
 AI-first Management Systems / AI-native Operational Systems. Relevo designs and implements internal software, agents and integrations that improve how businesses operate. Sell measurable outcomes, not a menu of technologies. An AI-first system may combine deterministic workflows, existing ERP/CRM, data, applications, permissions, human review and AI where it adds value. Do not imply replacing ERP, unrestricted autonomy or guaranteed savings. Cauvia explores the external customer journey; brand/legal boundaries remain open.
 
-## Homepage narrative (working Spanish copy)
+## Homepage narrative (historical v1; superseded for current copy by [Homepage Narrative v2](homepage-narrative-v2.md))
 1. Hero — Eyebrow: AI-FIRST MANAGEMENT SYSTEMS. H1: “Una nueva forma de operar tu empresa.” Supporting copy: “Diseñamos sistemas de gestión, software a medida y agentes de inteligencia artificial que liberan a tu equipo del trabajo manual y transforman tus operaciones.” CTA: “Exploremos tu operación”. Alternative territory: “Construimos sistemas de gestión para la era de la inteligencia artificial.”
 2. Problem — “¿Cuánto de tu operación sigue dependiendo de trabajo que podría hacer un sistema?” Four recognizable pains: repetitive work, disconnected systems, late decisions, growth constrained by manual capacity.
 3. Vision — “No añadimos inteligencia artificial a tu operación. Diseñamos tu operación para trabajar con inteligencia artificial.” Explain with an accessible architecture diagram: people/objectives/decisions ↔ intelligence and orchestration ↔ applications/workflows/analytics ↔ ERP, CRM, documents, APIs and data. Show authorization, exception handling and human control. This is a conceptual diagram, not an existing platform claim.
@@ -32,3 +32,6 @@ Homepage positions the studio; focused landing pages sell a bounded problem (e.g
 - https://github.com/feralvaradopais/relevo-studio-os/blob/main/context/2026-11-27-vision-comercial-y-radar.md
 - https://github.com/feralvaradopais/relevo-studio-os/blob/main/research/opportunities/commerce-catalog-optimization.md
 - Founder conversation 2026-11-27; Instagram phrase “Mapa de arquitectura de sistema de gestión AI-First” was inspiration only; reel not inspected.
+
+## November 27 revision
+Current homepage copy, capabilities, business domains and Systems Lab are governed by [Homepage Narrative v2](homepage-narrative-v2.md). No customer logos, case studies, Jelou references or fabricated metrics; Relevo has no clients yet. Custom Apps replaces the public service label “software a medida”.
