@@ -1,0 +1,18 @@
+/* Atlas v1 EXPLORATORY — scope to prototype; not production or Festa replacement. */
+[data-theme="atlas-preview"] {
+ --atlas-paper:#F3F2EB; --atlas-mist:#E3E7DB; --atlas-sage:#B0BFA3;
+ --atlas-moss:#647D5D; --atlas-forest:#263E30; --atlas-ink:#19271F;
+ --atlas-surface:var(--atlas-paper); --atlas-text:var(--atlas-ink);
+ --atlas-text-secondary:#52664F; --atlas-action:var(--atlas-forest);
+ --atlas-on-action:#FFFFFF; --atlas-line:var(--atlas-sage);
+ --atlas-control-border:#677960; --atlas-focus:var(--atlas-forest);
+ --atlas-error:#8B302D; --atlas-warning:#735016;
+ --atlas-font-display:system-ui,sans-serif; --atlas-font-body:system-ui,sans-serif;
+ --atlas-font-mono:ui-monospace,monospace;
+ --atlas-space-1:4px; --atlas-space-2:8px; --atlas-space-3:12px;
+ --atlas-space-4:16px; --atlas-space-6:24px; --atlas-space-8:32px;
+ --atlas-space-12:48px; --atlas-space-16:64px; --atlas-space-24:96px; --atlas-space-30:120px;
+ --atlas-radius-control:4px; --atlas-radius-panel:8px;
+ --atlas-container:1280px; --atlas-gutter:24px; --atlas-gutter-mobile:16px;
+ --atlas-ease:cubic-bezier(.25,1,.5,1); --atlas-duration-ui:240ms; --atlas-duration-diagram:700ms;
+}
