@@ -1,2 +1,8 @@
-# Identity
-Festa two-ring metaphor (deliver/receive) is worth preserving. Existing canonical exports remain unchanged. Explore original monochrome assets and a Forest/Moss treatment maintaining original ring geometry, order and proportions. Do not treat text-only relevo. in chat wireframes as approved wordmark. Audit the actual SVG lockup, legibility at favicon sizes, clear space and descriptor before choosing. No new logo or brand asset is approved. Study identity on Paper and dark surfaces, in one ink and print.
+# Identity — Logomark 02
+Fernando selected option 02 (interlaced), then corrected a subsequent reinterpretation by supplying IMG_4481.jpeg on 2026-11-27. That supplied image is the visual authority; do not use the later mask-based intersection proposal or redesign the cut positions. The reference has equal circular arcs, alternating openings with flat radial terminals, and horizontal overlap. Preserve the exact visual intent.
+
+Reference-derived SVG reconstruction: radius 75, stroke 14, center distance 93.5, arcs 65°→388° and 245°→568° (screen coordinates). Silhouette overlap (intersection over union) measured ~93.5% against thresholded screenshot at reference resolution. This is a geometric approximation of raster source, not a pixel-identical original vector. Source screenshot must be retained for final visual QA; it is not embedded in this PR.
+- [Forest SVG](../assets/relevo-isotipo-02-forest.svg)
+- [Paper SVG](../assets/relevo-isotipo-02-paper.svg)
+
+Color variants use exploratory Atlas tokens, not sampled JPEG color. No other geometry variants authorized. Preserve Festa exports as historical. Brand Book v1.2 updates identity, seed geometry and header marks; earlier raster reference boards remain historical concepts. PDF and screenshot not committed in this PR. Final lockup, font, clear-space and small-size QA pending. No production deployment or trademark clearance implied.
