@@ -1,6 +1,6 @@
 # Relevo Studio — Brand & Website Direction v1
 Date: 2026-11-27
-Status: creative direction endorsed by Fernando for exploration; commercial positioning, copy, visual identity and scope pending joint founder review. This is a new working brief, not an approval to deploy. The earlier cinematic direction is historical per the November 27 OS update; preserve prior assets and decisions.
+Status: Editorial Systems Atlas (A) selected by Fernando as the creative direction; commercial positioning, copy, visual identity and scope pending joint founder review. This is a new working brief, not an approval to deploy. The earlier cinematic direction is historical per the November 27 OS update; preserve prior assets and decisions.
 
 ## Strategic territory
 AI-first Management Systems / AI-native Operational Systems. Relevo designs and implements internal software, agents and integrations that improve how businesses operate. Sell measurable outcomes, not a menu of technologies. An AI-first system may combine deterministic workflows, existing ERP/CRM, data, applications, permissions, human review and AI where it adds value. Do not imply replacing ERP, unrestricted autonomy or guaranteed savings. Cauvia explores the external customer journey; brand/legal boundaries remain open.
@@ -20,14 +20,14 @@ Editorial modernism meets engineering. Swiss-inspired grid, generous whitespace,
 Motion should explain cause and effect (inputs → system → actions → outcomes), not become a cinematic prerequisite. Use real or clearly labeled concept UI, semantic HTML, static diagram fallback, reduced-motion support, keyboard navigation and mobile-first legibility.
 Review Festa v5 for reusable assets/tokens and typography; retain only what fits. Do not silently overwrite or delete historical assets. No chosen font, logo redesign or final palette yet.
 
-## Three hero exploration briefs (next design step)
+## Three hero exploration briefs (historical alternatives; A selected)
 A. Editorial systems atlas — large headline, ivory canvas, fine technical linework and a compact system map with annotation. Most direct and clear.
 B. Operational intelligence — darker forest canvas, structured modular architecture, carefully staged data-to-action microinteraction and prominent human control. More technical.
 C. Product evidence — editorial headline with a tangible catalog/operations interface, before/after workflow and concise labels. Most concrete commercially.
-All use the same narrative and CTA; evaluate mobile clarity, perceived trust, buyer comprehension, differentiation, build cost and accessibility before choosing. These are briefs, not generated mockups.
+Fernando selected A exclusively as the creative base. B and C remain historical alternatives, not a proposed blend or active design track. Product evidence remains useful for honest demos within A. See [Hero Direction v1](hero-direction-v1.md) for the current design brief. Evaluate mobile clarity, trust, buyer comprehension, differentiation, cost and accessibility within A.
 
 ## Website architecture and measurement
-Homepage positions the studio; focused landing pages sell a bounded problem (e.g. /solutions/catalog-intelligence). Choose initial buyer/offer with Julio before running campaigns. Use honest evidence, a working CTA, privacy/consent, minimal analytics and tested mobile/performance/reduced motion before release. Do not impose a deadline, budget, final stack or sprint. Next: review the creative explorations, refine Spanish copy, audit Festa, select design direction, then implementation plan.
+Homepage positions the studio; focused landing pages sell a bounded problem (e.g. /solutions/catalog-intelligence). Choose initial buyer/offer with Julio before running campaigns. Use honest evidence, a working CTA, privacy/consent, minimal analytics and tested mobile/performance/reduced motion before release. Do not impose a deadline, budget, final stack or sprint. Next: audit Festa, refine copy and initial tokens, design the A hero in desktop/mobile, approve it, then extend the homepage and plan implementation.
 ## Sources
 - https://github.com/feralvaradopais/relevo-studio-os/blob/main/context/2026-11-27-vision-comercial-y-radar.md
 - https://github.com/feralvaradopais/relevo-studio-os/blob/main/research/opportunities/commerce-catalog-optimization.md
