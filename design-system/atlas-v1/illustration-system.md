@@ -27,3 +27,6 @@ Brand decisions: evolve the original two-ring identity (no final logo approved);
 
 ## Reference inventory
 Approved visual source boards from conversation: Generative Forms v3 (atlas_de_formas_generativas.png), Operational Architectures v2 (a_high_detail_editorial_infographic_poster_in_a_cl.png); corrected homepage and hero remain preferred visual references. Brand Book: Relevo_Brand_Identity_Art_Direction_v1.1.pdf, 15 pages. Binary files are not included in this documentation commit; import original files before visual implementation. Do not substitute older rejected boards.
+
+## Execution update
+Fernando rejected the subsequent chat-generated SVG studies and delegated illustration/motion execution to Claude Code in the context of the real homepage. The approved Generative Forms v3 and Operational Architectures v2 boards remain authoritative aesthetic anchors. Do not reuse rejected vector sketches. No standalone library prerequisite. See [Engineering & Creative Handoff v1](../../context/engineering-creative-handoff-v1.md) for reference inventory and execution gates. Söhne and isotipo 02 are selected; Brand Book v1.3 is current internal reference.
